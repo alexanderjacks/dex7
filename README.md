@@ -18,13 +18,15 @@
 ### Engineering + Code
 - sort by category ⛔️ adapt
 - hide by category ⛔️ adapt
-- search by name ⛔️ adapt
+- all items ⛔️ add scraped images + modify json
+- search by name ⛔️ research (maybe AWS ElasticSearch if jives w S3/sls)
 - service-worker = works even if offline ⛔️ enable or add lib
 
 ### Design + Biz
 - manifest for custom load screen & color branding ⛔️ compare to existing, add
 - custom logo + favicons ⛔️ compare to existing, add
 - Lighthouse PWA scoring, tweaks ⛔️ run test!
+- ⛔️ resubmit to Google AdSense
 
 ## 🏁 _Reach Goals_
 - rebuild in Gatsby-U = :100: PWA
