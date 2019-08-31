@@ -18,20 +18,9 @@ p {z-index: 2;}
 }
 
 
-
-/* fun styling, maybe branding for store */
-
-.item-border {
-  border: black solid 2px;
-  padding: 2px;
-  height: 48px;
-  width: 48px;
-}
-
-/* general app area styling */
+/* large area styling */
 .App-header {
-  background: url(./img/background_leaf.png);
-  background-size: cover;
+  background-image: radial-gradient(  black, #12175a, #3f9cf7);
   min-height: 20vh;
   padding: 2px 10px 4px 10px;
   display: flex;
@@ -46,6 +35,7 @@ FormControl { color: white; }
 .App-body {
   padding: 2rem 0 2rem 0;
   background-image: linear-gradient(to left, #4ea128, #3f9cf7, #4ea128);
+  width: 100vw;
   flex-grow: 1; 
 }
 
@@ -57,28 +47,61 @@ ul {
   justify-content: center;
 }
 
+.categorical {
+  margin: 0.25rem;  
+  @media only screen and (max-width: 400px) {
+    background-color: lightblue;
+  }
+  @media only screen and (max-width: 600px) {
+    max-width: 30vw;
+    background-color: forestgreen;
+  }
+  @media only screen and (max-width: 900px) {
+    max-width: 24vw;
+    background-color: lime;
+  }
 
-/* precise changes to MUIDataTable asset */
-.MuiPaper-root-7 {max-width: 100vw; }
+}
 
-table { max-width: 100vw; }
+.Spring { background: url(./img/paper_Spring.png), wheat ; }
+.Summer { background: url(./img/paper_Summer.png), wheat ; }
+.Fall { background: url(./img/paper_Fall.png), wheat ; }
+.Winter { background: url(./img/paper_Winter.png), wheat ; }
+.Beach { background: url(./img/paper_Beach.png), wheat ; }
+.Mines { background: url(./img/paper_Mines.png), wheat ; }
+.Desert { background: url(./img/paper_Desert.png), wheat ; }
+.Anytime { background: url(./img/paper_Anytime.png), wheat ; }
 
-.MuiTable-root-115  {
-  background: ivory;
- }
+.itemm-card-back {
+  background-image: linear-gradient(to bottom, rgba(245,222,179,0.15),rgba(245,222,179,0.8), rgba(245,222,179,1));
+}
+.itemm-card-padding { padding: 3px 7px 7px 7px; }
+.itemm-border-1 { border: 2px sienna solid; border-radius: 3px; }
+.itemm-border-2 { border: 3px chocolate solid; border-radius: 4px; }
+.itemm-border-3 { border: 5px sandybrown solid; border-radius: 7px; }
+.itemm-border-4 { border: 2px brown solid; border-radius: 6px; }
 
 
+.item-border {
+  border: white solid 2px;
+  background-image: radial-gradient(wheat, tan);
+  padding: 2px;
+  height: 48px;
+  width: 48px;
+}
+
+.lotta-text { max-width: 27vw; }
+.navy { color: navy; }
+
+.App-header-switchpanel {
+  width: 30vw;
+}
 
 /* layout utilities */
 
-.maxy {
-  padding: 0px;
-  background: snow;
-}
-
 .rowed {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
   align-items: center;

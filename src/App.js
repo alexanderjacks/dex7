@@ -1,40 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
-
-import SortyTable from './SortyTable.js';
-
+import SimpleMenu from './SimpleMenu.js';
 import stuff from './stuff.json';
 import bundles from './bundles.json';
 import './App.css';
-
-import logo from './img/ommpos_logo.png';
-
+import logo from './img/logo.png';
 
 class App extends Component {
-
   constructor(props) {
     super(props)
     this.state = {
       categoricals: stuff,
     }
   }
-  
-  componentDidMount() {
+    componentDidMount() {      
+    console.log("check out the hipster hand-made JSON goodness");
     console.log(bundles);
-
-    Promise.all([
-            axios.get('https://ommposapi420.azurewebsites.net/api/inventory/')
-            ])
-            .then(([ response ]) => {
-                this.setState({ inventory: response.data });
-
-                console.log(this.state.inventory);
-            });
   }
 
   render(){
-
     const items = this.state.categoricals.map((item, key ) =>
       <li key={item.Key} className="categorical">
         <div className="itemm-border-4">
@@ -44,7 +28,7 @@ class App extends Component {
         <div className={item.When+ " coled"}>
         <div className="itemm-card-back">
         <div className="itemm-card-padding">
-          <img src={require('./img/' + item.ImageSrc + '.png')} 
+          <img src={require('./img/'+item.ImageSrc+'.png')} 
           className="item-border" 
           alt={item.Name}
           />
@@ -81,23 +65,25 @@ class App extends Component {
         <header className="App-header rowed">
           <div className="coled">
             <img src={logo} className="App-logo pulse" alt="logo" />
+            <SimpleMenu />
+          </div>
+          <div className="App-header-switchpanel">
+
           </div>
           <div className="coled">
             <h2>
               Your Guide to Pelican Town
             </h2>
             <h3>
-              Open Settings Menu (⠇) & Add To Your Home Screen
+              Add To Home Screen!
             </h3>
           </div>
         </header>
-          <div className="rowed">
-
-            <SortyTable />
-          </div>
       {/* BODY component, content sorted by HEADER */}
         <section >
-          <h2>🚧 Thank You for using StardewDex; Work In Progress 🚧</h2>
+         <ul className="App-body">
+          {items}
+         </ul>
         </section>
 
       </div>
