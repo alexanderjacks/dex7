@@ -69,4 +69,4 @@ for bundle_name, image_URL in zip(bundle_name, image_URL):
 		for chunk in rawImgData.iter_content(chunk_size=1024):
 			fd.write(chunk)
 
-
+		
