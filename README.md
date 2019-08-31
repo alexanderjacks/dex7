@@ -1,9 +1,8 @@
-# OMMPOS Store 🏬🌿
+# Stardewdex :melon::star::card_index:
 
-## [Demo here](https://focused-deathray.netlify.com/)
+## [LIVE on AWS CloudFront](https://stardewdex.com/)
 
-### API lives in Azure
-### This app is hosted on Netlify
+### This app is hosted on AWS S3
 ### Alex Jacks Apps 2019, MIT License ( Permissive Unlimited Reuse )
 
 ## 💥 _Features_
@@ -17,14 +16,15 @@
 ## 📋 _Milestones_
 
 ### Engineering + Code
-- API test call ⛔️ add axios, use .env vars w netlify
-- datatable feature ⛔️ strip styling from lib
-- service-worker = works even if offline ⛔️ research, find lib
+- sort by category ⛔️ adapt
+- hide by category ⛔️ adapt
+- search by name ⛔️ adapt
+- service-worker = works even if offline ⛔️ enable or add lib
 
 ### Design + Biz
-- manifest for custom load screen & color branding ⛔️ compare to website, add
-- custom logo + favicons ⛔️ compare to website, add
+- manifest for custom load screen & color branding ⛔️ compare to existing, add
+- custom logo + favicons ⛔️ compare to existing, add
 - Lighthouse PWA scoring, tweaks ⛔️ run test!
 
 ## 🏁 _Reach Goals_
-- rebuild in Gatsby . . .
+- rebuild in Gatsby-U = :100: PWA
