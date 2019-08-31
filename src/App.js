@@ -37,7 +37,7 @@ class App extends Component {
         <div className={item.When+ " coled"}>
         <div className="itemm-card-back">
         <div className="itemm-card-padding">
-          <img src={require('./img/'+item.ImageSrc+'.png')} 
+          <img src={require('./img/' + item.ImageSrc + '.png')} 
           className="item-border" 
           alt={item.Name}
           />
