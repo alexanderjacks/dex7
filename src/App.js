@@ -21,13 +21,13 @@ class App extends Component {
   render(){
     const items = this.state.categoricals.map((item, key ) =>
       <li key={item.Key} className="categorical">
-        <div className="itemm-border-4">
-        <div className="itemm-border-3">
-        <div className="itemm-border-2">
-        <div className="itemm-border-1">
+        <div className="css3frame-border-4">
+        <div className="css3frame-border-3">
+        <div className="css3frame-border-2">
+        <div className="css3frame-border-1">
         <div className={item.When+ " coled"}>
-        <div className="itemm-card-back">
-        <div className="itemm-card-padding">
+        <div className="css3frame-card-back">
+        <div className="css3frame-card-padding">
           <img src={require('./img/'+item.ImageSrc+'.png')} 
           className="item-border" 
           alt={item.Name}
@@ -39,9 +39,12 @@ class App extends Component {
               <h4>{item.Type}</h4>
             </div>
           </div>
-          <div className="lotta-text">{item.Description}</div>
-          <h4>{item.SellPrice}</h4>
-          <ul className="lotta-text navy">
+          <div className="lotta-text">
+            {item.Description}
+          </div>
+          <hr/>
+          <h4>{item.BaseSellPrice}g</h4>
+          <ul className="lista-stuff navy">
             {item.UsedIn && <li>⓵ {item.UsedIn}</li>}
             {item.UsedIn2 && <li>⓶ {item.UsedIn2}</li>}
             {item.UsedIn3 && <li>⓷ {item.UsedIn3}</li>}

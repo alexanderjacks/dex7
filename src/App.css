@@ -72,14 +72,14 @@ ul {
 .Desert { background: url(./img/paper_Desert.png), wheat ; }
 .Anytime { background: url(./img/paper_Anytime.png), wheat ; }
 
-.itemm-card-back {
+.css3frame-card-back {
   background-image: linear-gradient(to bottom, rgba(245,222,179,0.15),rgba(245,222,179,0.8), rgba(245,222,179,1));
 }
-.itemm-card-padding { padding: 3px 7px 7px 7px; }
-.itemm-border-1 { border: 2px sienna solid; border-radius: 3px; }
-.itemm-border-2 { border: 3px chocolate solid; border-radius: 4px; }
-.itemm-border-3 { border: 5px sandybrown solid; border-radius: 7px; }
-.itemm-border-4 { border: 2px brown solid; border-radius: 6px; }
+.css3frame-card-padding { padding: 3px 7px 7px 7px; }
+.css3frame-border-1 { border: 2px sienna solid; border-radius: 3px; }
+.css3frame-border-2 { border: 3px chocolate solid; border-radius: 4px; }
+.css3frame-border-3 { border: 5px sandybrown solid; border-radius: 7px; }
+.css3frame-border-4 { border: 2px brown solid; border-radius: 6px; }
 
 
 .item-border {
@@ -90,7 +90,16 @@ ul {
   width: 48px;
 }
 
-.lotta-text { max-width: 27vw; }
+.lotta-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.lista-stuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .navy { color: navy; }
 
 .App-header-switchpanel {
