@@ -12,10 +12,24 @@ class App extends Component {
     this.state = {
       categoricals: stuff,
     }
+    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
+    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
   }
-    componentDidMount() {      
+  sortByPriceAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.BaseSellPrice - b.BaseSellPrice))
+    });
+    console.log("Sort Price Asc");
+  }
+  sortByPriceDesc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (b.BaseSellPrice - a.BaseSellPrice))
+    });
+    console.log("Sort Price Desc");
+  }
+  componentDidMount() {      
     console.log("check out the hipster hand-made JSON goodness");
-    console.log(bundles);
+    console.log(this.state.categoricals);
   }
 
   render(){
@@ -71,6 +85,17 @@ class App extends Component {
             <SimpleMenu />
           </div>
           <div className="App-header-switchpanel">
+            {/* btns from CoC */}
+              <a href="#Price_Ascending" className="dropdown-item" onClick={this.sortByPriceAsc}>
+                <i className="fas fa-sort-amount-down fa-flip-vertical flip-vertical-fix"></i>
+                <i className="fas fa-dollar-sign"></i>
+                <span> Lowest_Price</span>
+              </a>
+              <a href="#Price_Descending" className="dropdown-item" onClick={this.sortByPriceDesc}>
+                <i className="fas fa-sort-amount-down fa-flip-vertical flip-vertical-fix"></i>
+                <i className="fas fa-dollar-sign"></i>
+                <span> Highest_Price</span>
+              </a>
 
           </div>
           <div className="coled">
