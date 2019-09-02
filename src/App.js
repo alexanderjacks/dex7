@@ -14,6 +14,8 @@ class App extends Component {
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
+    this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortBySeasonDesc = this.sortBySeasonDesc.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -26,6 +28,18 @@ class App extends Component {
         this.state.categoricals.sort((a,b) => (b.BaseSellPrice - a.BaseSellPrice))
     });
     console.log("Sort Price Desc");
+  }
+  sortByNameAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
+    });
+    console.log("Sort Name Asc");
+  }
+  sortBySeasonDesc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (b.When.localeCompare(a.When)))
+    });
+    console.log("Sort When Desc");
   }
   componentDidMount() {      
     console.log("check out the hipster hand-made JSON goodness");
@@ -53,9 +67,11 @@ class App extends Component {
               <h4>{item.Type}</h4>
             </div>
           </div>
+{/*
           <div className="lotta-text">
             {item.Description}
           </div>
+*/}
           <hr/>
           <h4>{item.BaseSellPrice}g</h4>
           <ul className="lista-stuff navy">
@@ -86,16 +102,30 @@ class App extends Component {
           </div>
           <div className="App-header-switchpanel">
             {/* btns from CoC */}
-              <a href="#Price_Ascending" className="dropdown-item" onClick={this.sortByPriceAsc}>
-                <i className="fas fa-sort-amount-down fa-flip-vertical flip-vertical-fix"></i>
-                <i className="fas fa-dollar-sign"></i>
-                <span> Lowest_Price</span>
-              </a>
-              <a href="#Price_Descending" className="dropdown-item" onClick={this.sortByPriceDesc}>
-                <i className="fas fa-sort-amount-down fa-flip-vertical flip-vertical-fix"></i>
-                <i className="fas fa-dollar-sign"></i>
-                <span> Highest_Price</span>
-              </a>
+              <button>
+                <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
+                  <span> Lowest_Price</span>
+                  <span> 💰</span>
+                </a>
+              </button>
+              <button>
+                <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
+                  <span> Highest_Price</span>
+                  <span> 💎</span>
+                </a>
+              </button>
+              <button>
+                <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
+                  <span> Name_A->Z</span>
+                  <span> 🔠</span>
+                </a>
+              </button>
+              <button>
+                <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
+                  <span> When</span>
+                  <span> ❄️</span>
+                </a>
+              </button>
 
           </div>
           <div className="coled">

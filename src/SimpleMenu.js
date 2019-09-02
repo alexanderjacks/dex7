@@ -30,7 +30,9 @@ function SimpleMenu() {
         color="primary"
         variant="contained"
       >
-        Sort Stuff!
+        More Stuff!
+        <span>🚧
+        </span>
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}>
