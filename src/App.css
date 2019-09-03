@@ -102,8 +102,14 @@ ul {
 }
 .navy { color: navy; }
 
-.App-header-switchpanel {
-  width: 30vw;
+.App-header-ctrls {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
 }
 
 /* layout utilities */

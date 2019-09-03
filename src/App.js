@@ -65,8 +65,8 @@ class App extends Component {
           <div className="rowed">
               <h2>{item.Name}</h2>
             <div className="coled">
-              <h4>{item.When}</h4>
-              <h4>{item.Type}</h4>
+              <h4>{item.Season}</h4>
+              <h4>{item.AlsoType}</h4>
             </div>
           </div>
 {/*
@@ -96,39 +96,38 @@ class App extends Component {
 
     return (
       <div className="App">
-      
-      {/* HEADER component, includes sorting of BODY content */}
+        
+        {/* HEADER component, includes sorting of BODY content */}
         <Header/>
+        {/* buttons, tied to App constructor logic att */}
+        <div className="App-header-ctrls">
+            <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
+          <Button>
+              <span>Lowest&nbsp;Price&nbsp;</span>
+              <span>💰</span>
+          </Button>
+            </a>
+            <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
+          <Button>
+              <span>Highest&nbsp;Price&nbsp;</span>
+              <span>💎</span>
+          </Button>
+            </a>
+            <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
+          <Button>
+              <span>Name&nbsp;A->Z&nbsp;</span>
+              <span>🔠</span>
+          </Button>
+            </a>
+            <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
+          <Button>
+              <span>When&nbsp;</span>
+              <span>❄️</span>
+          </Button>
+            </a>
+        </div>
 
-      {/* buttons, tied to App constructor logic att */}
-      <div className="App-header-switchpanel">
-        <Button>
-          <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
-            <span> Lowest_Price</span>
-            <span> 💰</span>
-          </a>
-        </Button>
-        <Button>
-          <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
-            <span> Highest_Price</span>
-            <span> 💎</span>
-          </a>
-        </Button>
-        <Button>
-          <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
-            <span> Name_A->Z</span>
-            <span> 🔠</span>
-          </a>
-        </Button>
-        <Button>
-          <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
-            <span> When</span>
-            <span> ❄️</span>
-          </a>
-        </Button>
-      </div>
-
-      {/* BODY component, content sorted by HEADER */}
+        {/* BODY component, content sorted by HEADER */}
         <section >
          <ul className="App-body">
           {items}
