@@ -5,7 +5,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
 
-function SimpleMenu() {
+function NavMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   function handleClick(event) {
@@ -17,9 +17,14 @@ function SimpleMenu() {
   }
 
   const url0 = '..'
-  const url1 = '../items'
-  const url2 = '../people'
-  const url3 = '../recipes'
+  const url1 = '../forage'
+  const url2 = '../crops'
+  const url3 = '../minerals'
+  const url4 = '../fish'
+  const url5 = '../cooking'
+  const url6 = '../crafting'
+  const url7 = '../artisan'
+  const url8 = '../bundles'
 
   return (
     <div>
@@ -39,17 +44,32 @@ function SimpleMenu() {
           <Link href={url0}>HOME</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url1}>Items</Link>
+          <Link href={url1}>Forage</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url2}>People</Link>
+          <Link href={url2}>Crops</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url3}>Recipes</Link>
+          <Link href={url3}>Minerals</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url4}>Fish</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url5}>Cooking</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url6}>Crafting</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url7}>Artisan</Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url8}>Bundles</Link>
         </MenuItem>
       </Menu>
     </div>
   );
 }
 
-export default SimpleMenu;
+export default NavMenu;

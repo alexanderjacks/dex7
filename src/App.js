@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SimpleMenu from './SimpleMenu.js';
+import Header from './Header.js';
+
+import Button from '@material-ui/core/Button';
+
 import stuff from './stuff.json';
 import bundles from './bundles.json';
 import './App.css';
-import logo from './img/logo.png';
 
 class App extends Component {
   constructor(props) {
@@ -19,13 +21,13 @@ class App extends Component {
   }
   sortByPriceAsc() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.BaseSellPrice - b.BaseSellPrice))
+        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
     });
     console.log("Sort Price Asc");
   }
   sortByPriceDesc() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.BaseSellPrice - a.BaseSellPrice))
+        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
     });
     console.log("Sort Price Desc");
   }
@@ -56,7 +58,7 @@ class App extends Component {
         <div className={item.When+ " coled"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
-          <img src={require('./img/'+item.ImageSrc+'.png')} 
+          <img src={require('./img/'+item.Name.replace(/ /g, '_')+'.png')} 
           className="item-border" 
           alt={item.Name}
           />
@@ -73,7 +75,7 @@ class App extends Component {
           </div>
 */}
           <hr/>
-          <h4>{item.BaseSellPrice}g</h4>
+          <h4>{item.BasePrice}g</h4>
           <ul className="lista-stuff navy">
             {item.UsedIn && <li>⓵ {item.UsedIn}</li>}
             {item.UsedIn2 && <li>⓶ {item.UsedIn2}</li>}
@@ -94,49 +96,38 @@ class App extends Component {
 
     return (
       <div className="App">
-        {/* HEADER component, includes sorting of BODY content */}
-        <header className="App-header rowed">
-          <div className="coled">
-            <img src={logo} className="App-logo pulse" alt="logo" />
-            <SimpleMenu />
-          </div>
-          <div className="App-header-switchpanel">
-            {/* btns from CoC */}
-              <button>
-                <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
-                  <span> Lowest_Price</span>
-                  <span> 💰</span>
-                </a>
-              </button>
-              <button>
-                <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
-                  <span> Highest_Price</span>
-                  <span> 💎</span>
-                </a>
-              </button>
-              <button>
-                <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
-                  <span> Name_A->Z</span>
-                  <span> 🔠</span>
-                </a>
-              </button>
-              <button>
-                <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
-                  <span> When</span>
-                  <span> ❄️</span>
-                </a>
-              </button>
+      
+      {/* HEADER component, includes sorting of BODY content */}
+        <Header/>
 
-          </div>
-          <div className="coled">
-            <h2>
-              Your Guide to Pelican Town
-            </h2>
-            <h3>
-              Add To Home Screen!
-            </h3>
-          </div>
-        </header>
+      {/* buttons, tied to App constructor logic att */}
+      <div className="App-header-switchpanel">
+        <Button>
+          <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
+            <span> Lowest_Price</span>
+            <span> 💰</span>
+          </a>
+        </Button>
+        <Button>
+          <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
+            <span> Highest_Price</span>
+            <span> 💎</span>
+          </a>
+        </Button>
+        <Button>
+          <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
+            <span> Name_A->Z</span>
+            <span> 🔠</span>
+          </a>
+        </Button>
+        <Button>
+          <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
+            <span> When</span>
+            <span> ❄️</span>
+          </a>
+        </Button>
+      </div>
+
       {/* BODY component, content sorted by HEADER */}
         <section >
          <ul className="App-body">
