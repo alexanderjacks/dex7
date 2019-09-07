@@ -39,9 +39,9 @@ class App extends Component {
   }
   sortBySeasonDesc() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.When.localeCompare(a.When)))
+        this.state.categoricals.sort((a,b) => (b.Season.localeCompare(a.Season)))
     });
-    console.log("Sort When Desc");
+    console.log("Sort Season Desc");
   }
   componentDidMount() {      
     console.log("check out the hipster hand-made JSON goodness");
@@ -55,7 +55,7 @@ class App extends Component {
         <div className="css3frame-border-3">
         <div className="css3frame-border-2">
         <div className="css3frame-border-1">
-        <div className={item.When+ " coled"}>
+        <div className={item.Season+ " coled"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
           <img src={require('./img/'+item.Name.replace(/ /g, '_')+'.png')} 
@@ -121,7 +121,7 @@ class App extends Component {
             </a>
             <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
           <Button>
-              <span>When&nbsp;</span>
+              <span>Season&nbsp;</span>
               <span>❄️</span>
           </Button>
             </a>

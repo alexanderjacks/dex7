@@ -32,7 +32,7 @@ function NavMenu() {
         aria-owns={anchorEl ? 'simple-menu' : undefined}
         aria-haspopup="true"
         onClick={handleClick}
-        color="primary"
+        color="secondary"
         variant="contained"
       >
         More Stuff!

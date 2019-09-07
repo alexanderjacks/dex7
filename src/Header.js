@@ -14,12 +14,12 @@ class Header extends Component {
         	<NavMenu/>
         </div>
 		<div className="coled">
-			<h2>
-			Your Guide to Pelican Town
-			</h2>
 			<h3>
-			Open Settings Menu (⠇) & Add To Your Home Screen
+			Your Guide to Pelican Town
 			</h3>
+			<h4>
+			Open Settings Menu (⠇) & Add To Your Home Screen
+			</h4>
 		</div>
 	</header>
 	);}
