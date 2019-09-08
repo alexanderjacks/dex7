@@ -4,7 +4,7 @@ import Header from './Header.js';
 
 import Button from '@material-ui/core/Button';
 
-import stuff from './stuff.json';
+import forage from './forage.json';
 import bundles from './bundles.json';
 import './App.css';
 
@@ -12,7 +12,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      categoricals: stuff,
+      categoricals: forage,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
@@ -102,28 +102,28 @@ class App extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
-          <Button>
-              <span>Lowest&nbsp;Price&nbsp;</span>
-              <span>💰</span>
-          </Button>
+              <Button>
+                  <span>Lowest&nbsp;Price&nbsp;</span>
+                  <span>💰</span>
+              </Button>
             </a>
             <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
-          <Button>
-              <span>Highest&nbsp;Price&nbsp;</span>
-              <span>💎</span>
-          </Button>
+              <Button>
+                  <span>Highest&nbsp;Price&nbsp;</span>
+                  <span>💎</span>
+              </Button>
             </a>
             <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
-          <Button>
-              <span>Name&nbsp;A->Z&nbsp;</span>
-              <span>🔠</span>
-          </Button>
+              <Button>
+                  <span>Name&nbsp;A->Z&nbsp;</span>
+                  <span>🔠</span>
+              </Button>
             </a>
             <a href="#sortBySeasonDesc" className="" onClick={this.sortBySeasonDesc}>
-          <Button>
-              <span>Season&nbsp;</span>
-              <span>❄️</span>
-          </Button>
+              <Button>
+                  <span>Season&nbsp;</span>
+                  <span>❄️</span>
+              </Button>
             </a>
         </div>
 
