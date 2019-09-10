@@ -2,7 +2,7 @@
   {
     "Name": "Wild Horseradish",
     "BasePrice": 50,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "Veg",
     "Location": "Town",
     "Location2": "-",
@@ -11,7 +11,7 @@
   {
     "Name": "Daffodil",
     "BasePrice": 30,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "Flower",
     "Location": "Town",
     "Location2": "-",
@@ -20,7 +20,7 @@
   {
     "Name": "Leek",
     "BasePrice": 60,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -29,7 +29,7 @@
   {
     "Name": "Dandelion",
     "BasePrice": 40,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -38,7 +38,7 @@
   {
     "Name": "Spring Onion",
     "BasePrice": 8,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -47,7 +47,7 @@
   {
     "Name": "Morel",
     "BasePrice": 150,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "",
     "Location": "Secret Woods",
     "Location2": "-",
@@ -56,7 +56,7 @@
   {
     "Name": "Common Mushroom",
     "BasePrice": 40,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "",
     "Location": "Secret Woods",
     "Location2": "-",
@@ -65,7 +65,7 @@
   {
     "Name": "Salmonberry",
     "BasePrice": 5,
-    "Season": "Spring",
+    "Season": ["Spring"],
     "AlsoType": "Fruit",
     "Location": "Bushes",
     "Location2": "-",
@@ -74,7 +74,7 @@
   {
     "Name": "Spice Berry",
     "BasePrice": 80,
-    "Season": "Summer",
+    "Season": ["Summer"],
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "-",
@@ -83,7 +83,7 @@
   {
     "Name": "Grape",
     "BasePrice": 80,
-    "Season": "Summer",
+    "Season": ["Summer"],
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "-",
@@ -92,7 +92,7 @@
   {
     "Name": "Sweet Pea",
     "BasePrice": 50,
-    "Season": "Summer",
+    "Season": ["Summer"],
     "AlsoType": "Flower",
     "Location": "Town",
     "Location2": "-",
@@ -101,7 +101,7 @@
   {
     "Name": "Red Mushroom",
     "BasePrice": 75,
-    "Season": "Summer",
+    "Season": ["Summer"],
     "AlsoType": "",
     "Location": "Secret Woods",
     "Location2": "-",
@@ -110,7 +110,7 @@
   {
     "Name": "Fiddlehead Fern",
     "BasePrice": 98,
-    "Season": "Summer",
+    "Season": ["Summer"],
     "AlsoType": "Veg",
     "Location": "Secret Woods",
     "Location2": "-",
@@ -119,7 +119,7 @@
   {
     "Name": "Wild Plum",
     "BasePrice": 80,
-    "Season": "Fall",
+    "Season": ["Fall"],
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "-",
@@ -128,7 +128,7 @@
   {
     "Name": "Hazelnut",
     "BasePrice": 90,
-    "Season": "Fall",
+    "Season": ["Fall"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -137,7 +137,7 @@
   {
     "Name": "Blackberry",
     "BasePrice": 20,
-    "Season": "Fall",
+    "Season": ["Fall"],
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "Bushes",
@@ -146,7 +146,7 @@
   {
     "Name": "Chanterelle",
     "BasePrice": 160,
-    "Season": "Fall",
+    "Season": ["Fall"],
     "AlsoType": "",
     "Location": "Secret Woods",
     "Location2": "-",
@@ -155,7 +155,7 @@
   {
     "Name": "Common Mushroom",
     "BasePrice": 40,
-    "Season": "Fall",
+    "Season": ["Fall"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -164,7 +164,7 @@
   {
     "Name": "Winter Root",
     "BasePrice": 70,
-    "Season": "Winter",
+    "Season": ["Winter"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "Secret Woods",
@@ -173,7 +173,7 @@
   {
     "Name": "Crystal Fruit",
     "BasePrice": 150,
-    "Season": "Winter",
+    "Season": ["Winter"],
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "-",
@@ -182,7 +182,7 @@
   {
     "Name": "Snow Yam",
     "BasePrice": 100,
-    "Season": "Winter",
+    "Season": ["Winter"],
     "AlsoType": "",
     "Location": "Town",
     "Location2": "-",
@@ -191,7 +191,7 @@
   {
     "Name": "Crocus",
     "BasePrice": 60,
-    "Season": "Winter",
+    "Season": ["Winter"],
     "AlsoType": "Flower",
     "Location": "Town",
     "Location2": "-",
@@ -200,7 +200,7 @@
   {
     "Name": "Nautilus Shell",
     "BasePrice": 120,
-    "Season": "Winter",
+    "Season": ["Winter"],
     "AlsoType": "",
     "Location": "The Beach",
     "Location2": "-",

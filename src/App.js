@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
+import Seasongrid from './components/Seasongrid.js';
 
 import Button from '@material-ui/core/Button';
 
@@ -71,7 +72,9 @@ class App extends Component {
             {/* display metadata on right */}
             <span className="coled">
               <h4 class="text-shadow-white">{item.Location}</h4>
+
               <h4 class="text-shadow-white">{item.Season}</h4>
+              <Seasongrid seasons={item.Season} />
             </span>
           </div>
           <div className="rowed row-spacer">
@@ -83,7 +86,7 @@ class App extends Component {
               </span>
           </div>
 
-        {/* needs own component */}
+        {/* prices across 4 quality lvls; needs own component */}
           <hr/>
           <h4 className="prices_bar"> 
             <h3>{item.BasePrice}g </h3>
