@@ -88,13 +88,13 @@ class App extends Component {
           <h4 className="prices_bar"> 
             <h3>{item.BasePrice}g </h3>
             <span>
-              <img src={require('./img/star-silver.png')} /> <span>{item.BasePrice*1.25}g </span>
+              <img src={require('./img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
             </span>
             <span>
-              <img src={require('./img/star-gold.png')} /> <span>{item.BasePrice*1.5}g </span>
+              <img src={require('./img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
             </span>
             <span>
-              <img src={require('./img/star-iridium.png')} /> <span>{item.BasePrice*2}g </span>
+              <img src={require('./img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
             </span>
           </h4>
 

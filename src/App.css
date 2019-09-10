@@ -81,10 +81,10 @@ ul {
   background-image: linear-gradient(to bottom, rgba(245,222,179,0.1),rgba(245,222,179,0.95), rgba(245,222,179,1));
 }
 .css3frame-card-padding { padding: 3px 7px 7px 7px; }
-.css3frame-border-1 { border: 2px sienna solid; border-radius: 3px; }
-.css3frame-border-2 { border: 3px chocolate solid; border-radius: 4px; }
+.css3frame-border-1 { border: 2px sienna solid; border-radius: 2px; }
+.css3frame-border-2 { border: 3px chocolate solid; border-radius: 2px; }
 .css3frame-border-3 { border: 5px sandybrown solid; border-radius: 7px; }
-.css3frame-border-4 { border: 2px brown solid; border-radius: 6px; }
+.css3frame-border-4 { border: 2px brown solid; border-radius: 8px; }
 
 
 .item-border {
