@@ -51,6 +51,7 @@ class App extends Component {
   render(){
     const items = this.state.categoricals.map((item, key ) =>
       <li key={item.Key} className="categorical">
+         {/* needs own component from here on down, fields will reflect json types */}
         <div className="css3frame-border-4">
         <div className="css3frame-border-3">
         <div className="css3frame-border-2">
@@ -66,7 +67,10 @@ class App extends Component {
               <h2>{item.Name}</h2>
             <div className="coled">
               <h4>{item.Season}</h4>
-              <h4>{item.AlsoType}</h4>
+              <h4>{item.Location}</h4>
+              <span>Forage</span>
+              {/* if 2nd type exists */}
+              {item.AlsoType && <span>(& {item.AlsoType})</span>}
             </div>
           </div>
 {/*
@@ -75,7 +79,18 @@ class App extends Component {
           </div>
 */}
           <hr/>
-          <h4>{item.BasePrice}g</h4>
+          <h4 className="prices_bar"> {/* needs own component */}
+            <h3>{item.BasePrice}g </h3>
+            <span>
+              <img src={require('./img/star-silver.png')} /> <span>{item.BasePrice*1.25}g </span>
+            </span>
+            <span>
+              <img src={require('./img/star-gold.png')} /> <span>{item.BasePrice*1.5}g </span>
+            </span>
+            <span>
+              <img src={require('./img/star-iridium.png')} /> <span>{item.BasePrice*2}g </span>
+            </span>
+          </h4>
           <ul className="lista-stuff navy">
             {item.UsedIn && <li>⓵ {item.UsedIn}</li>}
             {item.UsedIn2 && <li>⓶ {item.UsedIn2}</li>}

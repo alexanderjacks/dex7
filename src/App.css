@@ -16,6 +16,11 @@ p {z-index: 2;}
     height: 10vmin;
     pointer-events: none;
 }
+.prices_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 /* large area styling */

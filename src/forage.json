@@ -1,7 +1,7 @@
 [
   {
     "Name": "Wild Horseradish",
-    "BasePrice": "50",
+    "BasePrice": 50,
     "Season": "Spring",
     "AlsoType": "Veg",
     "Location": "Pelican Town",
@@ -10,7 +10,7 @@
   },
   {
     "Name": "Daffodil",
-    "BasePrice": "30",
+    "BasePrice": 30,
     "Season": "Spring",
     "AlsoType": "Flower",
     "Location": "Pelican Town",
@@ -19,7 +19,7 @@
   },
   {
     "Name": "Leek",
-    "BasePrice": "60",
+    "BasePrice": 60,
     "Season": "Spring",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -28,7 +28,7 @@
   },
   {
     "Name": "Dandelion",
-    "BasePrice": "40",
+    "BasePrice": 40,
     "Season": "Spring",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -37,7 +37,7 @@
   },
   {
     "Name": "Spring Onion",
-    "BasePrice": "8",
+    "BasePrice": 8,
     "Season": "Spring",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -46,25 +46,25 @@
   },
   {
     "Name": "Morel",
-    "BasePrice": "150",
+    "BasePrice": 150,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Hidden Forest",
+    "Location": "Secret Forest",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Common Mushroom",
-    "BasePrice": "40",
+    "BasePrice": 40,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Hidden Forest",
+    "Location": "Secret Forest",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Salmonberry",
-    "BasePrice": "5",
+    "BasePrice": 5,
     "Season": "Spring",
     "AlsoType": "Fruit",
     "Location": "Bushes in season",
@@ -73,7 +73,7 @@
   },
   {
     "Name": "Spice Berry",
-    "BasePrice": "80",
+    "BasePrice": 80,
     "Season": "Summer",
     "AlsoType": "Fruit",
     "Location": "Pelican Town",
@@ -82,7 +82,7 @@
   },
   {
     "Name": "Grape",
-    "BasePrice": "80",
+    "BasePrice": 80,
     "Season": "Summer",
     "AlsoType": "Fruit",
     "Location": "Pelican Town",
@@ -91,7 +91,7 @@
   },
   {
     "Name": "Sweet Pea",
-    "BasePrice": "50",
+    "BasePrice": 50,
     "Season": "Summer",
     "AlsoType": "Flower",
     "Location": "Pelican Town",
@@ -100,25 +100,25 @@
   },
   {
     "Name": "Red Mushroom",
-    "BasePrice": "75",
+    "BasePrice": 75,
     "Season": "Summer",
     "AlsoType": "",
-    "Location": "Hidden Forest",
+    "Location": "Secret Forest",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Fiddlehead Fern",
-    "BasePrice": "98",
+    "BasePrice": 98,
     "Season": "Summer",
     "AlsoType": "Veg",
-    "Location": "Hidden Forest",
+    "Location": "Secret Forest",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Wild Plum",
-    "BasePrice": "80",
+    "BasePrice": 80,
     "Season": "Fall",
     "AlsoType": "Fruit",
     "Location": "Pelican Town",
@@ -127,7 +127,7 @@
   },
   {
     "Name": "Hazelnut",
-    "BasePrice": "90",
+    "BasePrice": 90,
     "Season": "Fall",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -136,7 +136,7 @@
   },
   {
     "Name": "Blackberry",
-    "BasePrice": "20",
+    "BasePrice": 20,
     "Season": "Fall",
     "AlsoType": "Fruit",
     "Location": "Pelican Town",
@@ -145,16 +145,16 @@
   },
   {
     "Name": "Chanterelle",
-    "BasePrice": "160",
+    "BasePrice": 160,
     "Season": "Fall",
     "AlsoType": "",
-    "Location": "Hidden Forest",
+    "Location": "Secret Forest",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Common Mushroom",
-    "BasePrice": "40",
+    "BasePrice": 40,
     "Season": "Fall",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -163,16 +163,16 @@
   },
   {
     "Name": "Winter Root",
-    "BasePrice": "70",
+    "BasePrice": 70,
     "Season": "Winter",
     "AlsoType": "",
     "Location": "Pelican Town",
-    "Location2": "Hidden Forest",
+    "Location2": "Secret Forest",
     "Notes": ""
   },
   {
     "Name": "Crystal Fruit",
-    "BasePrice": "150",
+    "BasePrice": 150,
     "Season": "Winter",
     "AlsoType": "Fruit",
     "Location": "Pelican Town",
@@ -181,7 +181,7 @@
   },
   {
     "Name": "Snow Yam",
-    "BasePrice": "100",
+    "BasePrice": 100,
     "Season": "Winter",
     "AlsoType": "",
     "Location": "Pelican Town",
@@ -190,7 +190,7 @@
   },
   {
     "Name": "Crocus",
-    "BasePrice": "60",
+    "BasePrice": 60,
     "Season": "Winter",
     "AlsoType": "Flower",
     "Location": "Pelican Town",
@@ -199,71 +199,71 @@
   },
   {
     "Name": "Nautilus Shell",
-    "BasePrice": "120",
-    "Season": "Any",
+    "BasePrice": 120,
+    "Season": "Winter",
     "AlsoType": "",
-    "Location": "Beach",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Coral",
-    "BasePrice": "80",
-    "Season": "Any",
+    "BasePrice": 80,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "Beach",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Sea Urchin",
-    "BasePrice": "160",
-    "Season": "Any",
+    "BasePrice": 160,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "Beach",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Rainbow Shell",
-    "BasePrice": "300",
-    "Season": "Any",
+    "BasePrice": 300,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "Beach",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Clam",
-    "BasePrice": "50",
-    "Season": "Any",
+    "BasePrice": 50,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "Beach",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Mussel",
-    "BasePrice": "30",
-    "Season": "Any",
-    "AlsoType": "",
-    "Location": "Beach",
+    "BasePrice": 30,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "AlsoType": "Fish",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Oyster",
-    "BasePrice": "40",
-    "Season": "Any",
-    "AlsoType": "",
-    "Location": "Beach",
+    "BasePrice": 40,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "AlsoType": "Fish",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Red Mushroom",
-    "BasePrice": "75",
-    "Season": "Any",
+    "BasePrice": 75,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
     "Location2": "-",
@@ -271,8 +271,8 @@
   },
   {
     "Name": "Purple Mushroom",
-    "BasePrice": "250",
-    "Season": "Any",
+    "BasePrice": 250,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
     "Location2": "-",
@@ -280,8 +280,8 @@
   },
   {
     "Name": "Cave Carrot",
-    "BasePrice": "25",
-    "Season": "Any",
+    "BasePrice": 25,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
     "Location2": "-",
@@ -289,19 +289,37 @@
   },
   {
     "Name": "Cactus Fruit",
-    "BasePrice": "75",
-    "Season": "Any",
+    "BasePrice": 75,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "Fruit",
-    "Location": "Desert",
+    "Location": "The Desert",
     "Location2": "-",
     "Notes": ""
   },
   {
     "Name": "Coconut",
-    "BasePrice": "100",
-    "Season": "Any",
+    "BasePrice": 100,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "Fruit",
-    "Location": "Desert",
+    "Location": "The Desert",
+    "Location2": "-",
+    "Notes": ""
+  },
+  {
+    "Name": "Cockle",
+    "BasePrice": 50,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "AlsoType": "Fish",
+    "Location": "The Beach",
+    "Location2": "-",
+    "Notes": ""
+  },
+  {
+    "Name": "Coral",
+    "BasePrice": 58,
+    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "AlsoType": "",
+    "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
   }
