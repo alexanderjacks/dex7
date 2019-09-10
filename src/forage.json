@@ -4,7 +4,7 @@
     "BasePrice": 50,
     "Season": "Spring",
     "AlsoType": "Veg",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -13,7 +13,7 @@
     "BasePrice": 30,
     "Season": "Spring",
     "AlsoType": "Flower",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -22,7 +22,7 @@
     "BasePrice": 60,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -31,7 +31,7 @@
     "BasePrice": 40,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -40,7 +40,7 @@
     "BasePrice": 8,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -49,7 +49,7 @@
     "BasePrice": 150,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Secret Forest",
+    "Location": "Secret Woods",
     "Location2": "-",
     "Notes": ""
   },
@@ -58,7 +58,7 @@
     "BasePrice": 40,
     "Season": "Spring",
     "AlsoType": "",
-    "Location": "Secret Forest",
+    "Location": "Secret Woods",
     "Location2": "-",
     "Notes": ""
   },
@@ -67,7 +67,7 @@
     "BasePrice": 5,
     "Season": "Spring",
     "AlsoType": "Fruit",
-    "Location": "Bushes in season",
+    "Location": "Bushes",
     "Location2": "-",
     "Notes": "8th - 12th"
   },
@@ -76,7 +76,7 @@
     "BasePrice": 80,
     "Season": "Summer",
     "AlsoType": "Fruit",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -85,7 +85,7 @@
     "BasePrice": 80,
     "Season": "Summer",
     "AlsoType": "Fruit",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -94,7 +94,7 @@
     "BasePrice": 50,
     "Season": "Summer",
     "AlsoType": "Flower",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -103,7 +103,7 @@
     "BasePrice": 75,
     "Season": "Summer",
     "AlsoType": "",
-    "Location": "Secret Forest",
+    "Location": "Secret Woods",
     "Location2": "-",
     "Notes": ""
   },
@@ -112,7 +112,7 @@
     "BasePrice": 98,
     "Season": "Summer",
     "AlsoType": "Veg",
-    "Location": "Secret Forest",
+    "Location": "Secret Woods",
     "Location2": "-",
     "Notes": ""
   },
@@ -121,7 +121,7 @@
     "BasePrice": 80,
     "Season": "Fall",
     "AlsoType": "Fruit",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -130,7 +130,7 @@
     "BasePrice": 90,
     "Season": "Fall",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -139,8 +139,8 @@
     "BasePrice": 20,
     "Season": "Fall",
     "AlsoType": "Fruit",
-    "Location": "Pelican Town",
-    "Location2": "Bushes in season",
+    "Location": "Town",
+    "Location2": "Bushes",
     "Notes": "8th - 12th"
   },
   {
@@ -148,7 +148,7 @@
     "BasePrice": 160,
     "Season": "Fall",
     "AlsoType": "",
-    "Location": "Secret Forest",
+    "Location": "Secret Woods",
     "Location2": "-",
     "Notes": ""
   },
@@ -157,7 +157,7 @@
     "BasePrice": 40,
     "Season": "Fall",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -166,8 +166,8 @@
     "BasePrice": 70,
     "Season": "Winter",
     "AlsoType": "",
-    "Location": "Pelican Town",
-    "Location2": "Secret Forest",
+    "Location": "Town",
+    "Location2": "Secret Woods",
     "Notes": ""
   },
   {
@@ -175,7 +175,7 @@
     "BasePrice": 150,
     "Season": "Winter",
     "AlsoType": "Fruit",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -184,7 +184,7 @@
     "BasePrice": 100,
     "Season": "Winter",
     "AlsoType": "",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },
@@ -193,7 +193,7 @@
     "BasePrice": 60,
     "Season": "Winter",
     "AlsoType": "Flower",
-    "Location": "Pelican Town",
+    "Location": "Town",
     "Location2": "-",
     "Notes": ""
   },

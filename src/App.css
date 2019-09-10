@@ -68,17 +68,17 @@ ul {
 
 }
 
-.Spring { background: url(./img/paper_Spring.png), wheat ; }
-.Summer { background: url(./img/paper_Summer.png), wheat ; }
-.Fall { background: url(./img/paper_Fall.png), wheat ; }
-.Winter { background: url(./img/paper_Winter.png), wheat ; }
-.Beach { background: url(./img/paper_Beach.png), wheat ; }
-.Mines { background: url(./img/paper_Mines.png), wheat ; }
-.Desert { background: url(./img/paper_Desert.png), wheat ; }
-.Anytime { background: url(./img/paper_Anytime.png), wheat ; }
+.Town { background: url(./img/paper-Town.png), wheat ; }
+.Secret_Woods { background: url(./img/paper-Secret_Woods.png), wheat ; }
+.Bushes { background: url(./img/paper-Bushes.png), wheat ; }
+
+.The_Beach { background: url(./img/paper-The_Beach.png), wheat ; }
+.The_Mines { background: url(./img/paper-The_Mines.png), wheat ; }
+.The_Desert { background: url(./img/paper-The_Desert.png), wheat ; }
+
 
 .css3frame-card-back {
-  background-image: linear-gradient(to bottom, rgba(245,222,179,0.15),rgba(245,222,179,0.8), rgba(245,222,179,1));
+  background-image: linear-gradient(to bottom, rgba(245,222,179,0.1),rgba(245,222,179,0.95), rgba(245,222,179,1));
 }
 .css3frame-card-padding { padding: 3px 7px 7px 7px; }
 .css3frame-border-1 { border: 2px sienna solid; border-radius: 3px; }
@@ -129,6 +129,9 @@ a {
 .rowed * {
   margin: 0.15em;
 }
+.row-spacer {
+  justify-content: space-around;
+}
 .coled {
   display: flex;
   flex-flow: column nowrap;
@@ -140,7 +143,12 @@ a {
   margin: 0.0em;
   padding: 0.15em;
 }
-
+.text-shadow-white {
+  text-shadow: 2px 2px 4px white,
+  -2px -2px 4px white,
+  -2px 2px 4px white,
+2px -2px 4px white;
+}
 @keyframes pulse {
   50% {
     transform: scale(1.1);
