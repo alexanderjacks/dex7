@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
 import Seasongrid from './components/Seasongrid.js';
+import Seasontext from './components/Seasontext.js';
 
 import Button from '@material-ui/core/Button';
 
@@ -18,7 +19,7 @@ class App extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortBySeasonAsc = this.sortBySeasonAsc.bind(this);
+    this.sortByWinter = this.sortByWinter.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -38,7 +39,7 @@ class App extends Component {
     });
     console.log("Sort Name Asc");
   }
-  sortBySeasonAsc() {
+  sortByWinter() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
     });
@@ -63,6 +64,13 @@ class App extends Component {
         <div className={item.Location.replace(/ /g, '_')+ " coled"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
+          {/* place and time metadata in text */}
+          <div className="rowed row-spacer">
+            <h4 class="text-shadow-white">
+              <span>{item.Location}</span>
+              <Seasontext seasons={item.Season} />
+            </h4>
+          </div>
           <div className="rowed row-spacer">
             {/* display image on left */}
             <img src={require('./img/'+item.Name.replace(/ /g, '_')+'.png')} 
@@ -71,9 +79,7 @@ class App extends Component {
             />
             {/* display metadata on right */}
             <span className="coled">
-              <h4 class="text-shadow-white">{item.Location}</h4>
-
-              <h4 class="text-shadow-white">{item.Season}</h4>
+              {/* seasons could use own component */}
               <Seasongrid seasons={item.Season} />
             </span>
           </div>
@@ -138,12 +144,7 @@ class App extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-            <a href="#sortBySeasonAsc" className="" onClick={this.sortBySeasonAsc}>
-              <Button>
-                  <span>Season&nbsp;</span>
-                  <span>❄️</span>
-              </Button>
-            </a>
+            
         </div>
 
         {/* BODY component, content sorted by HEADER */}
