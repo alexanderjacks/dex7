@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import Seasontext from './Seasontext.js';
+import IngredientIterator from './IngredientIterator.js';
 
 import bundles from '../bundles.json';
 import '../App.css';
@@ -54,24 +54,37 @@ class App extends Component {
 
 
       {/* CSS class assigns background img based on .Name prop */}
-        <div className={item.Image.replace(/ /g, '_')+ " coled no-repeat-bg"}>
+        <div>
+    	{/* converts json field so matches filenames,
+    	removes any quantity from image name */}
+        <div className={item.Image.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
-          {/* place and time metadata in text */}
+          {/* name & reward metadata */}
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <h2>{item.Name}</h2>
               <h3>{item.Reward}</h3>
+            </h4>
+          </div>
+
+          {/* all bundle ingredients */}
+            <div class="text-shadow-white">
+              <IngredientIterator ingredients={item.Ingredients} />
+	            <h5>Needs {item.Needs} of {item.Of}</h5>
+            </div>
+          {/* CommCenter room metadata */}
+          <div className="rowed row-spacer">
+            <h4 class="text-shadow-white">
+              <hr/>
               <span>{item.Room}</span>
-              <span>
-	              <span>Needs {item.Needs} of</span>
-	              <span> {item.Of}</span>
-              </span>
             </h4>
           </div>
 
         </div>
         </div>
+        </div>
+
         </div>
 
 

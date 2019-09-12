@@ -164,6 +164,10 @@ a {
 .row-spacer {
   justify-content: space-around;
 }
+.row-spillover {
+  flex-flow: row wrap;
+}
+
 .coled {
   display: flex;
   flex-flow: column nowrap;
@@ -185,7 +189,6 @@ a {
 .no-repeat-bg {
   background-size: cover;
   resize: both;
-  min-height: 30vh;
 }
 
 @keyframes pulse {
