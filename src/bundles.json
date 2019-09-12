@@ -1,602 +1,602 @@
 [
   {
-    "bundle_name": "Spring_Foraging_Bundle",
-    "bundle_color": "green",
-    "bundle_reward": "Spring Seeds (30)",
-    "bundle_ingredients": [
-        {
-            "Wild Horseradish": "Spring Foraging"
-        },
-        {
-            "Daffodil": "Spring Foraging, buy from Pierre at Flower Dance"
-        },
-        {
-            "Leek": "Spring Foraging"
-        },
-        {
-            "Dandelion": "Spring Foraging, buy from Pierre at Flower Dance"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Spring Foraging Bundle",
+	"Image": "Spring Foraging Bundle",
+    "Reward": "Spring Seeds (30)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Wild Horseradish",
+    "Ingredient2": "Leek",
+    "Ingredient3": "Daffodil",
+    "Ingredient4": "Dandelion",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Summer_Foraging_Bundle",
-    "bundle_color": "yellow",
-    "bundle_reward": "Summer Seeds (30)",
-    "bundle_ingredients": [
-        {
-            "Grape": "Summer Foraging, Fall Farming"
-        },
-        {
-            "Spice Berry": "Summer Foraging, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Sweet Pea": "Summer Foraging"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Summer Foraging Bundle",
+	"Image": "Summer Foraging Bundle",
+    "Reward": "Summer Seeds (30)",
+    "Needs": 3,
+    "Of": 3,
+    "Ingredient": "Grape",
+    "Ingredient2": "Sweet Pea",
+    "Ingredient3": "Spice Berry",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Fall_Foraging_Bundle",
-    "bundle_color": "orange",
-    "bundle_reward": "Fall Seeds (30)",
-    "bundle_ingredients": [
-        {
-            "Common Mushroom": "Fall Foraging, Spring & Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree"
-        },
-        {
-            "Wild Plum": "Fall Foraging, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Hazelnut": "Fall Foraging"
-        },
-        {
-            "Blackberry": "Fall Foraging, The Farm Cave (fruit bat option)"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Fall Foraging Bundle",
+	"Image": "Fall Foraging Bundle",
+    "Reward": "Fall Seeds (30)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Common Mushroom",
+    "Ingredient2": "Hazelnut",
+    "Ingredient3": "Wild Plum",
+    "Ingredient4": "Blackberry",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Winter_Foraging_Bundle",
-    "bundle_color": "teal",
-    "bundle_reward": "Winter Seeds (30)",
-    "bundle_ingredients": [
-        {
-            "Winter Root": "Tilling soil or Artifact Spots in Winter, dropped by Blue Slimes on levels 41-79 of The Mines"
-        },
-        {
-            "Crystal Fruit": "Winter Foraging, dropped by Dust Sprites on levels 41-79 of The Mines"
-        },
-        {
-            "Snow Yam": "Tilling soil or Artifact Spots in Winter"
-        },
-        {
-            "Crocus": "Winter Foraging"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Winter Foraging Bundle",
+	"Image": "Winter Foraging Bundle",
+    "Reward": "Winter Seeds (30)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Winter Root",
+    "Ingredient2": "Snow Yam",
+    "Ingredient3": "Crystal Fruit",
+    "Ingredient4": "Crocus",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Construction_Bundle",
-    "bundle_color": "red",
-    "bundle_reward": "Charcoal Kiln (1)",
-    "bundle_ingredients": [
-        {
-            "Wood (99)": "Chopping Trees or branches with an Axe"
-        },
-        {
-            "Wood (99)": "Chopping Trees or branches with an Axe"
-        },
-        {
-            "Stone (99)": "Smashing stones with a Pickaxe"
-        },
-        {
-            "Hardwood (10)": "Chopping Large Stumps or Large Logs with an upgraded Axe, smashing crates in The Mines"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Construction Bundle",
+	"Image": "Construction Bundle",
+    "Reward": "Charcoal Kiln",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Wood (99)",
+    "Ingredient2": "Wood (99)",
+    "Ingredient3": "Stone (99)",
+    "Ingredient4": "Hardwood (10)",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Exotic_Foraging_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Autumn's Bounty (5)",
-    "bundle_ingredients": [
-        {
-            "Coconut": "Desert Foraging"
-        },
-        {
-            "Cactus Fruit": "Desert Foraging"
-        },
-        {
-            "Cave Carrot": "The Mines, either smashing boxes or tilling soil"
-        },
-        {
-            "Red Mushroom": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree, Forest Farm Map in Fall."
-        },
-        {
-            "Purple Mushroom": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
-        },
-        {
-            "Maple Syrup": "Tapped Maple Tree"
-        },
-        {
-            "Oak Resin": "Tapped Oak Tree"
-        },
-        {
-            "Pine Tar": "Tapped Pine Tree"
-        },
-        {
-            "Morel": "Foraging in the Secret Woods or Forest Farm Map in Spring, The Farm Cave (mushroom option)"
-        }
-    ]
+    "Room": "Crafts Room - Bridge Repair",
+    "Name": "Exotic Foraging Bundle",
+	"Image": "Exotic Foraging Bundle",
+    "Reward": "Autumn's Bounty (5)",
+    "Needs": 5,
+    "Of": 9,
+    "Ingredient": "Coconut",
+    "Ingredient2": "Cactus Fruit",
+    "Ingredient3": "Cave Carrot",
+    "Ingredient4": "Red Mushroom",
+    "Ingredient5": "Purple Mushroom",
+    "Ingredient6": "Morel",
+    "Ingredient7": "Maple Syrup",
+    "Ingredient8": "Oak Resin",
+    "Ingredient9": "Pine Tar",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Spring_Crops_Bundle",
-    "bundle_color": "green",
-    "bundle_reward": "Speed-Gro (20)",
-    "bundle_ingredients": [
-        {
-            "Parsnip": "Spring Crops"
-        },
-        {
-            "Green Bean": "Spring Crops"
-        },
-        {
-            "Cauliflower": "Spring Crops"
-        },
-        {
-            "Potato": "Spring Crops"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Spring Crops Bundle",
+	"Image": "Spring Crops Bundle",
+    "Reward": "Speed-Gro (20)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Parsnip",
+    "Ingredient2": "Green Bean",
+    "Ingredient3": "Potato",
+    "Ingredient4": "Cauliflower",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Summer_Crops_Bundle",
-    "bundle_color": "yellow",
-    "bundle_reward": "Quality Sprinkler (1)",
-    "bundle_ingredients": [
-        {
-            "Tomato": "Summer Crops"
-        },
-        {
-            "Hot Pepper": "Summer Crops"
-        },
-        {
-            "Blueberry": "Summer Crops"
-        },
-        {
-            "Melon": "Summer Crops"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Summer Crops Bundle",
+	"Image": "Summer Crops Bundle",
+    "Reward": "Quality Sprinkler",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Tomato",
+    "Ingredient2": "Hot Pepper",
+    "Ingredient3": "Blueberry",
+    "Ingredient4": "Melon",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Fall_Crops_Bundle",
-    "bundle_color": "orange",
-    "bundle_reward": "Bee House (1)",
-    "bundle_ingredients": [
-        {
-            "Corn": "Summer / Fall Crops"
-        },
-        {
-            "Eggplant": "Fall Crops"
-        },
-        {
-            "Pumpkin": "Fall Crops"
-        },
-        {
-            "Yam": "Fall Crops"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Fall Crops Bundle",
+	"Image": "Fall Crops Bundle",
+    "Reward": "Bee House",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Corn",
+    "Ingredient2": "Eggplant",
+    "Ingredient3": "Yam",
+    "Ingredient4": "Pumpkin",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Quality_Crops_Bundle",
-    "bundle_color": "teal",
-    "bundle_reward": "Preserves Jar (1)",
-    "bundle_ingredients": [
-        {
-            "Parsnip (5)": "Gold quality Spring Crops"
-        },
-        {
-            "Melon (5)": "Gold quality Summer Crops"
-        },
-        {
-            "Pumpkin (5)": "Gold quality Fall Crops"
-        },
-        {
-            "Corn (5)": "Gold quality Summer / Fall Crops"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Quality Crops Bundle",
+	"Image": "Quality Crops Bundle",
+    "Reward": "Preserves Jar",
+    "Needs": 3,
+    "Of": 4,
+    "Ingredient": "Parsnip (5)",
+    "Ingredient2": "Melon (5)",
+    "Ingredient3": "Corn (5)",
+    "Ingredient4": "Pumpkin (5)",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Animal_Bundle",
-    "bundle_color": "red",
-    "bundle_reward": "Cheese Press (1)",
-    "bundle_ingredients": [
-        {
-            "Large Milk": "Cows"
-        },
-        {
-            "Large Egg (Brown)": "Chickens"
-        },
-        {
-            "Large Egg": "Chickens"
-        },
-        {
-            "Large Goat Milk": "Goats"
-        },
-        {
-            "Wool": "Sheep, Rabbits"
-        },
-        {
-            "Duck Egg": "Ducks"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Animal Bundle",
+	"Image": "Animal Bundle",
+    "Reward": "Cheese Press",
+    "Needs": 5,
+    "Of": 6,
+    "Ingredient": "Large Egg (White)",
+    "Ingredient2": "Large Egg (Brown)",
+    "Ingredient3": "Large Milk",
+    "Ingredient4": "L. Goat Milk",
+    "Ingredient5": "Duck Egg",
+    "Ingredient6": "Wool",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Artisan_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Keg (1)",
-    "bundle_ingredients": [
-        {
-            "Truffle Oil (1)": "Made from Truffles using an Oil Maker"
-        },
-        {
-            "Cloth": "Loom, Recycling a Soggy Newspaper"
-        },
-        {
-            "Goat Cheese": "Cheese Press"
-        },
-        {
-            "Cheese": "Cheese Press"
-        },
-        {
-            "Honey": "Bee House"
-        },
-        {
-            "Jelly": "Preserves Jar"
-        },
-        {
-            "Apple": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Apricot": "Apricot Trees during Spring, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Orange": "Orange Trees during Summer, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Peach": "Peach Trees during Summer, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Pomegranate": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
-        },
-        {
-            "Cherry": "Cherry Trees during Spring, The Farm Cave (fruit bat option)"
-        }
-    ]
+    "Room": "Pantry - Greenhouse",
+    "Name": "Artisan Bundle",
+	"Image": "Artisan Bundle",
+    "Reward": "Keg",
+    "Needs": 6,
+    "Of": 12,
+    "Ingredient": "Apricot",
+    "Ingredient2": "Cherry",
+    "Ingredient3": "Orange",
+    "Ingredient4": "Peach",
+    "Ingredient5": "Apple",
+    "Ingredient6": "Pomegranate",
+    "Ingredient7": "Honey",
+    "Ingredient8": "Jelly",
+    "Ingredient9": "Cheese",
+    "Ingredient10": "Goat Cheese",
+    "Ingredient11": "Cloth",
+    "Ingredient12": "Truffle Oil"
   },
   {
-    "bundle_name": "River_Fish_Bundle",
-    "bundle_color": "teal",
-    "bundle_reward": "Bait (30)",
-    "bundle_ingredients": [
-        {
-            "Sunfish": "Found in Rivers, 6am – 7pm, Spring, and Summer during sunny weather. \nFound in the Riverlands Farm or in the Wilderness Farm pond during rainy weather."
-        },
-        {
-            "Catfish": "Found in Rivers and Secret Woods Pond Anytime, Spring and Fall. Only when raining."
-        },
-        {
-            "Shad": "Found in Rivers, 9am – 2am, Spring, Summer, and Fall. Only when raining."
-        },
-        {
-            "Tiger Trout": "Found in Rivers, 6am – 7pm, Fall and Winter."
-        }
-    ]
-    
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "River Fish Bundle",
+	"Image": "River Fish Bundle",
+    "Reward": "Bait (30)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Sunfish",
+    "Ingredient2": "Shad",
+    "Ingredient3": "Tiger Trout",
+    "Ingredient4": "Catfish",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Lake_Fish_Bundle",
-    "bundle_color": "green",
-    "bundle_reward": "Dressed Spinner (1)",
-    "bundle_ingredients": [
-        {
-            "Largemouth Bass": "Found in the Mountain lake, 6am – 7pm, All Seasons."
-        },
-        {
-            "Carp": "Found in the Mountain lake, Anytime, All Seasons.\nFound in Cindersap Forest pond, Anytime, Spring, Summer, or Fall.\nFound in Secret Woods or Sewer, Anytime, All Seasons."
-        },
-        {
-            "Bullhead": "Found in the Mountain Lake, Anytime, All Seasons."
-        },
-        {
-            "Sturgeon": "Found in the Mountain Lake, 6am – 7pm, Summer and Winter."
-        }
-    ]
-    
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "Lake Fish Bundle",
+	"Image": "Lake Fish Bundle",
+    "Reward": "Dressed Spinner",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Carp",
+    "Ingredient2": "Largemouth Bass",
+    "Ingredient3": "Bullhead",
+    "Ingredient4": "Sturgeon",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Ocean_Fish_Bundle",
-    "bundle_color": "blue",
-    "bundle_reward": "Warp Totem: Beach (5)",
-    "bundle_ingredients": [
-        {
-            "Sardine": "Found in the Ocean, 6am – 7pm, Spring, Fall, and Winter."
-        },
-        {
-            "Tuna": "Found in the Ocean, 6am – 7pm, Summer and Winter."
-        },
-        {
-            "Red Snapper": "Found in the Ocean, 6am – 7pm, Summer and Fall. Only when raining."
-        },
-        {
-            "Tilapia": "Found in the Ocean, 6am – 2pm, Summer and Fall."
-        }
-    ]
-    
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "Ocean Fish Bundle",
+	"Image": "Ocean Fish Bundle",
+    "Reward": "Warp Totem: Beach (5)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Sardine",
+    "Ingredient2": "Tuna",
+    "Ingredient3": "Red Snapper",
+    "Ingredient4": "Tilapia",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Night_Fishing_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Small Glow Ring (1)",
-    "bundle_ingredients": [
-        {
-            "Walleye": "Found in Rivers, Lakes and Forest Pond, 12pm – 2am, Fall. Only when raining."
-        },
-        {
-            "Bream": "Found in Rivers, 6pm – 2am, All Seasons."
-        },
-        {
-            "Eel": "Found in the Ocean, 4pm – 2am, Spring or Fall. Only when raining."
-        }
-    ]
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "Night Fishing Bundle",
+	"Image": "Night Fishing Bundle",
+    "Reward": "Small Glow Ring",
+    "Needs": 3,
+    "Of": 3,
+    "Ingredient": "Bream",
+    "Ingredient2": "Walleye",
+    "Ingredient3": "Eel",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Crab_Pot_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Crab Pot (3)",
-    "bundle_ingredients": [
-        {
-            "Lobster": "Caught in Crab Pots"
-        },
-        {
-            "Crayfish": "Caught in Crab Pots"
-        },
-        {
-            "Crab": "Caught in Crab Pots, drops from Rock Crabs or Lava Crabs in The Mines"
-        },
-        {
-            "Cockle": "Caught in Crab Pots, Beach Foraging"
-        },
-        {
-            "Mussel": "Caught in Crab Pots, Beach Foraging"
-        },
-        {
-            "Shrimp": "Caught in Crab Pots"
-        },
-        {
-            "Snail": "Caught in Crab Pots"
-        },
-        {
-            "Periwinkle": "Caught in Crab Pots"
-        },
-        {
-            "Oyster": "Caught in Crab Pots, Beach Foraging"
-        },
-        {
-            "Clam": "Caught in Crab Pots, Beach Foraging"
-        }
-    ]
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "Specialty Fish Bundle",
+	"Image": "Specialty Fish Bundle",
+    "Reward": "Crab Pot (3)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Ghostfish",
+    "Ingredient2": "Woodskip",
+    "Ingredient3": "Sandfish",
+    "Ingredient4": "Pufferfish",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Specialty_Fish_Bundle",
-    "bundle_color": "red",
-    "bundle_reward": "Dish o' The Sea (5)",
-    "bundle_ingredients": [
-        {
-            "Pufferfish": "Found in the Ocean, 12pm – 4pm, Summer during sunny weather."
-        },
-        {
-            "Ghostfish": "Found in ponds in The Mines levels 20 and 60, Anytime, All Seasons. May also be dropped by Ghosts."
-        },
-        {
-            "Sandfish": "Found in the pond in The Desert, 6am – 8pm, All Seasons."
-        },
-        {
-            "Woodskip": "Found in the Secret Woods, Anytime, All Seasons."
-        }
-    ]
+    "Room": "Fish Tank - Glittery Boulder Removed",
+    "Name": "Crab Pot Bundle",
+	"Image": "Crab Pot Bundle",
+    "Reward": "Dish O' The Sea (5)",
+    "Needs": 5,
+    "Of": 10,
+    "Ingredient": "Crayfish",
+    "Ingredient2": "Snail",
+    "Ingredient3": "Lobster",
+    "Ingredient4": "Periwinkle",
+    "Ingredient5": "Cockle",
+    "Ingredient6": "Crab",
+    "Ingredient7": "Shrimp",
+    "Ingredient8": "Oyster",
+    "Ingredient9": "Mussel",
+    "Ingredient10": "Clam",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Blacksmith_Bundle",
-    "bundle_color": "orange",
-    "bundle_reward": "Furnace (1)",
-    "bundle_ingredients": [
-        {
-            "Copper Bar": "Smelting Copper Ore in the Furnace"
-        },
-        {
-            "Iron Bar": "Smelting Iron Ore in the Furnace, Crafting the \"Transmute (Fe)\" recipe"
-        },
-        {
-            "Gold Bar": "Smelting Gold Ore in the Furnace, Crafting the \"Transmute (Au)\" recipe"
-        }
-    ]
+    "Room": "Boiler Room - Minecarts Repaired",
+    "Name": "Blacksmith's Bundle",
+	"Image": "Blacksmiths Bundle",
+    "Reward": "Furnace",
+    "Needs": 3,
+    "Of": 3,
+    "Ingredient": "Copper Bar",
+    "Ingredient2": "Iron Bar",
+    "Ingredient3": "Gold Bar",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Geologist%27s_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Omni Geode (5)",
-    "bundle_ingredients": [
-        {
-            "Quartz": "Foraging on all levels of The Mines"
-        },
-        {
-            "Earth Crystal": "Foraging on Levels 1-39 of The Mines, Geodes, Omni Geodes, drop from Duggies in the Mines (floors 1-29)"
-        },
-        {
-            "Frozen Tear": "Foraging on Levels 40-79 of The Mines, Frozen Geodes, Omni Geodes, drop from Dust Sprites in the Mines (floors 40-80)"
-        },
-        {
-            "Fire Quartz": "Foraging on Levels 80-120 of The Mines, Magma Geodes, Omni Geodes"
-        }
-    ]
+    "Room": "Boiler Room - Minecarts Repaired",
+    "Name": "Geologist's Bundle",
+	"Image": "Geologists Bundle",
+    "Reward": "Omni Geode (5)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Quartz",
+    "Ingredient2": "Frozen Tear",
+    "Ingredient3": "Earth Crystal",
+    "Ingredient4": "Fire Quartz",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Adventurer%27s_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Small Magnet Ring (1)",
-    "bundle_ingredients": [
-        {
-            "Slime (99)": "Dropped by Slimes"
-        },
-        {
-            "Bat Wing (10)": "Dropped by Bats in The Mines"
-        },
-        {
-            "Solar Essence": "Dropped by Ghosts, Squid Kids, or Metal Heads in The Mines, dropped by Mummies in the Skull Cavern"
-        },
-        {
-            "Void Essence": "Dropped by Shadow Brutes in The Mines or Serpents in the Skull Cavern"
-        }
-    ]
+    "Room": "Boiler Room - Minecarts Repaired",
+    "Name": "Adventurer's Bundle",
+	"Image": "Adventurers Bundle",
+    "Reward": "Small Magnet Ring",
+    "Needs": 2,
+    "Of": 4,
+    "Ingredient": "Bat Wing (10)",
+    "Ingredient2": "Slime (99)",
+    "Ingredient3": "Void Essence",
+    "Ingredient4": "Solar Essence",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Chef%27s_Bundle",
-    "bundle_color": "red",
-    "bundle_reward": "Pink Cake (3)",
-    "bundle_ingredients": [
-        {
-            "Maple Syrup": "Tapped Maple Tree"
-        },
-        {
-            "Fiddlehead Fern": "Summer Foraging in the Secret Woods"
-        },
-        {
-            "Truffle": "Pigs"
-        },
-        {
-            "Poppy": "Summer Crops"
-        },
-        {
-            "Maki Roll": "Cooking (recipe sources: The Queen of Sauce, The Saloon)"
-        },
-        {
-            "Fried Egg": "Cooking"
-        }
-    ]
+    "Room": "Bulletin Board - Friendship",
+    "Name": "Chef's Bundle",
+	"Image": "Chefs Bundle",
+    "Reward": "Pink Cake (3)",
+    "Needs": 6,
+    "Of": 6,
+    "Ingredient": "Maple Syrup",
+    "Ingredient2": "Poppy",
+    "Ingredient3": "Fiddlehead Fern",
+    "Ingredient4": "Maki Roll",
+    "Ingredient5": "Truffle",
+    "Ingredient6": "Fried Egg",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Dye_Bundle",
-    "bundle_color": "teal",
-    "bundle_reward": "Seed Maker (1)",
-    "bundle_ingredients": [
-        {
-            "Red Mushroom": "Foraging in The Mines, Summer or Fall Foraging in the Secret Woods, The Farm Cave (mushroom option), Tapping a Mushroom Tree"
-        },
-        {
-            "Sea Urchin": "Beach Foraging, after using 300 wood to fix the bridge to the right side of the beach"
-        },
-        {
-            "Sunflower": "Summer / Fall Crops"
-        },
-        {
-            "Duck Feather": "Ducks"
-        },
-        {
-            "Aquamarine": "Aquamarine Nodes, boxes in The Mines, Fishing Treasure Chests"
-        },
-        {
-            "Red Cabbage": "Summer Crops (Red Cabbage Seeds are available at Pierre's General Store in year 2+)"
-        }
-    ]
+    "Room": "Bulletin Board - Friendship",
+    "Name": "Dye Bundle",
+	"Image": "Dye Bundle",
+    "Reward": "Seed Maker",
+    "Needs": 6,
+    "Of": 6,
+    "Ingredient": "Red Mushroom",
+    "Ingredient2": "Duck Feather",
+    "Ingredient3": "Sea Urchin",
+    "Ingredient4": "Aquamarine",
+    "Ingredient5": "Sunflower",
+    "Ingredient6": "Red Cabbage",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Field_Research_Bundle",
-    "bundle_color": "blue",
-    "bundle_reward": "Recycling Machine (1)",
-    "bundle_ingredients": [
-        {
-            "Purple Mushroom": "The Mines, The Farm Cave (mushroom option), Forest Farm Map Foraging in Fall"
-        },
-        {
-            "Nautilus Shell": "Winter Beach Foraging (Note: NOT the Nautilus Fossil artifact)"
-        },
-        {
-            "Chub": "Can be found in the mountain lake and river during all seasons, any time."
-        },
-        {
-            "Frozen Geode": "The Mines Levels 40-79"
-        }
-    ]
+    "Room": "Bulletin Board - Friendship",
+    "Name": "Field Research Bundle",
+	"Image": "Field Research Bundle",
+    "Reward": "Recycling Machine",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Purple Mushroom",
+    "Ingredient2": "Chub",
+    "Ingredient3": "Nautilus Shell",
+    "Ingredient4": "Frozen Geode",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Fodder_Bundle",
-    "bundle_color": "yellow",
-    "bundle_reward": "Heater (1)",
-    "bundle_ingredients": [
-        {
-            "Wheat (10)": "Summer / Fall Crops"
-        },
-        {
-            "Hay (10)": "Purchase at Marnie's Ranch, or harvest grass with the Scythe once you have a Silo, and withdraw the hay from the Hay Hopperonce you have a Coop or Barn"
-        },
-        {
-            "Apple (3)": "Apple Trees during Fall, The Farm Cave (fruit bat option)"
-        }
-    ]
+    "Room": "Bulletin Board - Friendship",
+    "Name": "Fodder Bundle",
+	"Image": "Fodder Bundle",
+    "Reward": "Heater",
+    "Needs": 3,
+    "Of": 3,
+    "Ingredient": "Apple (3)",
+    "Ingredient2": "Wheat (10)",
+    "Ingredient3": "Hay (10)",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "Enchanter%27s_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Gold Bar (5)",
-    "bundle_ingredients": [
-        {
-            "Oak Resin": "Tapped Oak Tree"
-        },
-        {
-            "Wine": "Keg"
-        },
-        {
-            "Rabbit's Foot": "Rabbits, Serpent drop in Skull Cavern (0.8%)"
-        },
-        {
-            "Pomegranate": "Pomegranate Trees during Fall, The Farm Cave (fruit bat option)"
-        }
-    ]
+    "Room": "Bulletin Board - Friendship",
+    "Name": "Enchanter's Bundle",
+	"Image": "Enchanters Bundle",
+    "Reward": "Gold Bar (5)",
+    "Needs": 4,
+    "Of": 4,
+    "Ingredient": "Wine",
+    "Ingredient2": "Pomegranate",
+    "Ingredient3": "Oak Resin",
+    "Ingredient4": "Rabbits Foot",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "2500_Bundle",
-    "bundle_color": "red",
-    "bundle_reward": "Chocolate Cake (3)",
-    "bundle_ingredients": [
-        {
-            "2,500g": "gameplay"
-        }
-    ]
+    "Room": "Vault - Bus Repair",
+    "Name": "2,500g Bundle",
+	"Image": "g2500 Bundle",
+    "Reward": "Chocolate Cake (3)",
+    "Needs": 1,
+    "Of": 1,
+    "Ingredient": "2,500g",
+    "Ingredient2": "",
+    "Ingredient3": "",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "5000_Bundle",
-    "bundle_color": "orange",
-    "bundle_reward": "Quality Fertilizer (30)",
-    "bundle_ingredients": [
-        {
-            "5,000g": "gameplay"
-        }
-    ]
+    "Room": "Vault - Bus Repair",
+    "Name": "5,000g Bundle",
+	"Image": "g5000 Bundle",
+    "Reward": "Quality Fertilizer (30)",
+    "Needs": 1,
+    "Of": 1,
+    "Ingredient": "5,000g",
+    "Ingredient2": "",
+    "Ingredient3": "",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "10000_Bundle",
-    "bundle_color": "yellow",
-    "bundle_reward": "Lightning Rod (1)",
-    "bundle_ingredients": [
-        {
-            "10,000g": "gameplay"
-        }
-    ]
+    "Room": "Vault - Bus Repair",
+    "Name": "10,000g Bundle",
+	"Image": "g10000 Bundle",
+    "Reward": "Lightning Rod",
+    "Needs": 1,
+    "Of": 1,
+    "Ingredient": "10,000g",
+    "Ingredient2": "",
+    "Ingredient3": "",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   },
   {
-    "bundle_name": "25000_Bundle",
-    "bundle_color": "purple",
-    "bundle_reward": "Crystalarium (1)",
-    "bundle_ingredients": [
-        {
-            "25,000g": "gameplay"
-        }
-    ]
+    "Room": "Vault - Bus Repair",
+    "Name": "25,000g Bundle",
+	"Image": "g25000 Bundle",
+    "Reward": "Crystalarium",
+    "Needs": 1,
+    "Of": 1,
+    "Ingredient": "25,000g",
+    "Ingredient2": "",
+    "Ingredient3": "",
+    "Ingredient4": "",
+    "Ingredient5": "",
+    "Ingredient6": "",
+    "Ingredient7": "",
+    "Ingredient8": "",
+    "Ingredient9": "",
+    "Ingredient10": "",
+    "Ingredient11": "",
+    "Ingredient12": ""
   }
 ]

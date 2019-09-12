@@ -1,23 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Seasongrid from './Seasongrid.js';
-import Seasontext from './Seasontext.js';
 import Button from '@material-ui/core/Button';
+import Seasontext from './Seasontext.js';
 
-
-import forage from '../forage.json';
+import bundles from '../bundles.json';
 import '../App.css';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      categoricals: forage,
+      categoricals: bundles,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortByWinter = this.sortByWinter.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -37,15 +34,13 @@ class App extends Component {
     });
     console.log("Sort Name Asc");
   }
-  sortByWinter() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
-    });
-    console.log("Sort Season Asc");
-  }
   componentDidMount() {      
-    console.log("check out the hipster hand-made JSON goodness");
+    console.log("some players never complete bundles ;_;");
     console.log(this.state.categoricals);
+  }
+
+  commaFormatting(num) {
+  	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
   }
 
   render(){
@@ -58,56 +53,27 @@ class App extends Component {
         <div className="css3frame-border-1">
 
 
-      {/* CSS class assigns background img based on .Location prop */}
-        <div className={item.Location.replace(/ /g, '_')+ " coled"}>
+      {/* CSS class assigns background img based on .Name prop */}
+        <div className={item.Image.replace(/ /g, '_')+ " coled no-repeat-bg"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
-              <span>{item.Location}</span>
-              <Seasontext seasons={item.Season} />
+              <h2>{item.Name}</h2>
+              <h3>{item.Reward}</h3>
+              <span>{item.Room}</span>
+              <span>
+	              <span>Needs {item.Needs} of</span>
+	              <span> {item.Of}</span>
+              </span>
             </h4>
           </div>
-          <div className="rowed row-spacer">
-            {/* display image on left */}
-            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
-            className="item-border" 
-            alt={item.Name}
-            />
-            {/* display metadata on right */}
-            <span className="coled">
-              {/* seasons could use own component */}
-              <Seasongrid seasons={item.Season} />
-            </span>
-          </div>
-          <div className="rowed row-spacer">
-              <h2>{item.Name}</h2>
-              <span>
-                <span>Forage</span>
-                {/* if 2nd type exists */}
-                {item.AlsoType && <span>(& {item.AlsoType})</span>}
-              </span>
-          </div>
-
-        {/* prices across 4 quality lvls; needs own component */}
-          <hr/>
-          <h4 className="prices_bar"> 
-            <h3>{item.BasePrice}g </h3>
-            <span>
-              <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
-            </span>
-          </h4>
 
         </div>
         </div>
         </div>
+
 
         {/* styling of item frame */}
         </div>

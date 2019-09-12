@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavMenu from './NavMenu.js';
 import Button from '@material-ui/core/Button';
-import logo from './img/logo.png';
+import logo from '../img/logo.png';
 
 class Header extends Component {
 	render(){

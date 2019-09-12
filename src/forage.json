@@ -313,14 +313,5 @@
     "Location": "The Beach",
     "Location2": "-",
     "Notes": ""
-  },
-  {
-    "Name": "Coral",
-    "BasePrice": 58,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
-    "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
   }
 ]

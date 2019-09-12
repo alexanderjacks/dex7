@@ -67,7 +67,7 @@ ul {
   }
 
 }
-
+/* background styling */
 .Town { background: url(./img/paper-Town.png), wheat ; }
 .Secret_Woods { background: url(./img/paper-Secret_Woods.png), wheat ; }
 .Bushes { background: url(./img/paper-Bushes.png), wheat ; }
@@ -76,6 +76,38 @@ ul {
 .The_Mines { background: url(./img/paper-The_Mines.png), wheat ; }
 .The_Desert { background: url(./img/paper-The_Desert.png), wheat ; }
 
+
+/* bundles' */
+.Spring_Foraging_Bundle { background: url(./img/Spring_Foraging_Bundle.png); }
+.Summer_Foraging_Bundle { background: url(./img/Summer_Foraging_Bundle.png); }
+.Fall_Foraging_Bundle { background: url(./img/Fall_Foraging_Bundle.png); }
+.Winter_Foraging_Bundle { background: url(./img/Winter_Foraging_Bundle.png); }
+.Construction_Bundle { background: url(./img/Construction_Bundle.png); }
+.Exotic_Foraging_Bundle { background: url(./img/Exotic_Foraging_Bundle.png); }
+.Spring_Crops_Bundle { background: url(./img/Spring_Crops_Bundle.png); }
+.Summer_Crops_Bundle { background: url(./img/Summer_Crops_Bundle.png); }
+.Fall_Crops_Bundle { background: url(./img/Fall_Crops_Bundle.png); }
+.Quality_Crops_Bundle { background: url(./img/Quality_Crops_Bundle.png); }
+.Animal_Bundle { background: url(./img/Animal_Bundle.png); }
+.Artisan_Bundle { background: url(./img/Artisan_Bundle.png); }
+.River_Fish_Bundle { background: url(./img/River_Fish_Bundle.png); }
+.Lake_Fish_Bundle { background: url(./img/Lake_Fish_Bundle.png); }
+.Ocean_Fish_Bundle { background: url(./img/Ocean_Fish_Bundle.png); }
+.Night_Fishing_Bundle { background: url(./img/Night_Fishing_Bundle.png); }
+.Specialty_Fish_Bundle { background: url(./img/Specialty_Fish_Bundle.png); }
+.Crab_Pot_Bundle { background: url(./img/Crab_Pot_Bundle.png); }
+.Blacksmiths_Bundle { background: url(./img/Blacksmiths_Bundle.png); }
+.Geologists_Bundle { background: url(./img/Geologists_Bundle.png); }
+.Adventurers_Bundle { background: url(./img/Adventurers_Bundle.png); }
+.Chefs_Bundle { background: url(./img/Chefs_Bundle.png); }
+.Dye_Bundle { background: url(./img/Dye_Bundle.png); }
+.Field_Research_Bundle { background: url(./img/Field_Research_Bundle.png); }
+.Fodder_Bundle { background: url(./img/Fodder_Bundle.png); }
+.Enchanters_Bundle { background: url(./img/Enchanters_Bundle.png); }
+.g2500_Bundle { background: url(./img/g2500_Bundle.png); }
+.g5000_Bundle { background: url(./img/g5000_Bundle.png); }
+.g10000_Bundle { background: url(./img/g10000_Bundle.png); }
+.g25000_Bundle { background: url(./img/g25000_Bundle.png); }
 
 .css3frame-card-back {
   background-image: linear-gradient(to bottom, rgba(245,222,179,0.1),rgba(245,222,179,0.95), rgba(245,222,179,1));
@@ -149,6 +181,13 @@ a {
   -2px 2px 4px white,
 2px -2px 4px white;
 }
+
+.no-repeat-bg {
+  background-size: cover;
+  resize: both;
+  min-height: 30vh;
+}
+
 @keyframes pulse {
   50% {
     transform: scale(1.1);
