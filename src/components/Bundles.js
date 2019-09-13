@@ -33,9 +33,9 @@ class App extends Component {
   //   });
   //   console.log("Sort Name Asc");
   // }
-  componentDidMount() {      
+  componentWillMount() {      
     console.log("some players never complete bundles ;_;");
-    console.log(this.state.categoricals);
+    this.setState({categoricals: this.props.categoricals});
   }
 
   render(){

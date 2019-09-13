@@ -5,40 +5,61 @@ import Seasongrid from './components/Seasongrid.js';
 import Seasontext from './components/Seasontext.js';
 import Button from '@material-ui/core/Button';
 
-import AppRouter from './AppRouter.js';
-import NavMenu from './components/NavMenu.js';
 import logo from './img/logo.png';
 import './App.css';
 
 import forage from './forage.json';
-import Forage from './components/Forage';
 import bundles from './bundles.json';
-import Bundles from './components/Bundles';
+import Forage from './components/Forage.js';
+import Bundles from './components/Bundles.js';
+
 
 
 function Index() {
-  return <h2>Home Base</h2>;
+  return(<>
+    <h2>Home Base</h2>
+    <h6>Maybe Crops? They as-yet-uncrafted People component? Description of app?????
+    </h6>
+  </>);
 }
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      categoricals: forage,
+      forage: forage,
+      bundles: bundles,
     }
+    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
+    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
+    this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortByWinter = this.sortByWinter.bind(this);
+  }
+  sortByPriceAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
+    });
+    console.log("Sort Price Asc");
+  }
+  sortByPriceDesc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
+    });
+    console.log("Sort Price Desc");
+  }
+  sortByNameAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
+    });
+    console.log("Sort Name Asc");
+  }
+  sortByWinter() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
+    });
+    console.log("Sort Season Asc");
   }
   
-  chooseForage() {
-    this.setState(prevState => {
-      this.state = { categoricals: forage }
-    });
-  }
-  chooseBundles() {
-    this.setState(prevState => {
-      this.state = { categoricals: bundles }
-    });
-  }
-
   componentDidMount() {      
     console.log("here's the app shell");
   }
@@ -81,11 +102,18 @@ class App extends Component {
 
         {/* BODY component, content chosen by dropdown Router ideally */}
         <section>
-          <Forage categoricals={this.state.categoricals} />
-          {/*<Bundles categoricals={this.state.bundles} />*/}
-          {/*<Route path="/" exact component={Index} />
-          <Route path="/forage/" component={Forage} categoricals={this.state.categoricals} />
-          <Route path="/bundles/" component={Bundles} categoricals={this.state.categoricals} />*/}
+          {/*<Forage categoricals={this.state.forage} />*/}
+          <Route path="/" exact component={Index} />
+          <Route path="/bundles/"
+            render={props =>
+            (<Bundles {...props} categoricals={this.state.bundles}/>)
+            }
+          />
+          <Route path="/forage/"
+            render={props =>
+            (<Forage {...props} categoricals={this.state.forage}/>)
+            }
+          />
         </section>
 
       </div>

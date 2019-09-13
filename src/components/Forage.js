@@ -41,9 +41,9 @@ class App extends Component {
     });
     console.log("Sort Season Asc");
   }
-  componentDidMount() {      
-    console.log("check out the hipster hand-made JSON goodness");
-    console.log(this.state.categoricals);
+  componentWillMount() {      
+    console.log("Forage goods are too mysterious!");
+    this.setState({categoricals: this.props.categoricals});
   }
 
   render(){
