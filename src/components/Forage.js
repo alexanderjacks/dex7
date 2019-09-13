@@ -4,15 +4,13 @@ import Seasongrid from './Seasongrid.js';
 import Seasontext from './Seasontext.js';
 import Button from '@material-ui/core/Button';
 
-
-import forage from '../forage.json';
 import '../App.css';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      categoricals: forage,
+      categoricals: this.props.categoricals,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);

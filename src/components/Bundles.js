@@ -3,44 +3,39 @@ import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import IngredientIterator from './IngredientIterator.js';
 
-import bundles from '../bundles.json';
 import '../App.css';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      categoricals: bundles,
+      categoricals: this.props.categoricals,
     }
-    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
-    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    // this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
+    // this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
+    // this.sortByNameAsc = this.sortByNameAsc.bind(this);
   }
-  sortByPriceAsc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
-    });
-    console.log("Sort Price Asc");
-  }
-  sortByPriceDesc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
-    });
-    console.log("Sort Price Desc");
-  }
-  sortByNameAsc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
-    });
-    console.log("Sort Name Asc");
-  }
+  // sortByPriceAsc() {
+  //   this.setState(prevState => {
+  //       this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
+  //   });
+  //   console.log("Sort Price Asc");
+  // }
+  // sortByPriceDesc() {
+  //   this.setState(prevState => {
+  //       this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
+  //   });
+  //   console.log("Sort Price Desc");
+  // }
+  // sortByNameAsc() {
+  //   this.setState(prevState => {
+  //       this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
+  //   });
+  //   console.log("Sort Name Asc");
+  // }
   componentDidMount() {      
     console.log("some players never complete bundles ;_;");
     console.log(this.state.categoricals);
-  }
-
-  commaFormatting(num) {
-  	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
   }
 
   render(){
@@ -101,25 +96,12 @@ class App extends Component {
         
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
-            <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
-              <Button>
-                  <span>Lowest&nbsp;Price&nbsp;</span>
-                  <span>💰</span>
-              </Button>
-            </a>
-            <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
-              <Button>
-                  <span>Highest&nbsp;Price&nbsp;</span>
-                  <span>💎</span>
-              </Button>
-            </a>
-            <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
-              <Button>
-                  <span>Name&nbsp;A->Z&nbsp;</span>
-                  <span>🔠</span>
-              </Button>
-            </a>
-            
+            <Button>
+            	broken ~ sort by 6 rooms
+            </Button>
+            <Button>
+            	broken (larger than usual dropdown) ~ sort by 30 rewards
+            </Button>
         </div>
 
         {/* BODY component, content sorted by HEADER */}
