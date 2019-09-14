@@ -72,10 +72,16 @@ ul {
 .Secret_Woods { background: url(./img/paper-Secret_Woods.png), wheat ; }
 .Bushes { background: url(./img/paper-Bushes.png), wheat ; }
 
+.River { background: url(./img/paper-River.png), wheat ; }
+.Lake { background: url(./img/paper-Lake.png), wheat ; }
+.Ocean { background: url(./img/paper-Ocean.png), wheat ; }
 .The_Beach { background: url(./img/paper-The_Beach.png), wheat ; }
 .The_Mines { background: url(./img/paper-The_Mines.png), wheat ; }
+.The_Sewers { background: url(./img/paper-The_Sewers.png), wheat ; }
+.Mutant_Bug_Lair { background: url(./img/paper-Mutant_Bug_Lair.png), wheat ; }
 .The_Desert { background: url(./img/paper-The_Desert.png), wheat ; }
 .Skull_Cavern { background: url(./img/paper-Skull_Cavern.png), wheat ; }
+.Witchs_Swamp { background: url(./img/paper-Witchs_Swamp.png), wheat ; }
 
 .Furnace { background: url(./img/paper-Furnace.png), wheat ; }
 .Magma_Geode { background: url(./img/Magma_Geode.png), maroon ; }

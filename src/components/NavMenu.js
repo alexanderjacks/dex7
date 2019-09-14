@@ -52,16 +52,16 @@ function NavMenu() {
         <MenuItem onClick={handleClose}>
           <Link href={url3}>Minerals</Link>
         </MenuItem>
-        {/*<MenuItem onClick={handleClose}>
+        <MenuItem onClick={handleClose}>
           <Link href={url4}>Fish</Link>
         </MenuItem>
-        <MenuItem onClick={handleClose}>
+        {/*<MenuItem onClick={handleClose}>
           <Link href={url5}>Cooking</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
+        </MenuItem>*/}
+        {/*<MenuItem onClick={handleClose}>
           <Link href={url6}>Crafting</Link>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
+        </MenuItem>*/}
+        {/*<MenuItem onClick={handleClose}>
           <Link href={url7}>Artisan</Link>
         </MenuItem>*/}
         <MenuItem onClick={handleClose}>

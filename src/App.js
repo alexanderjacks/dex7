@@ -12,9 +12,11 @@ import './App.css';
 import forage from './forage.json';
 import bundles from './bundles.json';
 import minerals from './minerals.json';
+import fish from './fish.json';
 import Forage from './components/Forage.js';
 import Bundles from './components/Bundles.js';
 import Minerals from './components/Minerals.js';
+import Fish from './components/Fish.js';
 
 function Index() {
   return(<>
@@ -30,6 +32,7 @@ class App extends Component {
       forage: forage,
       bundles: bundles,
       minerals: minerals,
+      fish: fish,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
@@ -122,6 +125,11 @@ class App extends Component {
           <Route path="/minerals/"
             render={props =>
             (<Minerals {...props} categoricals={this.state.minerals}/>)
+            }
+          />
+          <Route path="/fish/"
+            render={props =>
+            (<Fish {...props} categoricals={this.state.fish}/>)
             }
           />
         </section>
