@@ -60,8 +60,15 @@ class Fish extends Component {
             {/* display image on left */}
 			<span className="coled">
 				<h2 className="text-shadow-white">{item.Name}</h2>
-				<h3><ul>{item.Location.map && item.Location.map(Location => <li>{Location}</li>)}</ul></h3>
-				<h3>{item.Time}</h3>
+				<h3>
+        <ul className="coled">{item.Location && item.Location.map(
+          Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
+          )}</ul>
+        <ul className="coled">{item.Time.map && item.Time.map(
+          Time => <li>{Time}</li>
+          )}</ul>
+        </h3>
+
 			</span>
             <span className="coled">
 	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
@@ -69,19 +76,31 @@ class Fish extends Component {
 	            alt={item.Name}
 	            />
 	            <h3>{item.BasePrice}g</h3>
+              <h4>{item.ChallengePlusBehavior}</h4>
             </span>
             {/* display metadata on right */}
           </div>
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <hr/>
-			  <h4>{item.Notes && item.Notes}</h4>
-              <h5>{item.Description && 
-              	<span>📕: {item.Description} </span>
-              }</h5>
-              <span>
+              <div className="max400px">
+                {item.Notes && <h4>🔎 {item.Notes}</h4>}
+                <h5>{item.Description && 
+                	<span>📕: {item.Description} </span>
+                }</h5>
+              </div>
+              <span className="coled">
               	{item.Uses && item.Uses.map(
-              		(Use) => (<span>{Use}</span>)
+              		(Use) => (
+                    <span>
+                  {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
+                    {/*<img src={require('../img/'+item.Use.replace(/ /g, '_')+'.png')} 
+                      className="item-border" 
+                      alt={item.Use}
+                    />*/}
+                    <h4>{Use}</h4>
+                    </span>
+                  )
               	)}
               </span>
             </h4>

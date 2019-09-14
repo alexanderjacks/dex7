@@ -79,9 +79,11 @@ ul {
 .The_Mines { background: url(./img/paper-The_Mines.png), wheat ; }
 .The_Sewers { background: url(./img/paper-The_Sewers.png), wheat ; }
 .Mutant_Bug_Lair { background: url(./img/paper-Mutant_Bug_Lair.png), wheat ; }
+.Night_Market { background: url(./img/paper-Night_Market.png), wheat ; }
 .The_Desert { background: url(./img/paper-The_Desert.png), wheat ; }
 .Skull_Cavern { background: url(./img/paper-Skull_Cavern.png), wheat ; }
 .Witchs_Swamp { background: url(./img/paper-Witchs_Swamp.png), wheat ; }
+.Special { background: url(./img/paper-Special.png), wheat ; }
 
 .Furnace { background: url(./img/paper-Furnace.png), wheat ; }
 .Magma_Geode { background: url(./img/Magma_Geode.png), maroon ; }
@@ -201,6 +203,11 @@ a {
 .no-repeat-bg {
   background-size: cover;
   resize: both;
+}
+
+.max400px {
+  max-width: 400px;
+  overflow-wrap: normal;
 }
 
 @keyframes pulse {
