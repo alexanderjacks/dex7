@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+import NavMenu from './components/NavMenu.js';
 import Seasongrid from './components/Seasongrid.js';
 import Seasontext from './components/Seasontext.js';
 import Button from '@material-ui/core/Button';
@@ -10,16 +11,15 @@ import './App.css';
 
 import forage from './forage.json';
 import bundles from './bundles.json';
+import minerals from './minerals.json';
 import Forage from './components/Forage.js';
 import Bundles from './components/Bundles.js';
-
-
+import Minerals from './components/Minerals.js';
 
 function Index() {
   return(<>
     <h2>Home Base</h2>
-    <h6>Maybe Crops? They as-yet-uncrafted People component? Description of app?????
-    </h6>
+    <h6>Either a People component or a description of the app</h6>
   </>);
 }
 
@@ -29,6 +29,7 @@ class App extends Component {
     this.state = {
       forage: forage,
       bundles: bundles,
+      minerals: minerals,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
@@ -75,7 +76,8 @@ class App extends Component {
         <div className="coled">
           {/*<NavMenu/>*/}
           {/*<AppRouter />*/}
-          <nav>
+          <NavMenu/>
+{/*          <nav>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -86,8 +88,11 @@ class App extends Component {
               <li>
                 <Link to="/bundles/">Bundles</Link>
               </li>
+              <li>
+                <Link to="/minerals/">Minerals</Link>
+              </li>
             </ul>
-          </nav>
+          </nav>*/}
         </div>
         <div className="coled">
           <h3>
@@ -112,6 +117,11 @@ class App extends Component {
           <Route path="/forage/"
             render={props =>
             (<Forage {...props} categoricals={this.state.forage}/>)
+            }
+          />
+          <Route path="/minerals/"
+            render={props =>
+            (<Minerals {...props} categoricals={this.state.minerals}/>)
             }
           />
         </section>

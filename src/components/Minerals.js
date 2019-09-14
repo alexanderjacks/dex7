@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import '../App.css';
 
-class Forage extends Component {
+class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -15,7 +15,6 @@ class Forage extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortByWinter = this.sortByWinter.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -35,14 +34,9 @@ class Forage extends Component {
     });
     console.log("Sort Name Asc");
   }
-  sortByWinter() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
-    });
-    console.log("Sort Season Asc");
-  }
+  
   componentWillMount() {      
-    console.log("Forage goods are too mysterious!");
+    console.log("Minerals need more recipes!");
     this.setState({categoricals: this.props.categoricals});
   }
 
@@ -57,53 +51,34 @@ class Forage extends Component {
 
 
       {/* CSS class assigns background img based on .Location prop */}
-        <div className={item.Location.replace(/ /g, '_')+ " coled"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
-              <span>{item.Location}</span>
-              <Seasontext seasons={item.Season} />
-            </h4>
-          </div>
-          <div className="rowed row-spacer">
             {/* display image on left */}
+			<h2>{item.Name}</h2>
             <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
             className="item-border" 
             alt={item.Name}
             />
             {/* display metadata on right */}
-            <span className="coled">
-              {/* seasons could use own component */}
-              <Seasongrid seasons={item.Season} />
-            </span>
           </div>
           <div className="rowed row-spacer">
-              <h2>{item.Name}</h2>
+            <h4 class="text-shadow-white">
+              <h3>{item.BasePrice}g</h3>
+              {item.Mine_Lvl && 
+              	<span>Lvls: {item.Mine_Lvl} </span>
+              }
+              <span>Panning: {item.Panning} </span>
+              <hr/>
               <span>
-                <span>Forage</span>
-                {/* if 2nd type exists */}
-                {item.AlsoType && <span>(& {item.AlsoType})</span>}
+              	{item.Uses && item.Uses.map(
+              		Use => <span>{Use}</span>
+              	)}
               </span>
+            </h4>
           </div>
 
-        {/* prices across 4 quality lvls; needs own component */}
-          <hr/>
-          <h4 className="prices_bar"> 
-            <h3>{item.BasePrice}g </h3>
-            <span>
-              <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
-            </span>
-          </h4>
-
-        </div>
         </div>
         </div>
 
@@ -153,4 +128,4 @@ class Forage extends Component {
   }
 }
 
-export default Forage;
+export default App;

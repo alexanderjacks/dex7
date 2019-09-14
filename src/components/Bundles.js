@@ -5,7 +5,7 @@ import IngredientIterator from './IngredientIterator.js';
 
 import '../App.css';
 
-class App extends Component {
+class Bundles extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -116,4 +116,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Bundles;
