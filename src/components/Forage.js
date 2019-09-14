@@ -134,7 +134,7 @@ class Forage extends Component {
             </a>
             <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
               <Button>
-                  <span>Name&nbsp;A->Z&nbsp;</span>
+                  <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>

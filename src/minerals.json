@@ -22,7 +22,7 @@
     "BasePrice": 75,
     "Type": "Gem",
     "Location": "Frozen Tear",
-    "Mine_Lvl": "40-79",
+    "Mine_Lvl": "41-79",
     "Panning": "Yes",
     "Uses": ["Geologist's Bundle", "Warrior Ring"]
   },
@@ -47,7 +47,7 @@
     "BasePrice": 100,
     "Type": "Gem",
     "Location": "Fire Quarz",
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "Yes",
     "Uses": ["Geologist's Bundle", "Slime Egg-Press"]
   },
@@ -56,7 +56,7 @@
     "BasePrice": 180,
     "Type": "Gem",
     "Location": ["Aquamarine Node", "Gem Note", "Fishing Chest"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "Yes",
     "Uses": ["Dye Bundle"]
   },
@@ -65,7 +65,7 @@
     "BasePrice": 200,
     "Type": "Gem",
     "Location": ["Jade Node", "Gem Node"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "Yes"
   },
   {
@@ -73,7 +73,7 @@
     "BasePrice": 250,
     "Type": "Gem",
     "Location": ["Emerald Node", "Gem Node"],
-    "Mine_Lvl": "80+",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -81,7 +81,7 @@
     "BasePrice": 250,
     "Type": "Gem",
     "Location": ["Ruby Node", "Gem Node"],
-    "Mine_Lvl": "80+",
+    "Mine_Lvl": "81-120",
     "Panning": "Yes"
   },
   {
@@ -89,7 +89,7 @@
     "BasePrice": 750,
     "Type": "Gem",
     "Location": ["Diamond Node", "Gem Node"],
-    "Mine_Lvl": "50+",
+    "Mine_Lvl": "50-120",
     "Panning": "Yes",
     "Uses": ["Ring of Yoba"]
   },
@@ -114,8 +114,8 @@
     "Name": "Frozen Geode",
     "BasePrice": 0,
     "Type": "Geode",
-    "Location": "Fishing Chest",
-    "Mine_Lvl": "40-79",
+    "Location": ["Fishing Chest","Frozen Node"],
+    "Mine_Lvl": "41-79",
     "Panning": "No"
   },
   {
@@ -123,7 +123,7 @@
     "BasePrice": 0,
     "Type": "Geode",
     "Location": "The Mines",
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -155,7 +155,7 @@
     "BasePrice": 50,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -211,7 +211,7 @@
     "BasePrice": 100,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "39-40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -235,8 +235,9 @@
     "BasePrice": 110,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "39-40-120",
-    "Panning": "No"
+    "Mine_Lvl": "41-120",
+    "Panning": "No",
+    "Uses": ["Marble Brazier"]
   },
   {
     "Name": "Jagoite",
@@ -259,7 +260,7 @@
     "BasePrice": 120,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -267,7 +268,7 @@
     "BasePrice": 120,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -275,7 +276,7 @@
     "BasePrice": 125,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -299,7 +300,7 @@
     "BasePrice": 150,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -315,7 +316,7 @@
     "BasePrice": 150,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -323,7 +324,7 @@
     "BasePrice": 150,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -331,7 +332,7 @@
     "BasePrice": 150,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -339,7 +340,7 @@
     "BasePrice": 175,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -347,7 +348,7 @@
     "BasePrice": 200,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -355,7 +356,7 @@
     "BasePrice": 200,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -363,7 +364,7 @@
     "BasePrice": 200,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -371,7 +372,7 @@
     "BasePrice": 200,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -379,7 +380,7 @@
     "BasePrice": 200,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -387,7 +388,7 @@
     "BasePrice": 220,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -395,7 +396,7 @@
     "BasePrice": 250,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -403,7 +404,7 @@
     "BasePrice": 250,
     "Type": "Mineral",
     "Location": ["Frozen Geode", "Omni Geode"],
-    "Mine_Lvl": "40-120",
+    "Mine_Lvl": "41-120",
     "Panning": "No"
   },
   {
@@ -411,7 +412,7 @@
     "BasePrice": 275,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -419,7 +420,7 @@
     "BasePrice": 300,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -427,7 +428,7 @@
     "BasePrice": 300,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -435,7 +436,7 @@
     "BasePrice": 350,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -443,7 +444,7 @@
     "BasePrice": 450,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -451,7 +452,7 @@
     "BasePrice": 500,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
@@ -459,63 +460,68 @@
     "BasePrice": 553,
     "Type": "Mineral",
     "Location": ["Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "80-120",
+    "Mine_Lvl": "81-120",
     "Panning": "No"
   },
   {
     "Name": "Copper Ore",
     "BasePrice": 5,
     "Type": "Ore",
-    "Location": "Mining",
+    "Location": ["The Mines"],
     "Mine_Lvl": "All",
-    "Panning": "Yes"
+    "Panning": "Yes",
+    "Uses": ["Furnace", "Copper Bar"]
   },
   {
     "Name": "Iron Ore",
     "BasePrice": 10,
     "Type": "Ore",
-    "Location": ["Mining", "Most common: 40-72"],
-    "Mine_Lvl": "40-120",
-    "Panning": "Yes"
+    "Location": ["The Mines", "Most common: 41-72"],
+    "Mine_Lvl": "41-120",
+    "Panning": "Yes",
+    "Uses": ["Iron Bar"]
   },
   {
     "Name": "Coal",
     "BasePrice": 15,
     "Type": "Ore",
-    "Location": ["Mining", "Most common: 60-90"],
+    "Location": ["The Mines", "Most common: 60-90"],
     "Mine_Lvl": "All",
-    "Panning": "?"
+    "Panning": "?",
+    "Uses": ["Scarecrow"]
   },
   {
     "Name": "Gold Ore",
     "BasePrice": 25,
     "Type": "Ore",
-    "Location": ["Mining", "Most common: ??-??"],
-    "Mine_Lvl": "80+",
-    "Panning": "Yes"
+    "Location": ["The Mines", "Most common: ??-??"],
+    "Mine_Lvl": "81-120",
+    "Panning": "Yes",
+    "Uses": ["Gold Bar"]
   },
   {
     "Name": "Iridium Ore",
     "BasePrice": 100,
     "Type": "Ore",
-    "Location": ["Meteor, Quarry", "Magma Geode", "Omni Geode"],
-    "Mine_Lvl": "",
+    "Location": ["Skull Cavern", "Meteor", "Quarry", "Magma Geode", "Omni Geode"],
+    "Mine_Lvl": "81-120",
     "Panning": "?",
-    "Uses": ["Skull Cavern"]
+    "Uses": ["Iridium Bar"]
   },
   {
     "Name": "Refined Quartz",
     "BasePrice": 50,
     "Type": "Refined",
-    "Location": ["Smelting", "Quartz (1)", "Coal (1)"],
+    "Location": ["Furnace", "Quartz (1)", "Coal (1)"],
     "Mine_Lvl": "All",
-    "Panning": "No"
+    "Panning": "No",
+    "Uses": ["Crystal Path", "Crystal Floor", "Quality Sprinkler", "Garden Pot", "Sturdy Ring", "Lightning Rod"]
   },
   {
     "Name": "Copper Bar",
     "BasePrice": 60,
     "Type": "Refined",
-    "Location": ["Smelting", "Copper Ore (5)", "Coal (1)"],
+    "Location": ["Furnace", "Copper Ore (5)", "Coal (1)"],
     "Mine_Lvl": "All",
     "Panning": "No"
   },
@@ -523,7 +529,7 @@
     "Name": "Iron Bar",
     "BasePrice": 120,
     "Type": "Refined",
-    "Location": ["Smelting", "Iron Ore (5)", "Coal (1)"],
+    "Location": ["Furnace", "Iron Ore (5)", "Coal (1)"],
     "Mine_Lvl": "All",
     "Panning": "No"
   },
@@ -531,7 +537,7 @@
     "Name": "Gold Bar",
     "BasePrice": 250,
     "Type": "Refined",
-    "Location": ["Smelting", "Gold Ore (5)", "Coal (1)"],
+    "Location": ["Furnace", "Gold Ore (5)", "Coal (1)"],
     "Mine_Lvl": "All",
     "Panning": "No"
   },
@@ -539,7 +545,7 @@
     "Name": "Iridium Bar",
     "BasePrice": 1000,
     "Type": "Refined",
-    "Location": ["Smelting", "Iridium Ore (5)", "Coal (1)"],
+    "Location": ["Furnace", "Iridium Ore (5)", "Coal (1)"],
     "Mine_Lvl": "All",
     "Panning": "No"
   }

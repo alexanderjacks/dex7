@@ -69,7 +69,7 @@ class App extends Component {
     return (
       <div className="App">
         
-      <header className="App-header rowed">
+      <header className="App-header rowed row-spacer">
         <div className="coled">
           <img src={logo} className="App-logo pulse" alt="logo" />
         </div>

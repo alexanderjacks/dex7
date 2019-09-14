@@ -5,6 +5,7 @@ class Seasongrid extends React.Component {
 		return(
 			<div>
 			<div className="rowed">
+				{/* if you expand them out, React offers visually-pleasing conditionals */}
 				<span>
 				{this.props.seasons.includes('Spring')
 				? 

@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 
 import '../App.css';
 
-class App extends Component {
+class Minerals extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -50,13 +50,18 @@ class App extends Component {
         <div className="css3frame-border-1">
 
 
-      {/* CSS class assigns background img based on .Location prop */}
+      {/* elaborate background image decision code, for CSS class via .Location prop */}
+        <div className={item.Location[0].replace(/ /g, '_')+ " coled"}>
+
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
             {/* display image on left */}
-			<h2>{item.Name}</h2>
+			<span>
+				<h2 className="text-shadow-white">{item.Name}</h2>
+				<h5>{item.Type}</h5>
+			</span>
             <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
             className="item-border" 
             alt={item.Name}
@@ -87,6 +92,7 @@ class App extends Component {
         </div>
         </div>
         </div>
+        </div>
       </li>
     );
 
@@ -109,7 +115,7 @@ class App extends Component {
             </a>
             <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
               <Button>
-                  <span>Name&nbsp;A->Z&nbsp;</span>
+                  <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>
@@ -128,4 +134,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Minerals;
