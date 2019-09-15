@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Seasongrid from './Seasongrid.js';
-import Seasontext from './Seasontext.js';
+import SeasonGrid from './SeasonGrid.js';
+import SeasonText from './SeasonText.js';
 import Button from '@material-ui/core/Button';
 
 import '../App.css';
@@ -64,7 +64,7 @@ class Forage extends Component {
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <span>{item.Location}</span>
-              <Seasontext seasons={item.Season} />
+              <SeasonText seasons={item.Season} />
             </h4>
           </div>
           <div className="rowed row-spacer">
@@ -76,7 +76,7 @@ class Forage extends Component {
             {/* display metadata on right */}
             <span className="coled">
               {/* seasons could use own component */}
-              <Seasongrid seasons={item.Season} />
+              <SeasonGrid seasons={item.Season} />
             </span>
           </div>
           <div className="rowed row-spacer">

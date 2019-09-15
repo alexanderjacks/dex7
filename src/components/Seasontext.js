@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Seasontext extends React.Component {
+class SeasonText extends React.Component {
 	constructor(props) {
 		super(props);
 	}
@@ -14,4 +14,4 @@ class Seasontext extends React.Component {
 		)
 	}
 }
-export default Seasontext;
+export default SeasonText;

@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import NavMenu from './components/NavMenu.js';
-import Seasongrid from './components/Seasongrid.js';
-import Seasontext from './components/Seasontext.js';
 import Button from '@material-ui/core/Button';
 
 import logo from './img/logo.png';

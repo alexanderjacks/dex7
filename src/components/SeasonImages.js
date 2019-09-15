@@ -1,9 +1,8 @@
 import React from 'react';
 
-class SeasonGrid extends React.Component {
+class SeasonImages extends React.Component {
 	render() {
 		return(
-			<div>
 			<div className="rowed">
 				{/* if you expand them out, React offers visually-pleasing conditionals */}
 				<span>
@@ -11,11 +10,10 @@ class SeasonGrid extends React.Component {
 				? 
 					<span>
 						<img src={require('../img/tinytile-Spring.png')} />
+						<h6>Spring</h6>
 					</span>
 				:
-					<span>
-						<img src={require('../img/tinytile-nonSpring.png')} />
-					</span>
+					<br/>
 				}
 				</span>
 				<span>
@@ -23,25 +21,21 @@ class SeasonGrid extends React.Component {
 				? 
 					<span>
 						<img src={require('../img/tinytile-Summer.png')} />
+						<h6>Summer</h6>
 					</span>
 				:
-					<span>
-						<img src={require('../img/tinytile-nonSummer.png')} />
-					</span>
+					<br/>
 				}
 				</span>
-			</div>
-			<div className="rowed">
 				<span>
 				{this.props.seasons.includes('Fall')
 				? 
 					<span>
 						<img src={require('../img/tinytile-Fall.png')} />
+						<h6>Fall</h6>
 					</span>
 				:
-					<span>
-						<img src={require('../img/tinytile-nonFall.png')} />
-					</span>
+					<br/>
 				}
 				</span>
 				<span>
@@ -49,16 +43,14 @@ class SeasonGrid extends React.Component {
 				? 
 					<span>
 						<img src={require('../img/tinytile-Winter.png')} />
+						<h6>Winter</h6>
 					</span>
 				:
-					<span>
-						<img src={require('../img/tinytile-nonWinter.png')} />
-					</span>
+					<br/>
 				}
 				</span>
-			</div>
 			</div>
 		)
 	}
 }
-export default SeasonGrid;
+export default SeasonImages;

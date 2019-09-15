@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Seasongrid from './Seasongrid.js';
-import Seasontext from './Seasontext.js';
+import SeasonImages from './SeasonImages.js';
+
 import Button from '@material-ui/core/Button';
 
 import '../App.css';
@@ -64,6 +64,7 @@ class Fish extends Component {
         <ul className="coled">{item.Location && item.Location.map(
           Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
           )}</ul>
+        <SeasonImages seasons={item.Season} />
         <ul className="coled">{item.Time.map && item.Time.map(
           Time => <li>{Time}</li>
           )}</ul>
