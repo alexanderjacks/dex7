@@ -194,10 +194,7 @@ a {
   padding: 0.15em;
 }
 .text-shadow-white {
-  text-shadow: 2px 2px 4px white,
-  -2px -2px 4px white,
-  -2px 2px 4px white,
-2px -2px 4px white;
+  text-shadow: 2px 2px 4px white, -2px -2px 4px white, -2px 2px 4px white, 2px -2px 4px white;
 }
 
 .no-repeat-bg {

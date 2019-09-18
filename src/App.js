@@ -8,19 +8,44 @@ import logo from './img/logo.png';
 import './App.css';
 
 import forage from './forage.json';
-import bundles from './bundles.json';
+import crops from './crops.json';
 import minerals from './minerals.json';
 import fish from './fish.json';
+import bundles from './bundles.json';
 import Forage from './components/Forage.js';
-import Bundles from './components/Bundles.js';
+import Crops from './components/Crops.js';
 import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
+import Bundles from './components/Bundles.js';
+
+const url0 = '..'
+const url1 = '../forage'
+const url2 = '../crops'
+const url3 = '../minerals'
+const url4 = '../fish'
+const url5 = '../cooking'
+const url6 = '../crafting'
+const url7 = '../artisan'
+const url8 = '../bundles'
 
 function Index() {
-  return(<>
-    <h2>Home Base</h2>
-    <h6>Either a People component or a description of the app</h6>
-  </>);
+  return(
+    <div className="">
+      <h1>Welome to Stardewdex</h1>
+      <p>Your quick guide to Stardew Valley</p>
+      <hr/>
+      <div className="coled">
+        <Link to={url0}>HOME</Link>
+        <Link to={url1}>Forage</Link>
+        <Link to={url2}>Crops</Link>
+        <Link to={url3}>Minerals</Link>
+        <Link to={url4}>Fish</Link>
+        <Link to={url8}>Bundles</Link>
+      </div>
+      <p>Use the MORE STUFF button to explore the site, and check back often as we add content!</p>
+      <p>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></p>
+    </div>
+  );
 }
 
 class App extends Component {
@@ -28,9 +53,10 @@ class App extends Component {
     super(props)
     this.state = {
       forage: forage,
-      bundles: bundles,
+      crops: crops,
       minerals: minerals,
       fish: fish,
+      bundles: bundles,
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
@@ -75,40 +101,17 @@ class App extends Component {
           <img src={logo} className="App-logo pulse" alt="logo" />
         </div>
         <div className="coled">
-          {/*<NavMenu/>*/}
-          {/*<AppRouter />*/}
           <NavMenu/>
-{/*          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/forage/">Forage</Link>
-              </li>
-              <li>
-                <Link to="/bundles/">Bundles</Link>
-              </li>
-              <li>
-                <Link to="/minerals/">Minerals</Link>
-              </li>
-            </ul>
-          </nav>*/}
         </div>
         <div className="coled">
-          <h3>
-            Your Guide to Pelican Town
-          </h3>
-          <h4>
-            Open Settings Menu (⠇) & Add To Your Home Screen
-          </h4>
+          <h3>Your Guide to Pelican Town</h3>
+          <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
         </div>
       </header>
         
 
-        {/* BODY component, content chosen by dropdown Router ideally */}
+        {/* BODY components, active content chosen by <NavMenu/>  */}
         <section>
-          {/*<Forage categoricals={this.state.forage} />*/}
           <Route path="/" exact component={Index} />
           <Route path="/bundles/"
             render={props =>
@@ -118,6 +121,11 @@ class App extends Component {
           <Route path="/forage/"
             render={props =>
             (<Forage {...props} categoricals={this.state.forage}/>)
+            }
+          />
+          <Route path="/crops/"
+            render={props =>
+            (<Crops {...props} categoricals={this.state.crops}/>)
             }
           />
           <Route path="/minerals/"

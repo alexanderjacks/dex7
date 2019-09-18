@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import CropStages from './CropStages.js';
+// import CropStages from './CropStages.js';
+import SeasonGrid from './SeasonGrid.js';
 
 import '../App.css';
 
@@ -11,22 +12,22 @@ class Crops extends Component {
     this.state = {
       categoricals: this.props.categoricals,
     }
-    // this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
-    // this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
+    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
+    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     // this.sortByNameAsc = this.sortByNameAsc.bind(this);
   }
-  // sortByPriceAsc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
-  //   });
-  //   console.log("Sort Price Asc");
-  // }
-  // sortByPriceDesc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
-  //   });
-  //   console.log("Sort Price Desc");
-  // }
+  sortByPriceAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
+    });
+    console.log("Sort Price Asc");
+  }
+  sortByPriceDesc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
+    });
+    console.log("Sort Price Desc");
+  }
   // sortByNameAsc() {
   //   this.setState(prevState => {
   //       this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
@@ -34,7 +35,7 @@ class Crops extends Component {
   //   console.log("Sort Name Asc");
   // }
   componentWillMount() {      
-    console.log("some players never complete bundles ;_;");
+    console.log("ConcernedApe we want more crop types!! Well, I do.");
     this.setState({categoricals: this.props.categoricals});
   }
 
@@ -52,28 +53,37 @@ class Crops extends Component {
         <div>
     	{/* converts json field so matches filenames,
     	removes any quantity from image name */}
-        <div className={item.Image.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
+        <div className={item.Name.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
-          {/* name & reward metadata */}
+
+          {/* name & price metadata */}
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
-              <h2>{item.Name}</h2>
-              <h3>{item.Reward}</h3>
-            </h4>
+            {/* display image on left */}
+            <div>
+	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
+	            className="item-border" 
+	            alt={item.Name}
+	            />
+	            <h4 class="text-shadow-white">
+	              <h2>{item.Name}</h2>
+	            </h4>
+            </div>
+            <div>
+	              <p>growth metadata
+	              </p>
+            </div>
           </div>
 
-          {/* all bundle ingredients */}
-            <div class="text-shadow-white">
-              <CropStages stages={item.Ingredients} />
-	            <h5>Needs {item.Needs} of {item.Of}</h5>
+            <div class="rowed">
+            	<h1>crop stages go here</h1>
+              {/*<CropStages stages={item.Stages} />*/}
             </div>
-          {/* CommCenter room metadata */}
-          <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
-              <hr/>
-              <span>{item.Room}</span>
-            </h4>
+            <hr/>
+          
+          <div className="coled text-shadow-white">
+	          <h3>Seed/buy: {item.SeedPrice}g</h3>
+	          <h3>Crop/sell: {item.BasePrice}g</h3>
           </div>
 
         </div>
@@ -96,6 +106,17 @@ class Crops extends Component {
         
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
+            <a href="#sortByPriceAsc" onClick={this.sortByPriceAsc}>
+            <Button>
+            	<span>Low Sell Price&nbsp;</span>
+                <span>💰</span>
+            </Button></a>
+            <a href="#Price_Descending"onClick={this.sortByPriceDesc}>
+              <Button>
+                  <span>High Sell Price&nbsp;</span>
+                  <span>💎</span>
+              </Button>
+            </a>
             <Button>
             	broken ~ 🌸 sort by season
             </Button>

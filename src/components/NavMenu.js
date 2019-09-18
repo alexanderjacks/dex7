@@ -46,9 +46,9 @@ function NavMenu() {
         <MenuItem onClick={handleClose}>
           <Link href={url1}>Forage</Link>
         </MenuItem>
-      {/*  <MenuItem onClick={handleClose}>
+        <MenuItem onClick={handleClose}>
           <Link href={url2}>Crops</Link>
-        </MenuItem>*/}
+        </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url3}>Minerals</Link>
         </MenuItem>
