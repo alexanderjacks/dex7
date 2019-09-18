@@ -53,7 +53,7 @@ class Bundles extends Component {
     	{/* converts json field so matches filenames,
     	removes any quantity from image name */}
         <div className={item.Image.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
-        <div className="css3frame-card-back">
+        <div className="css3frame-card-back-sidefade">
         <div className="css3frame-card-padding">
           {/* name & reward metadata */}
           <div className="rowed row-spacer">

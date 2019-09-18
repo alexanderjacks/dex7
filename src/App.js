@@ -30,17 +30,36 @@ const url8 = '../bundles'
 
 function Index() {
   return(
-    <div className="">
+    <div className="homepage-route">
       <h1>Welome to Stardewdex</h1>
       <p>Your quick guide to Stardew Valley</p>
       <hr/>
       <div className="coled">
-        <Link to={url0}>HOME</Link>
-        <Link to={url1}>Forage</Link>
-        <Link to={url2}>Crops</Link>
-        <Link to={url3}>Minerals</Link>
-        <Link to={url4}>Fish</Link>
-        <Link to={url8}>Bundles</Link>
+        <Link to={url1} className="rowed">
+          <img src={require('./img/Common_Mushroom.png')} />
+          &nbsp;
+          Forage
+        </Link>
+        <Link to={url2} className="rowed">
+          <img src={require('./img/Melon.png')} />
+          &nbsp;
+          Crops
+        </Link>
+        <Link to={url3} className="rowed">
+          <img src={require('./img/Jade.png')} />
+          &nbsp;
+          Minerals
+        </Link>
+        <Link to={url4} className="rowed">
+          <img src={require('./img/Red_Snapper.png')} />
+          &nbsp;
+          Fish
+        </Link>
+        <Link to={url8} className="rowed">
+          <img src={require('./img/Quality_Crops_Bundle.png')} />
+          &nbsp;
+          Bundles
+        </Link>
       </div>
       <p>Use the MORE STUFF button to explore the site, and check back often as we add content!</p>
       <p>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></p>

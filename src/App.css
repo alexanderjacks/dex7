@@ -123,8 +123,10 @@ ul {
 .g10000_Bundle { background: url(./img/g10000_Bundle.png); }
 .g25000_Bundle { background: url(./img/g25000_Bundle.png); }
 
-.css3frame-card-back {
-  background-image: linear-gradient(to bottom, rgba(245,222,179,0.1),rgba(245,222,179,0.95), rgba(245,222,179,1));
+.css3frame-card-back { background-image: linear-gradient(to bottom, rgba(245,222,179,0.1),rgba(245,222,179,0.95), rgba(245,222,179,1)); }
+.css3frame-card-back-sidefade {
+    background-image: linear-gradient(to right, rgba(245,222,179,0.1), rgba(245,222,179,0.2), rgba(245,222,179,0.9)),
+    linear-gradient(to left, rgba(245,222,179,0.1), rgba(245,222,179,0.2), rgba(245,222,179,0.9));
 }
 .css3frame-card-padding { padding: 3px 7px 7px 7px; }
 .css3frame-border-1 { border: 2px sienna solid; border-radius: 2px; }
