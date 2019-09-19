@@ -14,6 +14,7 @@ class Minerals extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortByTypeAsc = this.sortByTypeAsc.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -32,6 +33,12 @@ class Minerals extends Component {
         this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
     });
     console.log("Sort Name Asc");
+  }
+  sortByTypeAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Type.localeCompare(b.Type)))
+    });
+    console.log("Sort Type Asc");
   }
   
   componentWillMount() {      
@@ -115,6 +122,12 @@ class Minerals extends Component {
             <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
               <Button>
                   <span>Name&nbsp;A→Z&nbsp;</span>
+                  <span>🔠</span>
+              </Button>
+            </a>
+            <a href="#sortByTypeAsc" className="" onClick={this.sortByTypeAsc}>
+              <Button>
+                  <span>Type&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>

@@ -104,12 +104,14 @@ class Bundles extends Component {
         <div className="App-header-ctrls">
             <a href="#Name_Ascending" onClick={this.sortByNameAsc}>
               <Button>
-              	🔠 sort by name
+              	<span>Name&nbsp;A→Z&nbsp;</span>
+                <span>🔠</span>
               </Button>
             </a>
             <a href="#Room_Ascending" onClick={this.sortByRoomAsc}>
               <Button>
-                🔠 sort by room
+                <span>Room&nbsp;A→Z&nbsp;</span>
+                <span>🔠</span>
               </Button>
             </a>
             {/*<a href="#Name_Ascending" onClick={this.sortByNameAsc}>
