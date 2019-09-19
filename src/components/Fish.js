@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SeasonImages from './SeasonImages.js';
+import WeatherImages from './WeatherImages.js';
 
 import Button from '@material-ui/core/Button';
 
@@ -15,6 +16,7 @@ class Fish extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortOnlyBundles = this.sortOnlyBundles.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -33,6 +35,12 @@ class Fish extends Component {
         this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
     });
     console.log("Sort Name Asc");
+  }
+  sortOnlyBundles() {
+    this.setState(prevState => {
+        this.state.categoricals.filter((a) => a.Use.includes('Bundle'))
+    });
+    console.log("Sort Only Bundles");
   }
   
   componentWillMount() {      
@@ -65,6 +73,7 @@ class Fish extends Component {
           Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
           )}</ul>
         <SeasonImages seasons={item.Season} />
+        <WeatherImages weather={item.Weather} />
         <ul className="coled">{item.Time.map && item.Time.map(
           Time => <li>{Time}</li>
           )}</ul>
@@ -124,24 +133,31 @@ class Fish extends Component {
         
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
-            <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
+            <a href="#Price_Ascending"onClick={this.sortByPriceAsc}>
               <Button>
                   <span>Lowest&nbsp;Price&nbsp;</span>
                   <span>💰</span>
               </Button>
             </a>
-            <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
+            <a href="#Price_Descending"onClick={this.sortByPriceDesc}>
               <Button>
                   <span>Highest&nbsp;Price&nbsp;</span>
                   <span>💎</span>
               </Button>
             </a>
-            <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
+            <a href="#sortByNameAsc"onClick={this.sortByNameAsc}>
               <Button>
                   <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>
+{/*         needs working logic, likely filter()
+            <a href="#sortOnlyBundles"onClick={this.sortOnlyBundles}>
+              <Button>
+                  <span>Only&nbsp;Bundles&nbsp;</span>
+                  <span>🚥</span>
+              </Button>
+            </a>*/}
             
         </div>
 
