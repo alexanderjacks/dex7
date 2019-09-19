@@ -12,8 +12,8 @@ class Bundles extends Component {
       categoricals: this.props.categoricals,
     }
     // this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
-    // this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    // this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortByRoomAsc = this.sortByRoomAsc.bind(this);
   }
   // sortByPriceAsc() {
   //   this.setState(prevState => {
@@ -27,12 +27,18 @@ class Bundles extends Component {
   //   });
   //   console.log("Sort Price Desc");
   // }
-  // sortByNameAsc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
-  //   });
-  //   console.log("Sort Name Asc");
-  // }
+  sortByNameAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
+    });
+    console.log("Sort Name Asc");
+  }
+  sortByRoomAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Room.localeCompare(b.Room)))
+    });
+    console.log("Sort Room Asc");
+  }
   componentWillMount() {      
     console.log("some players never complete bundles ;_;");
     this.setState({categoricals: this.props.categoricals});
@@ -96,12 +102,21 @@ class Bundles extends Component {
         
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
-            <Button>
-            	broken ~ sort by 6 rooms
-            </Button>
-            <Button>
-            	broken (larger than usual dropdown) ~ sort by 30 rewards
-            </Button>
+            <a href="#Name_Ascending" onClick={this.sortByNameAsc}>
+              <Button>
+              	🔠 sort by name
+              </Button>
+            </a>
+            <a href="#Room_Ascending" onClick={this.sortByRoomAsc}>
+              <Button>
+                🔠 sort by room
+              </Button>
+            </a>
+            {/*<a href="#Name_Ascending" onClick={this.sortByNameAsc}>
+              <Button>
+                🔠 sort by name
+              </Button>
+            </a>*/}
         </div>
 
         {/* BODY component, content sorted by HEADER */}
