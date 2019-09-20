@@ -38,9 +38,11 @@ class Fish extends Component {
   }
   sortOnlyBundles() {
     this.setState(prevState => {
-        this.state.categoricals.filter((a) => a.Use.includes('Bundle'))
+        let bundleItems = this.state.categoricals.filter(function (item) {
+          if (item.Use == 'River Fish Bundle') { return item; }
+        });
     });
-    console.log("Sort Only Bundles");
+    console.log("Sort Only River Fish Bundle");
   }
   
   componentWillMount() {      
@@ -68,15 +70,16 @@ class Fish extends Component {
             {/* display image on left */}
 			<span className="coled">
 				<h2 className="text-shadow-white">{item.Name}</h2>
-				<h3>
+				<h3 className="text-shadow-white">
         <ul className="coled">{item.Location && item.Location.map(
           Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
           )}</ul>
         <SeasonImages seasons={item.Season} />
-        <WeatherImages weather={item.Weather} />
         <ul className="coled">{item.Time.map && item.Time.map(
           Time => <li>{Time}</li>
-          )}</ul>
+          )}
+        </ul>
+        <WeatherImages weather={item.Weather} />
         </h3>
 
 			</span>
@@ -104,11 +107,13 @@ class Fish extends Component {
               		(Use) => (
                     <span>
                   {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
-                    {/*<img src={require('../img/'+item.Use.replace(/ /g, '_')+'.png')} 
+                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')} 
                       className="item-border" 
                       alt={item.Use}
-                    />*/}
-                    <h4>{Use}</h4>
+                    />
+                    <h4>{
+                      Use
+                    }</h4>
                     </span>
                   )
               	)}
@@ -151,8 +156,8 @@ class Fish extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-{/*         needs working logic, likely filter()
-            <a href="#sortOnlyBundles"onClick={this.sortOnlyBundles}>
+
+{/*            <a href="#sortOnlyBundles"onClick={this.sortOnlyBundles}>
               <Button>
                   <span>Only&nbsp;Bundles&nbsp;</span>
                   <span>🚥</span>
