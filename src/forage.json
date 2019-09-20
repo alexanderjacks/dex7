@@ -2,263 +2,229 @@
   {
     "Name": "Wild Horseradish",
     "BasePrice": 50,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "Veg",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Spring Foraging Bundle"
   },
   {
     "Name": "Daffodil",
     "BasePrice": 30,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "Flower",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Spring Foraging Bundle"
   },
   {
     "Name": "Leek",
     "BasePrice": 60,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Spring Foraging Bundle"
   },
   {
     "Name": "Dandelion",
     "BasePrice": 40,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Spring Foraging Bundle"
   },
   {
     "Name": "Spring Onion",
     "BasePrice": 8,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "",
-    "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "Town"
   },
   {
     "Name": "Morel",
     "BasePrice": 150,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "",
     "Location": "Secret Woods",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Common Mushroom",
     "BasePrice": 40,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "",
-    "Location": "Secret Woods",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "Secret Woods"
   },
   {
     "Name": "Salmonberry",
     "BasePrice": 5,
-    "Season": ["Spring"],
+    "Season": "Spring",
     "AlsoType": "Fruit",
     "Location": "Bushes",
-    "Location2": "-",
     "Notes": "8th - 12th"
   },
   {
     "Name": "Spice Berry",
     "BasePrice": 80,
-    "Season": ["Summer"],
+    "Season": "Summer",
     "AlsoType": "Fruit",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Summer Foraging Bundle"
   },
   {
     "Name": "Grape",
     "BasePrice": 80,
-    "Season": ["Summer"],
+    "Season": "Summer",
     "AlsoType": "Fruit",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Summer Foraging Bundle"
   },
   {
     "Name": "Sweet Pea",
     "BasePrice": 50,
-    "Season": ["Summer"],
+    "Season": "Summer",
     "AlsoType": "Flower",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Summer Foraging Bundle"
   },
   {
     "Name": "Red Mushroom",
     "BasePrice": 75,
-    "Season": ["Summer"],
+    "Season": "Summer",
     "AlsoType": "",
     "Location": "Secret Woods",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Fiddlehead Fern",
     "BasePrice": 98,
-    "Season": ["Summer"],
+    "Season": "Summer",
     "AlsoType": "Veg",
-    "Location": "Secret Woods",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "Secret Woods"
   },
   {
     "Name": "Wild Plum",
     "BasePrice": 80,
-    "Season": ["Fall"],
+    "Season": "Fall",
     "AlsoType": "Fruit",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Fall Foraging Bundle"
   },
   {
     "Name": "Hazelnut",
     "BasePrice": 90,
-    "Season": ["Fall"],
+    "Season": "Fall",
     "AlsoType": "",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Fall Foraging Bundle"
   },
   {
     "Name": "Blackberry",
     "BasePrice": 20,
-    "Season": ["Fall"],
+    "Season": "Fall",
     "AlsoType": "Fruit",
     "Location": "Town",
     "Location2": "Bushes",
-    "Notes": "8th - 12th"
+    "Notes": "8th - 12th",
+    "Bundle": "Fall Foraging Bundle"
   },
   {
     "Name": "Chanterelle",
     "BasePrice": 160,
-    "Season": ["Fall"],
+    "Season": "Fall",
     "AlsoType": "",
     "Location": "Secret Woods",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Common Mushroom",
     "BasePrice": 40,
-    "Season": ["Fall"],
+    "Season": "Fall",
     "AlsoType": "",
-    "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "Town"
   },
   {
     "Name": "Winter Root",
     "BasePrice": 70,
-    "Season": ["Winter"],
+    "Season": "Winter",
     "AlsoType": "",
     "Location": "Town",
     "Location2": "Secret Woods",
-    "Notes": ""
+    "Location3": "The Mines",
+    "Bundle": "Winter Foraging Bundle"
   },
   {
     "Name": "Crystal Fruit",
     "BasePrice": 150,
-    "Season": ["Winter"],
+    "Season": "Winter",
     "AlsoType": "Fruit",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Location2": "The Mines",
+    "Bundle": "Winter Foraging Bundle"
   },
   {
     "Name": "Snow Yam",
     "BasePrice": 100,
-    "Season": ["Winter"],
+    "Season": "Winter",
     "AlsoType": "",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Location2": "The Mines",
+    "Bundle": "Winter Foraging Bundle"
   },
   {
     "Name": "Crocus",
     "BasePrice": 60,
-    "Season": ["Winter"],
+    "Season": "Winter",
     "AlsoType": "Flower",
     "Location": "Town",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Winter Foraging Bundle"
   },
   {
     "Name": "Nautilus Shell",
     "BasePrice": 120,
-    "Season": ["Winter"],
+    "Season": "Winter",
     "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "The Beach"
   },
   {
     "Name": "Coral",
     "BasePrice": 80,
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "The Beach"
   },
   {
     "Name": "Sea Urchin",
     "BasePrice": 160,
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "The Beach"
   },
   {
     "Name": "Rainbow Shell",
     "BasePrice": 300,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "Summer",
     "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "The Beach"
   },
   {
     "Name": "Clam",
     "BasePrice": 50,
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Location": "The Beach"
   },
   {
     "Name": "Mussel",
     "BasePrice": 30,
     "Season": ["Spring", "Summer", "Fall", "Winter"],
-    "AlsoType": "Fish",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "AlsoType": "",
+    "Location": "The Beach"
   },
   {
     "Name": "Oyster",
     "BasePrice": 40,
     "Season": ["Spring", "Summer", "Fall", "Winter"],
-    "AlsoType": "Fish",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "AlsoType": "",
+    "Location": "The Beach"
   },
   {
     "Name": "Red Mushroom",
@@ -266,8 +232,7 @@
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Purple Mushroom",
@@ -275,8 +240,7 @@
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Cave Carrot",
@@ -284,8 +248,7 @@
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "",
     "Location": "The Mines",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Cactus Fruit",
@@ -293,8 +256,7 @@
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "Fruit",
     "Location": "The Desert",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   },
   {
     "Name": "Coconut",
@@ -302,16 +264,6 @@
     "Season": ["Spring", "Summer", "Fall", "Winter"],
     "AlsoType": "Fruit",
     "Location": "The Desert",
-    "Location2": "-",
-    "Notes": ""
-  },
-  {
-    "Name": "Cockle",
-    "BasePrice": 50,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
-    "AlsoType": "Fish",
-    "Location": "The Beach",
-    "Location2": "-",
-    "Notes": ""
+    "Bundle": "Exotic Foraging Bundle"
   }
 ]

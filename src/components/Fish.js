@@ -102,11 +102,12 @@ class Fish extends Component {
                 	<span>📕: {item.Description} </span>
                 }</h5>
               </div>
+              {/* could use refactoring into own Uses/Bundles component */}
+              {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
               <span className="coled">
               	{item.Uses && item.Uses.map(
               		(Use) => (
                     <span>
-                  {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
                     <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')} 
                       className="item-border" 
                       alt={item.Use}

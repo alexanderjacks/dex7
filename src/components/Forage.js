@@ -64,7 +64,9 @@ class Forage extends Component {
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <span>{item.Location}</span>
-              <SeasonText seasons={item.Season} />
+              {item.Location2 && <span>& {item.Location2}</span>}
+
+              {/*<SeasonText seasons={item.Season} />*/}
             </h4>
           </div>
           <div className="rowed row-spacer">
@@ -102,6 +104,20 @@ class Forage extends Component {
               <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
             </span>
           </h4>
+          {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
+          <div className="coled">
+            {item.Bundle &&
+              <span>
+              <img src={require('../img/'+item.Bundle.replace(/ /g, '_')+'.png')} 
+                className="item-border" 
+                alt={item.Bundle}
+              />
+              <h4>{
+                item.Bundle
+              }</h4>
+              </span>
+             }
+          </div>
 
         </div>
         </div>
