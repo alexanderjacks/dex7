@@ -7,7 +7,8 @@
     "SeedPrice": 3400,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 4
   },
   {
     "Name": "Apricot",
@@ -17,7 +18,8 @@
     "SeedPrice": 2000,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 4
   },
   {
     "Name": "Ancient Fruit",
@@ -29,7 +31,8 @@
     "Days": 28,
     "Yield": 1,
     "DaysToReharvest": 8,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Strawberry",
@@ -42,12 +45,13 @@
     "Yield": 1,
     "Harvests": 5,
     "DaysToReharvest": 4,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Rhubarb",
     "BasePrice": 220,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 100,
     "Location": "Desert Store",
@@ -55,12 +59,13 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 13,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Potato",
     "BasePrice": 80,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 50,
     "Location": "General Store",
@@ -69,12 +74,13 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
+    "Stages": 7,
     "Notes": "Multiple yield"
   },
   {
     "Name": "Cauliflower",
     "BasePrice": 175,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 80,
     "Location": "General Store",
@@ -82,12 +88,13 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 12,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Green Bean",
     "BasePrice": 40,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 60,
     "Location": "General Store",
@@ -96,12 +103,13 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Notes": "Impassable, multiple yield"
+    "Stages": 7,
+    "Notes": "Impassable"
   },
   {
     "Name": "Kale",
     "BasePrice": 110,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 70,
     "Location": "General Store",
@@ -109,12 +117,13 @@
     "Yield": 1,
     "Harvests": 4,
     "DaysToReharvest": 6,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Garlic",
     "BasePrice": 60,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 40,
     "Location": "General Store",
@@ -122,12 +131,13 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 4,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Parsnip",
     "BasePrice": 35,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Spring"],
     "SeedPrice": 20,
     "Location": "General Store",
@@ -135,7 +145,8 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 4,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Blue Jazz",
@@ -148,7 +159,8 @@
     "Yield": 1,
     "Harvests": 3,
     "DaysToReharvest": 7,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Tulip",
@@ -161,7 +173,8 @@
     "Yield": 1,
     "Harvests": 4,
     "DaysToReharvest": 6,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Coffee Bean",
@@ -174,7 +187,8 @@
     "Yield": 2,
     "Harvests": 11,
     "DaysToReharvest": 2,
-    "Continuous": ""
+    "Continuous": "",
+    "Stages": 7
   },
   {
     "Name": "Orange",
@@ -184,7 +198,8 @@
     "SeedPrice": 4000,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Peach",
@@ -194,7 +209,8 @@
     "SeedPrice": 6000,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Ancient Fruit",
@@ -206,7 +222,8 @@
     "Days": 28,
     "Yield": 1,
     "DaysToReharvest": 8,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Blueberry",
@@ -220,6 +237,7 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
+    "Stages": 7,
     "Notes": "Multiple yield"
   },
   {
@@ -233,12 +251,13 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 13,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Red Cabbage",
     "BasePrice": 260,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Summer"],
     "SeedPrice": 100,
     "Location": "General Store",
@@ -246,12 +265,13 @@
     "Yield": 1,
     "Harvests": 3,
     "DaysToReharvest": 9,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Hops",
     "BasePrice": 25,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Summer"],
     "SeedPrice": 60,
     "Location": "General Store",
@@ -260,6 +280,7 @@
     "Harvests": 17,
     "DaysToReharvest": 1,
     "Continuous": "Yes",
+    "Stages": 7,
     "Notes": "Multiple yield"
   },
   {
@@ -273,7 +294,8 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 12,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Hot Pepper",
@@ -286,12 +308,13 @@
     "Yield": 1,
     "Harvests": 8,
     "DaysToReharvest": 3,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Tomato",
     "BasePrice": 60,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Summer"],
     "SeedPrice": 50,
     "Location": "General Store",
@@ -299,12 +322,13 @@
     "Yield": 1,
     "Harvests": 5,
     "DaysToReharvest": 4,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Radish",
     "BasePrice": 90,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Summer"],
     "SeedPrice": 40,
     "Location": "General Store",
@@ -312,7 +336,8 @@
     "Yield": 1,
     "Harvests": 4,
     "DaysToReharvest": 6,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Poppy",
@@ -325,7 +350,8 @@
     "Yield": 1,
     "Harvests": 3,
     "DaysToReharvest": 7,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Summer Spangle",
@@ -338,7 +364,8 @@
     "Yield": 1,
     "Harvests": 3,
     "DaysToReharvest": 8,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Wheat",
@@ -351,12 +378,13 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 4,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Corn",
     "BasePrice": 50,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Summer", "Fall"],
     "SeedPrice": 150,
     "Location": "General Store",
@@ -365,6 +393,7 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
+    "Stages": 7,
     "Notes": "Numbers shown for 56 days"
   },
   {
@@ -379,6 +408,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
+    "Stages": 7,
     "Notes": "JojaMart has cheaper seeds"
   },
   {
@@ -389,7 +419,8 @@
     "SeedPrice": 4000,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Pomegranate",
@@ -399,7 +430,8 @@
     "SeedPrice": 6000,
     "Location": "General Store",
     "Days": 28,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Cranberries",
@@ -412,12 +444,13 @@
     "Yield": 2,
     "Harvests": 5,
     "DaysToReharvest": 5,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Pumpkin",
     "BasePrice": 320,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 100,
     "Location": "General Store",
@@ -425,7 +458,8 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 13,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Grape",
@@ -438,12 +472,13 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 3,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Artichoke",
     "BasePrice": 160,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 30,
     "Location": "General Store",
@@ -452,12 +487,13 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
+    "Stages": 7,
     "Notes": "Year 2"
   },
   {
     "Name": "Beet",
     "BasePrice": 100,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 20,
     "Location": "Desert Store",
@@ -466,12 +502,13 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
+    "Stages": 7,
     "Notes": "Year 2"
   },
   {
     "Name": "Eggplant",
     "BasePrice": 60,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 20,
     "Location": "General Store",
@@ -479,12 +516,13 @@
     "Yield": 1,
     "Harvests": 5,
     "DaysToReharvest": 5,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Amaranth",
     "BasePrice": 150,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 70,
     "Location": "General Store",
@@ -492,12 +530,13 @@
     "Yield": 1,
     "Harvests": 3,
     "DaysToReharvest": 7,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Yam",
     "BasePrice": 160,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 60,
     "Location": "General Store",
@@ -505,12 +544,13 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 10,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Bok Choy",
     "BasePrice": 80,
-    "Type": "Veg",
+    "Type": "Veggie",
     "Season": ["Fall"],
     "SeedPrice": 50,
     "Location": "General Store",
@@ -518,7 +558,8 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 4,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Fairy Rose",
@@ -531,7 +572,8 @@
     "Yield": 1,
     "Harvests": 2,
     "DaysToReharvest": 12,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   },
   {
     "Name": "Cactus Fruit",
@@ -544,7 +586,8 @@
     "Yield": 1,
     "Harvests": 6,
     "DaysToReharvest": 3,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Ancient Fruit",
@@ -556,7 +599,8 @@
     "Days": 28,
     "Yield": 1,
     "DaysToReharvest": 8,
-    "Continuous": "Yes"
+    "Continuous": "Yes",
+    "Stages": 7
   },
   {
     "Name": "Sweet Gem Berry",
@@ -569,6 +613,7 @@
     "Yield": 1,
     "Harvests": 1,
     "DaysToReharvest": 24,
-    "Continuous": "No"
+    "Continuous": "No",
+    "Stages": 7
   }
 ]

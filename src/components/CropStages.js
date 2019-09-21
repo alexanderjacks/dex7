@@ -6,17 +6,10 @@ class CropStages extends React.Component {
 	}
 	render() {
 		return(
-			<ul className="rowed row-spacer row-spillover">
-				{this.props.stages.map(
-					(stage) => <li>
-						<img src={require('../img/'+stage.replace(/ /g, '_')+'.png')} 
-				            className="item-border" 
-				            alt={stage}
-			            />
-						<br/>{stage}
-					</li>
-				)}
-			</ul>
+			<div className="rowed row-spacer row-spillover">
+				{this.props.stages}<br/>
+				{this.props.name}<br/>
+			</div>
 		)
 	}
 }

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-// import CropStages from './CropStages.js';
-import SeasonGrid from './SeasonGrid.js';
+import CropStages from './CropStages.js';
 
 import '../App.css';
 
@@ -70,14 +69,16 @@ class Crops extends Component {
 	            </h4>
             </div>
             <div>
-	              <p>growth metadata
-	              </p>
+               <h3>{item.Season[0]}</h3>
+	             <h3>{item.Type}</h3>
+               <h5>takes {item.Days} days</h5>
+               <h5>{item.Continuous} multi harvest</h5>
             </div>
           </div>
 
             <div class="rowed">
-            	<h1>crop stages go here</h1>
-              {/*<CropStages stages={item.Stages} />*/}
+              <h6>crop stages...</h6>
+              <CropStages stages={item.Stages} name={item.Name} />
             </div>
             <hr/>
           

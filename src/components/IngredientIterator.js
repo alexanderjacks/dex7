@@ -8,12 +8,12 @@ class IngredientIterator extends React.Component {
 		return(
 			<ul className="rowed row-spacer row-spillover">
 				{this.props.ingredients.map(
-					ingredient => <li>
+					(ingredient, i) => <li>
 						<img src={require('../img/'+ingredient.replace(/ /g, '_')+'.png')} 
 				            className="item-border" 
 				            alt={ingredient}
 			            />
-						<br/>{ingredient}
+						<br/>{ingredient} #{i+1}
 					</li>
 				)}
 			</ul>
