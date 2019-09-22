@@ -76,9 +76,10 @@ class Crops extends Component {
             </div>
           </div>
 
-            <div class="rowed">
-              <h6>crop stages...</h6>
-              <CropStages stages={item.Stages} name={item.Name} />
+            <div class="">
+              <ul className="rowed row-spacer row-spillover">
+              <CropStages stages={item.Stages} name={item.Name}/>
+              </ul>
             </div>
             <hr/>
           

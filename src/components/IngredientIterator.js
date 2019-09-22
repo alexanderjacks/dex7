@@ -13,7 +13,7 @@ class IngredientIterator extends React.Component {
 				            className="item-border" 
 				            alt={ingredient}
 			            />
-						<br/>{ingredient} #{i+1}
+						<br/>{ingredient} #{i++}
 					</li>
 				)}
 			</ul>

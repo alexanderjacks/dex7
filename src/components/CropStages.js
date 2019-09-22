@@ -5,12 +5,25 @@ class CropStages extends React.Component {
 		super(props);
 	}
 	render() {
-		return(
-			<div className="rowed row-spacer row-spillover">
-				{this.props.stages}<br/>
-				{this.props.name}<br/>
-			</div>
-		)
+        {/* not using ES6 map() b/c not an array of img names */}
+		let counter = 1
+		const allGrowthStages = []
+		while (counter < this.props.stages+1) {
+			allGrowthStages.push(
+				<li key={this.props.name}>
+					<img src={require('../img/'+this.props.name.replace(/ /g, '_')+'_Stage_'+counter+'.png')}
+						className="item-border" 
+				        alt={this.props.name}
+					/>
+					<br/>
+					<span>
+						Stage {counter}
+					</span>
+				</li>
+			)
+			counter++
+		}
+		return(<div>{allGrowthStages}</div>)
 	}
 }
 export default CropStages;

@@ -32,7 +32,7 @@
     "Yield": 1,
     "DaysToReharvest": 8,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Strawberry",
@@ -46,7 +46,7 @@
     "Harvests": 5,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Rhubarb",
@@ -60,7 +60,7 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Potato",
@@ -74,7 +74,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "Multiple yield"
   },
   {
@@ -89,7 +89,7 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Green Bean",
@@ -103,7 +103,7 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "Impassable"
   },
   {
@@ -118,7 +118,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Garlic",
@@ -132,7 +132,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Parsnip",
@@ -146,7 +146,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Blue Jazz",
@@ -160,7 +160,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Tulip",
@@ -174,7 +174,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Coffee Bean",
@@ -199,7 +199,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Peach",
@@ -210,7 +210,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Ancient Fruit",
@@ -223,7 +223,7 @@
     "Yield": 1,
     "DaysToReharvest": 8,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Blueberry",
@@ -237,7 +237,7 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "Multiple yield"
   },
   {
@@ -252,7 +252,7 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Red Cabbage",
@@ -266,7 +266,7 @@
     "Harvests": 3,
     "DaysToReharvest": 9,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Hops",
@@ -280,7 +280,7 @@
     "Harvests": 17,
     "DaysToReharvest": 1,
     "Continuous": "Yes",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "Multiple yield"
   },
   {
@@ -295,7 +295,7 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Hot Pepper",
@@ -323,7 +323,7 @@
     "Harvests": 5,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Radish",
@@ -337,7 +337,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Poppy",
@@ -351,7 +351,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Summer Spangle",
@@ -365,7 +365,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Wheat",
@@ -379,7 +379,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Corn",
@@ -393,7 +393,7 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 7,
+    "Stages": 5,
     "Notes": "Numbers shown for 56 days"
   },
   {
@@ -408,7 +408,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "JojaMart has cheaper seeds"
   },
   {
@@ -420,7 +420,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Pomegranate",
@@ -431,7 +431,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Cranberries",
@@ -445,7 +445,7 @@
     "Harvests": 5,
     "DaysToReharvest": 5,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Pumpkin",
@@ -459,7 +459,7 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Grape",
@@ -473,7 +473,7 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Artichoke",
@@ -487,7 +487,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
-    "Stages": 7,
+    "Stages": 6,
     "Notes": "Year 2"
   },
   {
@@ -502,7 +502,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 7,
+    "Stages": 4,
     "Notes": "Year 2"
   },
   {
@@ -517,7 +517,7 @@
     "Harvests": 5,
     "DaysToReharvest": 5,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Amaranth",
@@ -531,7 +531,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 5
   },
   {
     "Name": "Yam",
@@ -545,7 +545,7 @@
     "Harvests": 2,
     "DaysToReharvest": 10,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Bok Choy",
@@ -559,7 +559,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Fairy Rose",
@@ -573,7 +573,7 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Cactus Fruit",
@@ -600,7 +600,7 @@
     "Yield": 1,
     "DaysToReharvest": 8,
     "Continuous": "Yes",
-    "Stages": 7
+    "Stages": 4
   },
   {
     "Name": "Sweet Gem Berry",
@@ -614,6 +614,6 @@
     "Harvests": 1,
     "DaysToReharvest": 24,
     "Continuous": "No",
-    "Stages": 7
+    "Stages": 4
   }
 ]
