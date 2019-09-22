@@ -117,7 +117,9 @@ class App extends Component {
         
       <header className="App-header rowed row-spacer">
         <div className="coled">
-          <img src={logo} className="App-logo pulse" alt="logo" />
+          <Link to={url0}>
+            <img src={logo} className="App-logo pulse" alt="logo" />
+          </Link>
         </div>
         <div className="coled">
           <NavMenu/>

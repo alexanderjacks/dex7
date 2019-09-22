@@ -35,7 +35,7 @@ function NavMenu() {
         color="secondary"
         variant="contained"
       >
-        More Stuff!
+        LISTS&nbsp;
         <span>🚧
         </span>
       </Button>
