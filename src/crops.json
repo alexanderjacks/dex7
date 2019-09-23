@@ -8,6 +8,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle"],
     "Stages": 4
   },
   {
@@ -19,6 +20,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle"],
     "Stages": 4
   },
   {
@@ -32,7 +34,8 @@
     "Yield": 1,
     "DaysToReharvest": 8,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Strawberry",
@@ -46,7 +49,8 @@
     "Harvests": 5,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 6
   },
   {
     "Name": "Rhubarb",
@@ -60,7 +64,8 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 6
   },
   {
     "Name": "Potato",
@@ -74,7 +79,8 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 4,
+    "Bundles": ["Spring Crops Bundle"],
+    "Stages": 5,
     "Notes": "Multiple yield"
   },
   {
@@ -89,7 +95,8 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": ["Spring Crops Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Green Bean",
@@ -103,7 +110,8 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 4,
+    "Bundles": ["Spring Crops Bundle"],
+    "Stages": 6,
     "Notes": "Impassable"
   },
   {
@@ -118,6 +126,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -132,6 +141,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -146,7 +156,8 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": ["Spring Crops Bundle", "Quality Crops Bundle"],
+    "Stages": 5
   },
   {
     "Name": "Blue Jazz",
@@ -160,6 +171,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -174,6 +186,7 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -188,7 +201,8 @@
     "Harvests": 11,
     "DaysToReharvest": 2,
     "Continuous": "",
-    "Stages": 7
+    "Bundles": [],
+    "Stages": 6
   },
   {
     "Name": "Orange",
@@ -199,6 +213,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle"],
     "Stages": 4
   },
   {
@@ -210,6 +225,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle"],
     "Stages": 4
   },
   {
@@ -223,7 +239,8 @@
     "Yield": 1,
     "DaysToReharvest": 8,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Blueberry",
@@ -237,7 +254,8 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
-    "Stages": 4,
+    "Bundles": ["Summer Crops Bundle"],
+    "Stages": 6,
     "Notes": "Multiple yield"
   },
   {
@@ -252,7 +270,8 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 6
   },
   {
     "Name": "Red Cabbage",
@@ -266,7 +285,8 @@
     "Harvests": 3,
     "DaysToReharvest": 9,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": ["Dye Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Hops",
@@ -280,7 +300,8 @@
     "Harvests": 17,
     "DaysToReharvest": 1,
     "Continuous": "Yes",
-    "Stages": 4,
+    "Bundles": [],
+    "Stages": 6,
     "Notes": "Multiple yield"
   },
   {
@@ -295,7 +316,8 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": ["Summer Crops Bundle", "Quality Crops Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Hot Pepper",
@@ -309,7 +331,8 @@
     "Harvests": 8,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 7
+    "Bundles": ["Summer Crops Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Tomato",
@@ -323,6 +346,7 @@
     "Harvests": 5,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
+    "Bundles": ["Summer Crops Bundle"],
     "Stages": 4
   },
   {
@@ -337,7 +361,8 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Poppy",
@@ -351,6 +376,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
+    "Bundles": ["Chefs Bundle"],
     "Stages": 4
   },
   {
@@ -365,6 +391,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -379,6 +406,7 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 4
   },
   {
@@ -393,6 +421,7 @@
     "Harvests": 4,
     "DaysToReharvest": 4,
     "Continuous": "Yes",
+    "Bundles": ["Fall Crops Bundle", "Quality Crops Bundle"],
     "Stages": 5,
     "Notes": "Numbers shown for 56 days"
   },
@@ -408,7 +437,8 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
-    "Stages": 4,
+    "Bundles": ["Dye Bundle"],
+    "Stages": 5,
     "Notes": "JojaMart has cheaper seeds"
   },
   {
@@ -420,6 +450,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle", "Fodder Bundle"],
     "Stages": 4
   },
   {
@@ -431,6 +462,7 @@
     "Location": "General Store",
     "Days": 28,
     "Continuous": "Yes",
+    "Bundles": ["Artisan Bundle", "Enchanters Bundle"],
     "Stages": 4
   },
   {
@@ -445,7 +477,8 @@
     "Harvests": 5,
     "DaysToReharvest": 5,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": ["Fodder Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Pumpkin",
@@ -459,7 +492,8 @@
     "Harvests": 2,
     "DaysToReharvest": 13,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": ["Fall Crops Bundle", "Quality Crops Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Grape",
@@ -473,7 +507,8 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": ["Summer Foraging Bundle"],
+    "Stages": 5
   },
   {
     "Name": "Artichoke",
@@ -487,6 +522,7 @@
     "Harvests": 3,
     "DaysToReharvest": 8,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 6,
     "Notes": "Year 2"
   },
@@ -502,7 +538,8 @@
     "Harvests": 4,
     "DaysToReharvest": 6,
     "Continuous": "No",
-    "Stages": 4,
+    "Bundles": [],
+    "Stages": 5,
     "Notes": "Year 2"
   },
   {
@@ -517,7 +554,8 @@
     "Harvests": 5,
     "DaysToReharvest": 5,
     "Continuous": "Yes",
-    "Stages": 4
+    "Bundles": ["Fall Crops Bundle"],
+    "Stages": 6
   },
   {
     "Name": "Amaranth",
@@ -531,6 +569,7 @@
     "Harvests": 3,
     "DaysToReharvest": 7,
     "Continuous": "No",
+    "Bundles": [],
     "Stages": 5
   },
   {
@@ -545,7 +584,8 @@
     "Harvests": 2,
     "DaysToReharvest": 10,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Bok Choy",
@@ -559,7 +599,8 @@
     "Harvests": 6,
     "DaysToReharvest": 4,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Fairy Rose",
@@ -573,7 +614,8 @@
     "Harvests": 2,
     "DaysToReharvest": 12,
     "Continuous": "No",
-    "Stages": 4
+    "Bundles": [],
+    "Stages": 5
   },
   {
     "Name": "Cactus Fruit",
@@ -587,7 +629,8 @@
     "Harvests": 6,
     "DaysToReharvest": 3,
     "Continuous": "Yes",
-    "Stages": 7
+    "Bundles": [],
+    "Stages": 6
   },
   {
     "Name": "Ancient Fruit",
@@ -599,10 +642,11 @@
     "Days": 28,
     "Yield": 1,
     "DaysToReharvest": 8,
-    "Continuous": "Yes",
-    "Stages": 4
+    "Continuous": "Yes",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    "Bundles": [],
+    "Stages": 5
   },
-  {
+  {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     "Name": "Sweet Gem Berry",
     "BasePrice": 3000,
     "Type": "Special",
@@ -614,6 +658,7 @@
     "Harvests": 1,
     "DaysToReharvest": 24,
     "Continuous": "No",
+    "Bundles": ["Fodder Bundle"],
     "Stages": 4
   }
 ]

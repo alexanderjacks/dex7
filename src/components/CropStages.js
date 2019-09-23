@@ -12,13 +12,9 @@ class CropStages extends React.Component {
 			allGrowthStages.push(
 				<li key={this.props.name}>
 					<img src={require('../img/'+this.props.name.replace(/ /g, '_')+'_Stage_'+counter+'.png')}
-						className="item-border" 
+						className="item-plain" 
 				        alt={this.props.name}
 					/>
-					<br/>
-					<span>
-						Stage {counter}
-					</span>
 				</li>
 			)
 			counter++

@@ -135,12 +135,20 @@ ul {
 .css3frame-border-4 { border: 2px brown solid; border-radius: 8px; }
 
 
+.item-plain {
+  border: white solid 0px;
+}
 .item-border {
   border: white solid 2px;
   background-image: radial-gradient(wheat, tan);
   padding: 2px;
   height: 48px;
   width: 48px;
+}
+.crop-stages-frame {
+  border: white solid 2px;
+  background-image: radial-gradient(wheat, tan);
+  padding: 3px;
 }
 
 .lotta-text {
@@ -202,6 +210,10 @@ a {
 .no-repeat-bg {
   background-size: cover;
   resize: both;
+}
+
+.max-tallness {
+  min-height: 100%;
 }
 
 .max400px {

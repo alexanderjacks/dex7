@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import CropStages from './CropStages.js';
+import IngredientIterator from './IngredientIterator.js';
 
 import '../App.css';
 
@@ -48,11 +49,20 @@ class Crops extends Component {
         <div className="css3frame-border-1">
 
 
+      <div className="rowed row-spacer row-spillover">
+
+      {/*begin left col*/}
+        <div className="coled">
+          <ul className="rowed row-spacer row-spillover crop-stages-frame">
+            <CropStages stages={item.Stages} name={item.Name}/>
+          </ul>
+        </div>
+      {/*end left col*/}
+      {/*begin right col*/}
+        <div className="coled">
       {/* CSS class assigns background img based on .Name prop */}
-        <div>
-    	{/* converts json field so matches filenames,
-    	removes any quantity from image name */}
-        <div className={item.Name.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
+    	{/* converts json field so matches filenames */}
+        <div className={item.Name.replace(/ /g, '_')+ " coled no-repeat-bg"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
 
@@ -75,18 +85,18 @@ class Crops extends Component {
                <h5>{item.Continuous} multi harvest</h5>
             </div>
           </div>
-
-            <div class="">
-              <ul className="rowed row-spacer row-spillover">
-              <CropStages stages={item.Stages} name={item.Name}/>
-              </ul>
-            </div>
-            <hr/>
-          
+          <hr/>
           <div className="coled text-shadow-white">
 	          <h3>Seed/buy: {item.SeedPrice}g</h3>
 	          <h3>Crop/sell: {item.BasePrice}g</h3>
           </div>
+          <hr/>
+          <h3>{item.Location}</h3>
+          <IngredientIterator ingredients={item.Bundles} />
+
+        {/*end right col*/}
+        </div>
+
 
         </div>
         </div>
