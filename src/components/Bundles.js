@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import IngredientIterator from './IngredientIterator.js';
+import BundleIterator from './BundleIterator.js';
 
 import '../App.css';
 
@@ -71,7 +71,7 @@ class Bundles extends Component {
 
           {/* all bundle ingredients */}
             <div class="text-shadow-white">
-              <IngredientIterator ingredients={item.Ingredients} />
+              <BundleIterator requirements={item.Ingredients} />
 	            <h5>Needs {item.Needs} of {item.Of}</h5>
             </div>
           {/* CommCenter room metadata */}

@@ -1,9 +1,6 @@
 import React from 'react';
 
 class CropStages extends React.Component {
-	constructor(props) {
-		super(props);
-	}
 	render() {
         {/* not using ES6 map() b/c not an array of img names */}
 		let counter = 1

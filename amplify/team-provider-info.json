@@ -1,0 +1,14 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "stardewdex-master-20190924163728-authRole",
+            "UnauthRoleArn": "arn:aws:iam::447075351966:role/stardewdex-master-20190924163728-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::447075351966:role/stardewdex-master-20190924163728-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "stardewdex-master-20190924163728-deployment",
+            "UnauthRoleName": "stardewdex-master-20190924163728-unauthRole",
+            "StackName": "stardewdex-master-20190924163728",
+            "StackId": "arn:aws:cloudformation:us-east-1:447075351966:stack/stardewdex-master-20190924163728/45a2baa0-df24-11e9-8928-0e33f445a498"
+        }
+    }
+}

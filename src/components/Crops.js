@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import CropStages from './CropStages.js';
-import IngredientIterator from './IngredientIterator.js';
+import BundleIterator from './BundleIterator.js';
 
 import '../App.css';
 
@@ -92,7 +92,7 @@ class Crops extends Component {
           </div>
           <hr/>
           <h3>{item.Location}</h3>
-          <IngredientIterator ingredients={item.Bundles} />
+          <BundleIterator requirements={item.Bundles} />
 
         {/*end right col*/}
         </div>
