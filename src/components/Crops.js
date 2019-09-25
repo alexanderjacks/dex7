@@ -49,23 +49,12 @@ class Crops extends Component {
         <div className="css3frame-border-1">
 
 
-      <div className="rowed row-spacer row-spillover">
-
-      {/*begin left col*/}
-        <div className="coled">
-          <ul className="rowed row-spacer row-spillover crop-stages-frame">
-            <CropStages stages={item.Stages} name={item.Name}/>
-          </ul>
-        </div>
-      {/*end left col*/}
-      {/*begin right col*/}
-        <div className="coled">
+        <div className="rowed row-spacer row-spillover">
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className={item.Name.replace(/ /g, '_')+ " coled no-repeat-bg"}>
+        <div className={item.Season[0].replace(/ /g, '_')+ " coled no-repeat-bg"}>
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
-
           {/* name & price metadata */}
           <div className="rowed row-spacer">
             {/* display image on left */}
@@ -85,7 +74,10 @@ class Crops extends Component {
                <h5>{item.Continuous} multi harvest</h5>
             </div>
           </div>
-          <hr/>
+{/*          <ul className="crop-stages-frame">
+            <CropStages stages={item.Stages} name={item.Name}/>
+          </ul>
+          <hr/>*/}
           <div className="coled text-shadow-white">
 	          <h3>Seed/buy: {item.SeedPrice}g</h3>
 	          <h3>Crop/sell: {item.BasePrice}g</h3>
@@ -93,10 +85,6 @@ class Crops extends Component {
           <hr/>
           <h3>{item.Location}</h3>
           <BundleIterator requirements={item.Bundles} />
-
-        {/*end right col*/}
-        </div>
-
 
         </div>
         </div>

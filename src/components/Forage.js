@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SeasonGrid from './SeasonGrid.js';
+import SeasonTile from './SeasonTile.js';
 import SeasonText from './SeasonText.js';
 import Button from '@material-ui/core/Button';
 
@@ -15,7 +15,7 @@ class Forage extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortByWinter = this.sortByWinter.bind(this);
+    this.sortBySeason = this.sortBySeason.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -35,9 +35,9 @@ class Forage extends Component {
     });
     console.log("Sort Name Asc");
   }
-  sortByWinter() {
+  sortBySeason() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
+        this.state.categoricals.sort((a,b) => (a.Season[0].localeCompare(b.Season[0])))
     });
     console.log("Sort Season Asc");
   }
@@ -76,10 +76,11 @@ class Forage extends Component {
             alt={item.Name}
             />
             {/* display metadata on right */}
-            <span className="coled">
+            <div className="rowed">
               {/* seasons could use own component */}
-              <SeasonGrid seasons={item.Season} />
-            </span>
+              <SeasonTile seasons={item.Season} />
+              <div>{item.Season}</div>
+            </div>
           </div>
           <div className="rowed row-spacer">
               <h2>{item.Name}</h2>
@@ -154,7 +155,12 @@ class Forage extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-            
+            <a href="#sortBySeason" className="" onClick={this.sortBySeason}>
+              <Button>
+                  <span>Season&nbsp;A→Z&nbsp;</span>
+                  <span>🔠</span>
+              </Button>
+            </a>            
         </div>
 
         {/* BODY component, content sorted by HEADER */}

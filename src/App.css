@@ -68,10 +68,14 @@ ul {
 
 }
 /* background styling */
+.Spring { background: url(./img/Spring.png), wheat ; }
+.Summer { background: url(./img/Summer.png), wheat ; }
+.Fall { background: url(./img/Fall.png), wheat ; }
+.Winter { background: url(./img/Winter.png), wheat ; }
+
 .Town { background: url(./img/paper-Town.png), wheat ; }
 .Secret_Woods { background: url(./img/paper-Secret_Woods.png), wheat ; }
 .Bushes { background: url(./img/paper-Bushes.png), wheat ; }
-
 .River { background: url(./img/paper-River.png), wheat ; }
 .Lake { background: url(./img/paper-Lake.png), wheat ; }
 .Ocean { background: url(./img/paper-Ocean.png), wheat ; }
@@ -150,7 +154,10 @@ ul {
   background-image: radial-gradient(wheat, tan);
   padding: 3px;
 }
-
+.seasonTile {
+  max-width: 48px;
+  max-height: 32px;
+}
 .lotta-text {
   display: flex;
   flex-flow: row wrap;
@@ -194,7 +201,7 @@ a {
 
 .coled {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;

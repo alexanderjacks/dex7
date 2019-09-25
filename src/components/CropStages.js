@@ -4,7 +4,11 @@ class CropStages extends React.Component {
 	render() {
         {/* not using ES6 map() b/c not an array of img names */}
 		let counter = 1
-		const allGrowthStages = []
+		let allGrowthStages = []
+		// function removePriorEntries() {
+		// 	allGrowthStages.length = 0
+		// }
+		// removePriorEntries()
 		while (counter < this.props.stages+1) {
 			allGrowthStages.push(
 				<li key={this.props.name}>

@@ -3,7 +3,7 @@
     "Name": "Wild Horseradish",
     "BasePrice": 50,
     "Season": "Spring",
-    "AlsoType": "Veg",
+    "AlsoType": "Veggie",
     "Location": "Town",
     "Bundle": "Spring Foraging Bundle"
   },
@@ -97,7 +97,7 @@
     "Name": "Fiddlehead Fern",
     "BasePrice": 98,
     "Season": "Summer",
-    "AlsoType": "Veg",
+    "AlsoType": "Veggie",
     "Location": "Secret Woods"
   },
   {
@@ -187,14 +187,14 @@
   {
     "Name": "Coral",
     "BasePrice": 80,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Beach"
   },
   {
     "Name": "Sea Urchin",
     "BasePrice": 160,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Beach"
   },
@@ -208,28 +208,28 @@
   {
     "Name": "Clam",
     "BasePrice": 50,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Beach"
   },
   {
     "Name": "Mussel",
     "BasePrice": 30,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Beach"
   },
   {
     "Name": "Oyster",
     "BasePrice": 40,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Beach"
   },
   {
     "Name": "Red Mushroom",
     "BasePrice": 75,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Mines",
     "Bundle": "Exotic Foraging Bundle"
@@ -237,7 +237,7 @@
   {
     "Name": "Purple Mushroom",
     "BasePrice": 250,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Mines",
     "Bundle": "Exotic Foraging Bundle"
@@ -245,7 +245,7 @@
   {
     "Name": "Cave Carrot",
     "BasePrice": 25,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "",
     "Location": "The Mines",
     "Bundle": "Exotic Foraging Bundle"
@@ -253,7 +253,7 @@
   {
     "Name": "Cactus Fruit",
     "BasePrice": 75,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "Fruit",
     "Location": "The Desert",
     "Bundle": "Exotic Foraging Bundle"
@@ -261,7 +261,7 @@
   {
     "Name": "Coconut",
     "BasePrice": 100,
-    "Season": ["Spring", "Summer", "Fall", "Winter"],
+    "Season": "AllYear",
     "AlsoType": "Fruit",
     "Location": "The Desert",
     "Bundle": "Exotic Foraging Bundle"
