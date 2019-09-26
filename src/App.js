@@ -61,8 +61,9 @@ function Index() {
           Bundles
         </Link>
       </div>
-      <p>Use the MORE STUFF button to explore the site, and check back often as we add content!</p>
-      <p>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></p>
+      <hr/>
+      <p>Use the LISTS button to explore the site.</p>
+      <h6>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></h6>
     </div>
   );
 }

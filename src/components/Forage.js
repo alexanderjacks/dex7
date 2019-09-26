@@ -59,13 +59,12 @@ class Forage extends Component {
       {/* CSS class assigns background img based on .Location prop */}
         <div className={item.Location.replace(/ /g, '_')+ " coled"}>
         <div className="css3frame-card-back">
-        <div className="css3frame-card-padding">
+
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <span>{item.Location}</span>
               {item.Location2 && <span>& {item.Location2}</span>}
-
               {/*<SeasonText seasons={item.Season} />*/}
             </h4>
           </div>
@@ -120,7 +119,7 @@ class Forage extends Component {
              }
           </div>
 
-        </div>
+
         </div>
         </div>
 
