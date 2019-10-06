@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
-import CropStages from './CropStages.js';
 import BundleIterator from './BundleIterator.js';
 
 import '../App.css';
@@ -14,7 +13,9 @@ class Crops extends Component {
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    // this.sortByNameAsc = this.sortByNameAsc.bind(this);
+    this.sortByTimeAsc = this.sortByTimeAsc.bind(this);
+    this.sortByTimeDesc = this.sortByTimeDesc.bind(this);
+
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -28,14 +29,22 @@ class Crops extends Component {
     });
     console.log("Sort Price Desc");
   }
-  // sortByNameAsc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
-  //   });
-  //   console.log("Sort Name Asc");
-  // }
-  componentWillMount() {      
-    console.log("ConcernedApe we want more crop types!! Well, I do.");
+  sortByTimeAsc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (a.Days - b.Days))
+    });
+    console.log("Sort Time Asc");
+  }
+  sortByTimeDesc() {
+    this.setState(prevState => {
+        this.state.categoricals.sort((a,b) => (b.Days - a.Days))
+    });
+    console.log("Sort Time Desc");
+  }
+
+
+  componentWillMount() {
+    console.log("Artisan Valley => +100% more crop types; look into it!");
     this.setState({categoricals: this.props.categoricals});
   }
 
@@ -59,8 +68,8 @@ class Crops extends Component {
           <div className="rowed row-spacer">
             {/* display image on left */}
             <div>
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
-	            className="item-border" 
+	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+	            className="item-border"
 	            alt={item.Name}
 	            />
 	            <h4 class="text-shadow-white">
@@ -71,13 +80,10 @@ class Crops extends Component {
                <h3>{item.Season[0]}</h3>
 	             <h3>{item.Type}</h3>
                <h5>takes {item.Days} days</h5>
-               <h5>{item.Continuous} multi harvest</h5>
+               {item.Continuous ? <h3>multi-harvest</h3> : <h5>harvest once</h5> }
             </div>
           </div>
-{/*          <ul className="crop-stages-frame">
-            <CropStages stages={item.Stages} name={item.Name}/>
-          </ul>
-          <hr/>*/}
+          <hr/>
           <div className="coled text-shadow-white">
 	          <h3>Seed/buy: {item.SeedPrice}g</h3>
 	          <h3>Crop/sell: {item.BasePrice}g</h3>
@@ -103,7 +109,7 @@ class Crops extends Component {
 
     return (
       <div className="App">
-        
+
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#sortByPriceAsc" onClick={this.sortByPriceAsc}>
@@ -117,15 +123,19 @@ class Crops extends Component {
                   <span>💎</span>
               </Button>
             </a>
-            <Button>
-            	broken ~ 🌸 sort by season
-            </Button>
-            <Button>
-            	broken ~ 🎁 sort by bundles
-            </Button>
-            <Button>
-            	broken ~ 🍉 sort by harvest time
-            </Button>
+            <a href="#Time_Ascending"onClick={this.sortByTimeAsc}>
+              <Button>
+                  <span>Short Grow Time&nbsp;</span>
+                  <span>🥕</span>
+              </Button>
+            </a>
+            <a href="#Time_Descending"onClick={this.sortByTimeDesc}>
+              <Button>
+                  <span>Long Grow Time&nbsp;</span>
+                  <span>🌽</span>
+              </Button>
+            </a>
+
         </div>
 
         {/* BODY component, content sorted by HEADER */}

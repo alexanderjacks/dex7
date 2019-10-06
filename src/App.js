@@ -107,15 +107,15 @@ class App extends Component {
     });
     console.log("Sort Season Asc");
   }
-  
-  componentDidMount() {      
+
+  componentDidMount() {
     console.log("here's the app shell");
   }
 
   render(){
     return (
       <div className="App">
-        
+
       <header className="App-header rowed row-spacer">
         <div className="coled">
           <Link to={url0}>
@@ -130,34 +130,34 @@ class App extends Component {
           <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
         </div>
       </header>
-        
+
 
         {/* BODY components, active content chosen by <NavMenu/>  */}
         <section>
           <Route path="/" exact component={Index} />
           <Route path="/bundles/"
             render={props =>
-            (<Bundles {...props} categoricals={this.state.bundles}/>)
+            (<Bundles {...props} categoricals={this.state.bundles} allGrowthStages={this.state.allGrowthStages}/>)
             }
           />
           <Route path="/forage/"
             render={props =>
-            (<Forage {...props} categoricals={this.state.forage}/>)
+            (<Forage {...props} categoricals={this.state.forage} allGrowthStages={this.state.allGrowthStages}/>)
             }
           />
           <Route path="/crops/"
             render={props =>
-            (<Crops {...props} categoricals={this.state.crops}/>)
+            (<Crops {...props} categoricals={this.state.crops} allGrowthStages={this.state.allGrowthStages}/>)
             }
           />
           <Route path="/minerals/"
             render={props =>
-            (<Minerals {...props} categoricals={this.state.minerals}/>)
+            (<Minerals {...props} categoricals={this.state.minerals} allGrowthStages={this.state.allGrowthStages}/>)
             }
           />
           <Route path="/fish/"
             render={props =>
-            (<Fish {...props} categoricals={this.state.fish}/>)
+            (<Fish {...props} categoricals={this.state.fish} allGrowthStages={this.state.allGrowthStages}/>)
             }
           />
         </section>
