@@ -25,31 +25,32 @@ option.add_argument("--incognito")
 # launches Chrome
 browser = webdriver.Chrome(executable_path='./chromedriver', options=option)
 
-# surfs to this URL
-browser.get("https://stardewvalleywiki.com/Maru")
+## begins the iteration thru NPCs
+persons = [
+# "Alex","Elliott",
+"Harvey","Sam","Sebastian","Shane","Abigail","Emily","Haley","Leah","Maru","Penny","Caroline","Clint","Demetrius","Evelyn","George","Gus","Jas","Jodi","Kent","Lewis","Linus","Marnie","Pam","Pierre","Robin","Vincent","Willy"]
 
-###
-##
-# internet lag timeout (error handling)
-timeout = 30
-try:
-	# checking for default element on page, to test connection (the only <li> with id='pt-createaccount' )
-	WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.XPATH, "//li[@id='pt-createaccount']")))
-except TimeoutException:
-	print("This page takes too long to load-- try again?")
-	browser.quit()
-#
-##
-###
+for person in persons: # just one after another in Terminal
+    # surfs to this URL
+    browser.get(f"https://stardewvalleywiki.com/{person}")
 
-### scraping Likes/Dislikes info, testing w only 2nd row from certain tables
+    ###
+    ##
+    # internet lag timeout (error handling)
+    timeout = 30
+    try:
+    	# checking for default element on page, to test connection (the only <li> with id='pt-createaccount' )
+    	WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.XPATH, "//li[@id='pt-createaccount']")))
+    except TimeoutException:
+    	print("This page takes too long to load-- try again?")
+    	browser.quit()
+    #
+    ##
+    ###
 
-
-#1 results = browser.find_elements_by_xpath("//table[@class='wikitable' and @id='roundedborder']")
-#2 results = browser.find_elements_by_xpath("//a[@title]")
-results = browser.find_elements_by_xpath("//a[@class='image']")
-
-result_s = [x.get_attribute('href') for x in results]
-
-for result_s in zip(result_s):
-    print(result_s)
+    ### scraping (mostly) Faves/Likes/Neutral/Dislikes/Hates info-- use faces as guides for table boundaries
+    results = browser.find_elements_by_xpath("//a[@class='image']")
+    result_s = [x.get_attribute('href') for x in results]
+    for result_s in zip(result_s):
+        print(result_s)
+    print(f"\n¿S T O P = = {person} = = S T A R T❔\n")
