@@ -27,8 +27,33 @@ browser = webdriver.Chrome(executable_path='./chromedriver', options=option)
 
 ## begins the iteration thru NPCs
 persons = [
-# "Alex","Elliott",
-"Harvey","Sam","Sebastian","Shane","Abigail","Emily","Haley","Leah","Maru","Penny","Caroline","Clint","Demetrius","Evelyn","George","Gus","Jas","Jodi","Kent","Lewis","Linus","Marnie","Pam","Pierre","Robin","Vincent","Willy"]
+# "Alex","Elliott", "Harvey", "Sam",
+# "Sebastian",
+# "Shane",
+# "Abigail",
+# "Emily",
+# "Haley",
+# "Leah",
+# "Maru",
+# "Penny",
+#"Caroline",
+#"Clint",
+#"Demetrius",
+#"Evelyn",
+#"George",
+#"Gus",
+#"Jas",
+#"Jodi",
+#"Kent",
+#"Lewis",
+#"Linus",
+#"Marnie",
+#"Pam",
+#"Pierre",
+#"Robin",
+#"Vincent",
+#"Willy"
+]
 
 for person in persons: # just one after another in Terminal
     # surfs to this URL
@@ -53,4 +78,4 @@ for person in persons: # just one after another in Terminal
     result_s = [x.get_attribute('href') for x in results]
     for result_s in zip(result_s):
         print(result_s)
-    print(f"\n¿S T O P = = {person} = = S T A R T❔\n")
+    print(f"\n = = E N D {person} D A T A = =\n")
