@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
+import AdSense from 'react-adsense';
 import NavMenu from './components/NavMenu.js';
 import Button from '@material-ui/core/Button';
 
@@ -31,8 +31,13 @@ const url8 = '../bundles'
 function Index() {
   return(
     <div className="homepage-route">
-      <h1>Welome to Stardewdex</h1>
+      <h1><span alt="exclamation-upside-down">¡</span>Stardewdex!</h1>
       <p>Your quick guide to Stardew Valley</p>
+      <hr/>
+      <AdSense.Google
+          client='ca-pub-1699472970547311'
+          slot='6359860180'
+      />
       <hr/>
       <div className="coled">
         <Link to={url1} className="rowed">
