@@ -83,34 +83,6 @@ class App extends Component {
       fish: fish,
       bundles: bundles,
     }
-    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
-    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortByWinter = this.sortByWinter.bind(this);
-  }
-  sortByPriceAsc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
-    });
-    console.log("Sort Price Asc");
-  }
-  sortByPriceDesc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
-    });
-    console.log("Sort Price Desc");
-  }
-  sortByNameAsc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
-    });
-    console.log("Sort Name Asc");
-  }
-  sortByWinter() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Season.localeCompare(b.Season)))
-    });
-    console.log("Sort Season Asc");
   }
 
   componentDidMount() {
@@ -121,48 +93,47 @@ class App extends Component {
     return (
       <div className="App">
 
-      <header className="App-header rowed row-spacer">
-        <div className="coled">
-          <Link to={url0}>
-            <img src={logo} className="App-logo pulse" alt="logo" />
-          </Link>
-        </div>
-        <div className="coled">
-          <NavMenu/>
-        </div>
-        <div className="coled">
-          <h3>Your Guide to Pelican Town</h3>
-          <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
-        </div>
-      </header>
-
+        <header className="App-header rowed row-spacer">
+          <div className="coled">
+            <Link to={url0}>
+              <img src={logo} className="App-logo pulse" alt="logo" />
+            </Link>
+          </div>
+          <div className="coled">
+            <NavMenu/>
+          </div>
+          <div className="coled">
+            <h3>Your Guide to Pelican Town</h3>
+            <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
+          </div>
+        </header>
 
         {/* BODY components, active content chosen by <NavMenu/>  */}
         <section>
           <Route path="/" exact component={Index} />
           <Route path="/bundles/"
             render={props =>
-            (<Bundles {...props} categoricals={this.state.bundles} allGrowthStages={this.state.allGrowthStages}/>)
+            (<Bundles {...props} categoricals={this.state.bundles} />)
             }
           />
           <Route path="/forage/"
             render={props =>
-            (<Forage {...props} categoricals={this.state.forage} allGrowthStages={this.state.allGrowthStages}/>)
+            (<Forage {...props} categoricals={this.state.forage} />)
             }
           />
           <Route path="/crops/"
             render={props =>
-            (<Crops {...props} categoricals={this.state.crops} allGrowthStages={this.state.allGrowthStages}/>)
+            (<Crops {...props} categoricals={this.state.crops} />)
             }
           />
           <Route path="/minerals/"
             render={props =>
-            (<Minerals {...props} categoricals={this.state.minerals} allGrowthStages={this.state.allGrowthStages}/>)
+            (<Minerals {...props} categoricals={this.state.minerals} />)
             }
           />
           <Route path="/fish/"
             render={props =>
-            (<Fish {...props} categoricals={this.state.fish} allGrowthStages={this.state.allGrowthStages}/>)
+            (<Fish {...props} categoricals={this.state.fish} />)
             }
           />
         </section>
@@ -171,5 +142,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
