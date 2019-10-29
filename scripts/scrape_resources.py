@@ -1,8 +1,8 @@
-# GOAL OF THIS SOFTWARE: print Bundle name & image URL info in Terminal, then download each image item into a png
+# GOAL OF THIS SOFTWARE: print scraped data in Terminal
 ## please install PYTHON3, CHROMEDRIVER, SELENIUM, then proceed
 ### then enter in Terminal ```pip install -r setup.py```
 #### NOW, you can run this script in Terminal with ```python3 scrape_bundles.py```
-##### reuse & recycle & have a nice day
+##### ♲ reuse & recycle & have a nice day ♲
 
 # headless browser
 from selenium import webdriver
@@ -49,9 +49,19 @@ except TimeoutException:
 #
 ##
 ###
-
+# so we are scraping the URL above {url_this_time} for info...
+# confirm the next bit yourself with Inspect in your browser, then modify this script as YOU need w this guide:
+# https://gist.github.com/LeCoupa/8c305ec8c713aad07b14
+# ENJOY CODING
+#
+# the URL target has info we need: this XPATH selector id's only the HTML we want
+# it's always listed (are <ul><li>s) inside <div> elements w this ⬇️ class prop, and they are all ⬇️ <a> elements
 results = browser.find_elements_by_xpath("//div[@class='mw-category-group']/ul/li/a")
+# now let's collect the exact prop from these HTML elements
 result_s = [x.get_attribute('href') for x in results]
-for result_s in zip(result_s):
+# and print them all to Terminal
+for result_s in result_s:
     print(result_s)
 print(f"This concludes the scraping of: {url_this_time}")
+# ENJOY CODING
+##### ♲ reuse & recycle & have a nice day ♲
