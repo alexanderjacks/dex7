@@ -32,44 +32,26 @@ browser = webdriver.Chrome(executable_path='./chromedriver', chrome_options=opti
 # surfs to this URL
 page_this_time = 'Resources'
 url_this_time = f"https://stardewvalleywiki.com/Category:{page_this_time}"
-print(url_this_time)
-# browser.get(url_this_time)
+print(f"Let's scrape this site: {url_this_time}")
+browser.get(url_this_time)
+
+
+###
+##
+# internet lag timeout (error handling)
+timeout = 30
+try:
+	# checking for element on page, to test connection (the only <li> with id='pt-createaccount' )
+	WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.XPATH, "//li[@id='pt-createaccount']")))
+except TimeoutException:
+	print("This page takes too long to load-- try again?")
+	browser.quit()
 #
-#
-# ###
-# ##
-# # internet lag timeout (error handling)
-# timeout = 30
-# try:
-# 	# checking for element on page, to test connection (the only <li> with id='pt-createaccount' )
-# 	WebDriverWait(browser, timeout).until(EC.visibility_of_element_located((By.XPATH, "//li[@id='pt-createaccount']")))
-# except TimeoutException:
-# 	print("This page takes too long to load-- try again?")
-# 	browser.quit()
-# #
-# ##
-# ###
-#
-#
-# ### scraping Bundle info; 2 metadata elements: name & image alt
-#
-# # scraping bundle images, they are the only element w width='136'
-# results = browser.find_elements_by_xpath('div[@class="mw-category-group"]//h3')
-# # parsing returned objects into desired items ('list comprehension')
-# scraped_stuff_name = [x for x in results]
-#
-# ### display scraping results in Terminal
-#
-# print('Resources which have gotten scraped:')
-# ## zip() matches the scraped elements to each other
-# for scraped_stuff_name in scraped_stuff_name:
-# 	h3_text = scraped_stuff_name
-# #	test of variables
-# 	print("Script found: " + h3_text + " when it ran\n")
-# ### next step is to save each image to a local file
-# #	download image
-# 	# rawImgData = requests.get(image_URL, stream=True)
-# #	create a file & save (write) the raw (binary) image data (ergo 'wb')
-# 	# with open(png_name, 'wb') as fd:
-# 	# 	for chunk in rawImgData.iter_content(chunk_size=1024):
-# 	# 		fd.write(chunk)
+##
+###
+
+results = browser.find_elements_by_xpath("//div[@class='mw-category-group']/ul/li/a")
+result_s = [x.get_attribute('href') for x in results]
+for result_s in zip(result_s):
+    print(result_s)
+print(f"This concludes the scraping of: {url_this_time}")
