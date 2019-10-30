@@ -23,7 +23,7 @@ option = webdriver.ChromeOptions()
 option.add_argument("--incognito")
 
 # launches Chrome
-browser = webdriver.Chrome(executable_path='./chromedriver', chrome_options=option)
+browser = webdriver.Chrome(executable_path='./chromedriver', options=option)
 
 # grab text of any <li> any level inside of class="mw-category-group"
 # 'div[@class="mw-category-group"]//h3'
@@ -58,7 +58,7 @@ except TimeoutException:
 # it's always listed (are <ul><li>s) inside <div> elements w this ⬇️ class prop, and they are all ⬇️ <a> elements
 results = browser.find_elements_by_xpath("//div[@class='mw-category-group']/ul/li/a")
 # now let's collect the exact prop from these HTML elements
-result_s = [x.get_attribute('href') for x in results]
+result_s = [x.get_attribute('title') for x in results]
 # and print them all to Terminal
 for result_s in result_s:
     print(result_s)
