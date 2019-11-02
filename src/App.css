@@ -41,7 +41,7 @@ FormControl { color: white; }
   padding: 2rem 0 2rem 0;
   background-image: linear-gradient(to left, #4ea128, #3f9cf7, #4ea128);
   width: 100vw;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 ul {
@@ -52,17 +52,15 @@ ul {
   justify-content: center;
 }
 
-.categorical {
-  margin: 0.25rem;  
+.responsive-stuff {
+  margin: 0.25rem;
   @media only screen and (max-width: 400px) {
     background-color: lightblue;
   }
   @media only screen and (max-width: 600px) {
-    max-width: 30vw;
     background-color: forestgreen;
   }
   @media only screen and (max-width: 900px) {
-    max-width: 24vw;
     background-color: lime;
   }
 

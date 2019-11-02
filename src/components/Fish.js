@@ -44,8 +44,8 @@ class Fish extends Component {
     });
     console.log("Sort Only River Fish Bundle");
   }
-  
-  componentWillMount() {      
+
+  componentWillMount() {
     console.log("Minerals need more recipes!");
     this.setState({categoricals: this.props.categoricals});
   }
@@ -84,12 +84,12 @@ class Fish extends Component {
 
 			</span>
             <span className="coled">
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
-	            className="item-border" 
+	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+	            className="item-border"
 	            alt={item.Name}
 	            />
 	            <h3>{item.BasePrice}g</h3>
-              <h4>{item.ChallengePlusBehavior}</h4>
+              <h4>{item.Behaviour}&nbsp;{item.ChallengeScore}</h4>
             </span>
             {/* display metadata on right */}
           </div>
@@ -97,19 +97,21 @@ class Fish extends Component {
             <h4 class="text-shadow-white">
               <hr/>
               <div className="max400px">
-                {item.Notes && <h4>🔎 {item.Notes}</h4>}
-                <h5>{item.Description && 
-                	<span>📕: {item.Description} </span>
-                }</h5>
+                {item.Notes &&
+                  <h4>🔎 {item.Notes}</h4>}
+                {item.Description &&
+                  <h4>
+                	📕: {item.Description}
+                  </h4>
+                }
               </div>
               {/* could use refactoring into own Uses/Bundles component */}
-              {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
               <span className="coled">
               	{item.Uses && item.Uses.map(
               		(Use) => (
                     <span>
-                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')} 
-                      className="item-border" 
+                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')}
+                      className="item-border"
                       alt={item.Use}
                     />
                     <h4>{
@@ -136,7 +138,7 @@ class Fish extends Component {
 
     return (
       <div className="App">
-        
+
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending"onClick={this.sortByPriceAsc}>
@@ -164,7 +166,7 @@ class Fish extends Component {
                   <span>🚥</span>
               </Button>
             </a>*/}
-            
+
         </div>
 
         {/* BODY component, content sorted by HEADER */}

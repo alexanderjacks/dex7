@@ -29,8 +29,10 @@ browser = webdriver.Chrome(executable_path='./chromedriver', options=option)
 # 'div[@class="mw-category-group"]//h3'
 # // any h3 in a div with class 'mw-category-group'
 
+
+
 # surfs to this URL
-page_this_time = 'Resources'
+page_this_time = 'Farm_buildings'
 url_this_time = f"https://stardewvalleywiki.com/Category:{page_this_time}"
 print(f"Let's scrape this site: {url_this_time}")
 browser.get(url_this_time)

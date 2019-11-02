@@ -1,0 +1,1196 @@
+{
+  "minerals":
+    {
+      "Name": "Quartz",
+      "BasePrice": 25,
+      "Type": "Gem",
+      "Location": "Quartz",
+      "Mine_Lvl": "All",
+      "Panning": "No",
+      "Uses": ["Geologist's Bundle", "Refined Quartz"]
+    },
+    {
+      "Name": "Earth Crystal",
+      "BasePrice": 50,
+      "Type": "Gem",
+      "Location": "Earth Crystal",
+      "Mine_Lvl": "1-39",
+      "Panning": "Yes",
+      "Uses": ["Geologist's Bundle", "Mayonnaise Machine", "Sturdy Ring"]
+    },
+    {
+      "Name": "Frozen Tear",
+      "BasePrice": 75,
+      "Type": "Gem",
+      "Location": "Frozen Tear",
+      "Mine_Lvl": "41-79",
+      "Panning": "Yes",
+      "Uses": ["Geologist's Bundle", "Warrior Ring"]
+    },
+    {
+      "Name": "Topaz",
+      "BasePrice": 80,
+      "Type": "Gem",
+      "Location": ["Topaz Node", "Gem Node"],
+      "Mine_Lvl": "All",
+      "Panning": "Yes"
+    },
+    {
+      "Name": "Amethyst",
+      "BasePrice": 100,
+      "Type": "Gem",
+      "Location": ["Amethyst Node", "Gem Node"],
+      "Mine_Lvl": "All",
+      "Panning": "Yes"
+    },
+    {
+      "Name": "Fire Quartz",
+      "BasePrice": 100,
+      "Type": "Gem",
+      "Location": "Fire Quarz",
+      "Mine_Lvl": "81-120",
+      "Panning": "Yes",
+      "Uses": ["Geologist's Bundle", "Slime Egg-Press"]
+    },
+    {
+      "Name": "Aquamarine",
+      "BasePrice": 180,
+      "Type": "Gem",
+      "Location": ["Aquamarine Node", "Gem Note", "Fishing Chest"],
+      "Mine_Lvl": "41-120",
+      "Panning": "Yes",
+      "Uses": ["Dye Bundle"]
+    },
+    {
+      "Name": "Jade",
+      "BasePrice": 200,
+      "Type": "Gem",
+      "Location": ["Jade Node", "Gem Node"],
+      "Mine_Lvl": "41-120",
+      "Panning": "Yes"
+    },
+    {
+      "Name": "Emerald",
+      "BasePrice": 250,
+      "Type": "Gem",
+      "Location": ["Emerald Node", "Gem Node"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Ruby",
+      "BasePrice": 250,
+      "Type": "Gem",
+      "Location": ["Ruby Node", "Gem Node"],
+      "Mine_Lvl": "81-120",
+      "Panning": "Yes"
+    },
+    {
+      "Name": "Diamond",
+      "BasePrice": 750,
+      "Type": "Gem",
+      "Location": ["Diamond Node", "Gem Node"],
+      "Mine_Lvl": "50-120",
+      "Panning": "Yes",
+      "Uses": ["Ring of Yoba"]
+    },
+    {
+      "Name": "Prismatic Shard",
+      "BasePrice": 2000,
+      "Type": "Gem",
+      "Location": ["Iridium Node", "Mystic Stone", "Omni Geode"],
+      "Mine_Lvl": "?",
+      "Panning": "No",
+      "Uses": ["Doesn't work with Crystalarium"]
+    },
+    {
+      "Name": "Geode",
+      "BasePrice": 0,
+      "Type": "Geode",
+      "Location": "-",
+      "Mine_Lvl": "1-39",
+      "Panning": "No"
+    },
+    {
+      "Name": "Frozen Geode",
+      "BasePrice": 0,
+      "Type": "Geode",
+      "Location": ["Fishing Chest","Frozen Node"],
+      "Mine_Lvl": "41-79",
+      "Panning": "No"
+    },
+    {
+      "Name": "Magma Geode",
+      "BasePrice": 0,
+      "Type": "Geode",
+      "Location": "The Mines",
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Omni Geode",
+      "BasePrice": 0,
+      "Type": "Geode",
+      "Location": ["Farm", "The Mine", "The Desert"],
+      "Mine_Lvl": "All",
+      "Panning": "Yes"
+    },
+    {
+      "Name": "Limestone",
+      "BasePrice": 15,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Mudstone",
+      "BasePrice": 25,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Baryte",
+      "BasePrice": 50,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Sandstone",
+      "BasePrice": 60,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Calcite",
+      "BasePrice": 75,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Granite",
+      "BasePrice": 75,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Nekoite",
+      "BasePrice": 80,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Orpiment",
+      "BasePrice": 80,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Slate",
+      "BasePrice": 85,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Esperite",
+      "BasePrice": 100,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Malachite",
+      "BasePrice": 100,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Thunder Egg",
+      "BasePrice": 100,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Marble",
+      "BasePrice": 110,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No",
+      "Uses": ["Marble Brazier"]
+    },
+    {
+      "Name": "Jagoite",
+      "BasePrice": 115,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Petrified Slime",
+      "BasePrice": 120,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Pyrite",
+      "BasePrice": 120,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Soapstone",
+      "BasePrice": 120,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Aerinite",
+      "BasePrice": 125,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Celestine",
+      "BasePrice": 125,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Alamite",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Geminite",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Jamborite",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Geode", "Omni Geode"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Jasper",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Opal",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Hematite",
+      "BasePrice": 150,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Basalt",
+      "BasePrice": 175,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Fluorapatite",
+      "BasePrice": 200,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Lunarite",
+      "BasePrice": 200,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Lemon Stone",
+      "BasePrice": 200,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Ghost Crystal",
+      "BasePrice": 200,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Obsidian",
+      "BasePrice": 200,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Ocean Stone",
+      "BasePrice": 220,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Kyanite",
+      "BasePrice": 250,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Fairy Stone",
+      "BasePrice": 250,
+      "Type": "Mineral",
+      "Location": ["Frozen Geode", "Omni Geode"],
+      "Mine_Lvl": "41-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Tigerseye",
+      "BasePrice": 275,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Bixite",
+      "BasePrice": 300,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Dolomite",
+      "BasePrice": 300,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Fire Opal",
+      "BasePrice": 350,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Helvite",
+      "BasePrice": 450,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Star Shards",
+      "BasePrice": 500,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Neptunite",
+      "BasePrice": 553,
+      "Type": "Mineral",
+      "Location": ["Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "No"
+    },
+    {
+      "Name": "Copper Ore",
+      "BasePrice": 5,
+      "Type": "Ore",
+      "Location": ["The Mines"],
+      "Mine_Lvl": "All",
+      "Panning": "Yes",
+      "Uses": ["Furnace", "Copper Bar"]
+    },
+    {
+      "Name": "Iron Ore",
+      "BasePrice": 10,
+      "Type": "Ore",
+      "Location": ["The Mines", "Most common: 41-72"],
+      "Mine_Lvl": "41-120",
+      "Panning": "Yes",
+      "Uses": ["Iron Bar"]
+    },
+    {
+      "Name": "Coal",
+      "BasePrice": 15,
+      "Type": "Ore",
+      "Location": ["The Mines", "Most common: 60-90"],
+      "Mine_Lvl": "All",
+      "Panning": "?",
+      "Uses": ["Scarecrow"]
+    },
+    {
+      "Name": "Gold Ore",
+      "BasePrice": 25,
+      "Type": "Ore",
+      "Location": ["The Mines", "Most common: ??-??"],
+      "Mine_Lvl": "81-120",
+      "Panning": "Yes",
+      "Uses": ["Gold Bar"]
+    },
+    {
+      "Name": "Iridium Ore",
+      "BasePrice": 100,
+      "Type": "Ore",
+      "Location": ["Skull Cavern", "Meteor", "Quarry", "Magma Geode", "Omni Geode"],
+      "Mine_Lvl": "81-120",
+      "Panning": "?",
+      "Uses": ["Iridium Bar"]
+    },
+    {
+      "Name": "Refined Quartz",
+      "BasePrice": 50,
+      "Type": "Refined",
+      "Location": ["Furnace", "Quartz (1)", "Coal (1)"],
+      "Mine_Lvl": "All",
+      "Panning": "No",
+      "Uses": ["Crystal Path", "Crystal Floor", "Quality Sprinkler", "Garden Pot", "Sturdy Ring", "Lightning Rod"]
+    },
+    {
+      "Name": "Copper Bar",
+      "BasePrice": 60,
+      "Type": "Refined",
+      "Location": ["Furnace", "Copper Ore (5)", "Coal (1)"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Iron Bar",
+      "BasePrice": 120,
+      "Type": "Refined",
+      "Location": ["Furnace", "Iron Ore (5)", "Coal (1)"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Gold Bar",
+      "BasePrice": 250,
+      "Type": "Refined",
+      "Location": ["Furnace", "Gold Ore (5)", "Coal (1)"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    },
+    {
+      "Name": "Iridium Bar",
+      "BasePrice": 1000,
+      "Type": "Refined",
+      "Location": ["Furnace", "Iridium Ore (5)", "Coal (1)"],
+      "Mine_Lvl": "All",
+      "Panning": "No"
+    }
+  ,
+  fish: {
+    {
+      "Name": "Pufferfish",
+      "Description": "Inflates when threatened.",
+      "BasePrice": 200,
+      "Location": ["Ocean"],
+      "Time": ["12pm – 4pm"],
+      "Season": ["Summer"],
+      "Weather": ["Sun"],
+      "Size (inches)": "1-37",
+      "ChallengeScore": "80 floater",
+      "BaseXP": 29,
+      "Uses": ["Specialty Fish Bundle","Abigail","'Aquatic Research' Quest"]
+    },
+    {
+      "Name": "Anchovy",
+      "Description": "A small silver fish found in the ocean.",
+      "BasePrice": 30,
+      "Location": ["Ocean"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "1-17",
+      "ChallengeScore": "30 dart",
+      "BaseXP": 13
+    },
+    {
+      "Name": "Tuna",
+      "Description": "A large fish that lives in the ocean.",
+      "BasePrice": 100,
+      "Location": ["Ocean"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "23-61",
+      "ChallengeScore": "70 smooth",
+      "BaseXP": 26,
+      "Uses": ["Ocean Fish Bundle","Fish Taco"]
+    },
+    {
+      "Name": "Sardine",
+      "Description": "A common ocean fish.",
+      "BasePrice": 40,
+      "Location": ["Ocean"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Spring","Fall","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "1-13",
+      "ChallengeScore": "30 dart",
+      "BaseXP": 13,
+      "Uses": ["Ocean Fish Bundle","Dish o' The Sea"]
+    },
+    {
+      "Name": "Bream",
+      "Description": "A fairly common river fish that becomes active at night.",
+      "BasePrice": 45,
+      "Location": ["River"],
+      "Time": ["6pm – 2am"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-31",
+      "ChallengeScore": "35 smooth",
+      "BaseXP": 14,
+      "Uses": ["Night Fishing Bundle","Baked Fish"]
+    },
+    {
+      "Name": "Largemouth Bass",
+      "Description": "A popular fish that lives in lakes.",
+      "BasePrice": 100,
+      "Location": ["Lake"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "11-31",
+      "ChallengeScore": "50 mixed",
+      "BaseXP": 19,
+      "Uses": ["Lake Fish Bundle","Crispy Bass","'Fish Casserole' Quest"]
+    },
+    {
+      "Name": "Smallmouth Bass",
+      "Description": "A freshwater fish that is very sensitive to pollution.",
+      "BasePrice": 50,
+      "Location": ["River","Secret Woods"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-25",
+      "ChallengeScore": "28 mixed",
+      "BaseXP": 12
+    },
+    {
+      "Name": "Rainbow Trout",
+      "Description": "A freshwater trout with colorful markings.",
+      "BasePrice": 65,
+      "Location": ["River","Lake"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer"],
+      "Weather": ["Sun"],
+      "Size (inches)": "10-26",
+      "ChallengeScore": "45 mixed",
+      "BaseXP": 18,
+      "Uses": ["Trout Soup"]
+    },
+    {
+      "Name": "Salmon",
+      "Description": "Swims upstream to lay its eggs.",
+      "BasePrice": 75,
+      "Location": ["River"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "24-66",
+      "ChallengeScore": "50 mixed",
+      "BaseXP": 19,
+      "Uses": ["Salmon Dinner"]
+    },
+    {
+      "Name": "Walleye",
+      "Description": "A freshwater fish caught at night.",
+      "BasePrice": 105,
+      "Location": ["River","Secret Woods","Lake"],
+      "Time": ["12pm – 2am"],
+      "Season": ["Fall","Winter"],
+      "Weather": ["Rain"],
+      "Size (inches)": "10-41",
+      "ChallengeScore": "45 smooth",
+      "BaseXP": 18,
+      "Uses": ["Night Fishing Bundle"],
+      "Notes": "Winter (with Rain Totem)"
+    },
+    {
+      "Name": "Perch",
+      "Description": "A freshwater fish of the winter.",
+      "BasePrice": 55,
+      "Location": ["River","Secret Woods","Lake"],
+      "Time": ["Anytime"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "10-25",
+      "ChallengeScore": "35 mixed",
+      "BaseXP": 14
+    },
+    {
+      "Name": "Carp",
+      "Description": "A common fish.",
+      "BasePrice": 30,
+      "Location": ["Lake","Secret Woods","The Sewers"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "15-51",
+      "ChallengeScore": "15 mixed",
+      "BaseXP": 8,
+      "Uses": ["Lake Fish Bundle","Carp Surprise"]
+    },
+    {
+      "Name": "Catfish",
+      "Description": "An uncommon fish found in streams.",
+      "BasePrice": 200,
+      "Location": ["River","Secret Woods","Witchs Swamp"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall"],
+      "Weather": ["Rain"],
+      "Size (inches)": "12-73",
+      "ChallengeScore": "75 mixed",
+      "BaseXP": 28,
+      "Uses": ["River Fish Bundle","Willy"]
+    },
+    {
+      "Name": "Pike",
+      "Description": "A freshwater fish that's difficult to catch.",
+      "BasePrice": 100,
+      "Location": ["River","Secret Woods"],
+      "Time": ["Anytime"],
+      "Season": ["Summer","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "15-61",
+      "ChallengeScore": "60 dart",
+      "BaseXP": 23
+    },
+    {
+      "Name": "Sunfish",
+      "Description": "A common river fish.",
+      "BasePrice": 30,
+      "Location": ["River"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Spring","Summer"],
+      "Weather": ["Sun","Wind"],
+      "Size (inches)": "5-16",
+      "ChallengeScore": "30 mixed",
+      "BaseXP": 13,
+      "Uses": ["River Fish Bundle","Baked Fish"]
+    },
+    {
+      "Name": "Red Mullet",
+      "Description": "Long ago these were kept as pets.",
+      "BasePrice": 75,
+      "Location": ["Ocean"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-23",
+      "ChallengeScore": "55 smooth",
+      "BaseXP": 21
+    },
+    {
+      "Name": "Herring",
+      "Description": "A common ocean fish.",
+      "BasePrice": 30,
+      "Location": ["Ocean"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-21",
+      "ChallengeScore": "25 dart",
+      "BaseXP": 11
+    },
+    {
+      "Name": "Eel",
+      "Description": "A long, slippery little fish.",
+      "BasePrice": 85,
+      "Location": ["Ocean"],
+      "Time": ["4pm – 2am"],
+      "Season": ["Spring","Fall"],
+      "Weather": ["Rain"],
+      "Size (inches)": "12-81",
+      "ChallengeScore": "70 smooth",
+      "BaseXP": 26,
+      "Uses": ["Night Fishing Bundle","Fried Eel","Spicy Eel"]
+    },
+    {
+      "Name": "Octopus",
+      "Description": "A mysterious and intelligent creature.",
+      "BasePrice": 150,
+      "Location": ["Ocean"],
+      "Time": ["6am – 1pm"],
+      "Season": ["Summer"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-49",
+      "ChallengeScore": "95 sinker",
+      "BaseXP": 34,
+      "Uses": ["Willy"]
+    },
+    {
+      "Name": "Red Snapper",
+      "Description": "A popular fish with a nice red color.",
+      "BasePrice": 50,
+      "Location": ["Ocean"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer","Fall","Winter"],
+      "Weather": ["Rain"],
+      "Size (inches)": "8-26",
+      "ChallengeScore": "40 mixed",
+      "BaseXP": 16,
+      "Uses": ["Ocean Fish Bundle"],
+      "Notes": "Winter (with Rain Totem)"
+    },
+    {
+      "Name": "Squid",
+      "Description": "A deep sea creature that can grow to enormous size.",
+      "BasePrice": 80,
+      "Location": ["Ocean"],
+      "Time": ["6pm – 2am"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-49",
+      "ChallengeScore": "75 sinker",
+      "BaseXP": 28,
+      "Uses": ["Fried Calamari","'Catch a Squid' Quest"]
+    },
+    {
+      "Name": "Sea Cucumber",
+      "Description": "A slippery, slimy creature found on the ocean floor.",
+      "BasePrice": 75,
+      "Location": ["Ocean"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Fall","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "3-21",
+      "ChallengeScore": "40 sinker",
+      "BaseXP": 16,
+      "Uses": ["Lucky Lunch","Willy"]
+    },
+    {
+      "Name": "Super Cucumber",
+      "Description": "A rare, purple variety of sea cucumber.",
+      "BasePrice": 250,
+      "Location": ["Ocean"],
+      "Time": ["6pm – 2am"],
+      "Season": ["Summer","Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-37",
+      "ChallengeScore": "80 sinker",
+      "BaseXP": 29,
+      "Uses": ["Wizard"]
+    },
+    {
+      "Name": "Ghostfish",
+      "Description": "A pale, blind fish found in underground lakes.",
+      "BasePrice": 45,
+      "Location": ["The Mines"],
+      "Notes": "Floor 20. Requires fishing level 3. Also drops from Ghost.",
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "10-36",
+      "ChallengeScore": "50 mixed",
+      "BaseXP": 19,
+      "Uses": ["Specialty Fish Bundle"]
+    },
+    {
+      "Name": "Stonefish",
+      "Description": "A bizarre fish that's shaped like a brick.",
+      "BasePrice": 300,
+      "Location": ["The Mines"],
+      "Notes": "Floor 20. Requires fishing level 3",
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "14-16",
+      "ChallengeScore": "65 sinker",
+      "BaseXP": 24
+    },
+    {
+      "Name": "Ice Pip",
+      "Description": "A rare fish that thrives in extremely cold conditions.",
+      "BasePrice": 500,
+      "Location": ["The Mines"],
+      "Notes": "Floor 60. Requires fishing level 5",
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "7-9",
+      "ChallengeScore": "85 dart",
+      "BaseXP": 31
+    },
+    {
+      "Name": "Lava Eel",
+      "Description": "It can somehow survive in pools of red-hot lava.",
+      "BasePrice": 700,
+      "Location": ["The Mines"],
+      "Notes": ["Floor 100. Requires fishing level 7"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "31-33",
+      "ChallengeScore": "90 mixed",
+      "BaseXP": 33
+    },
+    {
+      "Name": "Sandfish",
+      "Description": "It tries to hide using camouflage.",
+      "BasePrice": 75,
+      "Location": ["The Desert"],
+      "Time": ["6am – 8pm"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-24",
+      "ChallengeScore": "65 mixed",
+      "BaseXP": 24,
+      "Uses": ["Specialty Fish Bundle","Penny"]
+    },
+    {
+      "Name": "Scorpion Carp",
+      "Description": "It's like a regular carp but with a sharp stinger.",
+      "BasePrice": 150,
+      "Location": ["The Desert"],
+      "Notes": ["Requires fishing level 4"],
+      "Time": ["6am – 8pm"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-32",
+      "ChallengeScore": "90 dart",
+      "BaseXP": 33
+    },
+    {
+      "Name": "Sturgeon",
+      "Description": "An ancient bottom-feeder with a dwindling population. Females can live up to 150 years.",
+      "BasePrice": 200,
+      "Location": ["Lake"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-61",
+      "ChallengeScore": "78 mixed",
+      "BaseXP": 29,
+      "Uses": ["Lake Fish Bundle","Willy"]
+    },
+    {
+      "Name": "Tiger Trout",
+      "Description": "A rare hybrid trout that cannot bear offspring of its own.",
+      "BasePrice": 150,
+      "Location": ["River"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Fall","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "10-21",
+      "ChallengeScore": "60 dart",
+      "BaseXP": 23,
+      "Uses": ["River Fish Bundle"]
+    },
+    {
+      "Name": "Bullhead",
+      "Description": "A relative of the catfish that eats a variety of foods off the lake bottom.",
+      "BasePrice": 75,
+      "Location": ["Lake"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-31",
+      "ChallengeScore": "46 smooth",
+      "BaseXP": 18,
+      "Uses": ["Lake Fish Bundle"]
+    },
+    {
+      "Name": "Tilapia",
+      "Description": "A primarily vegetarian fish that prefers warm water.",
+      "BasePrice": 75,
+      "Location": ["Ocean"],
+      "Time": ["6am – 2pm"],
+      "Season": ["Summer","Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "11-31",
+      "ChallengeScore": "50 mixed",
+      "BaseXP": 19,
+      "Uses": ["Ocean Fish Bundle"]
+    },
+    {
+      "Name": "Chub",
+      "Description": "A common freshwater fish known for its voracious appetite.",
+      "BasePrice": 50,
+      "Location": ["River","Lake"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "12-25",
+      "ChallengeScore": "35 dart",
+      "BaseXP": 14,
+      "Uses": ["Field Research Bundle"]
+    },
+    {
+      "Name": "Dorado",
+      "Description": "A fierce carnivore with brilliant orange scales.",
+      "BasePrice": 100,
+      "Location": ["River"],
+      "Time": ["6am – 7pm"],
+      "Season": ["Summer"],
+      "Weather": ["Any"],
+      "Size (inches)": "24-33",
+      "ChallengeScore": "78 mixed",
+      "BaseXP": 29
+    },
+    {
+      "Name": "Albacore",
+      "Description": "Prefers temperature 'edges' where cool and warm water meet.",
+      "BasePrice": 75,
+      "Location": ["Ocean"],
+      "Time": ["6am – 11am","6pm – 2am"],
+      "Season": ["Fall","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "20-41",
+      "ChallengeScore": "60 mixed",
+      "BaseXP": 23,
+      "Uses": ["'Fish Stew' Quest"]
+    },
+    {
+      "Name": "Shad",
+      "Description": "Lives in a school at sea, but returns to the rivers to spawn.",
+      "BasePrice": 60,
+      "Location": ["River"],
+      "Time": ["9am – 2am"],
+      "Season": ["Spring","Summer","Fall"],
+      "Weather": ["Rain"],
+      "Size (inches)": "20-49",
+      "ChallengeScore": "45 smooth",
+      "BaseXP": 18,
+      "Uses": ["River Fish Bundle"]
+    },
+    {
+      "Name": "Lingcod",
+      "Description": "A fearsome predator that will eat almost anything it can cram into its mouth.",
+      "BasePrice": 120,
+      "Location": ["River","Lake"],
+      "Time": ["Anytime"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "30-51",
+      "ChallengeScore": "85 mixed",
+      "BaseXP": 31,
+      "Uses": ["'Catch a Lingcod' Quest"]
+    },
+    {
+      "Name": "Halibut",
+      "Description": "A flat fish that lives on the ocean floor.",
+      "BasePrice": 80,
+      "Location": ["Ocean"],
+      "Time": ["6am – 11am","7pm – 2am"],
+      "Season": ["Spring","Summer","Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "10-34",
+      "ChallengeScore": "50 sinker",
+      "BaseXP": 19
+    },
+    {
+      "Name": "Woodskip",
+      "Description": "A very sensitive fish that can only live in pools deep in the forest.",
+      "BasePrice": 75,
+      "Location": ["Secret Woods","Forest Farm"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "11-30",
+      "ChallengeScore": "50 mixed",
+      "BaseXP": 19,
+      "Uses": ["Specialty Fish Bundle"]
+    },
+    {
+      "Name": "Blobfish",
+      "Description": "This odd creature floats above the ocean floor, consuming any edible material in its path.",
+      "BasePrice": 500,
+      "Location": ["Night Market"],
+      "Time": ["5pm - 2am"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-25",
+      "ChallengeScore": "75 floater",
+      "BaseXP": 28
+    },
+    {
+      "Name": "Midnight Squid",
+      "Description": "A strange and mysterious denizen of the ocean's twilight depths.",
+      "BasePrice": 100,
+      "Location": ["Night Market"],
+      "Time": ["5pm - 2am"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-25",
+      "ChallengeScore": "55 sinker",
+      "BaseXP": 21
+    },
+    {
+      "Name": "Spook Fish",
+      "Description": "The huge eyes can detect the faint silhouettes of prey.",
+      "BasePrice": 220,
+      "Location": ["Night Market"],
+      "Time": ["5pm - 2am"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-25",
+      "ChallengeScore": "60 dart",
+      "BaseXP": 23
+    },
+    {
+      "Name": "Void Salmon",
+      "Description": "A salmon, twisted by void energy. The fresh meat is jet black, but rapidly turns pink when exposed to air.",
+      "BasePrice": 150,
+      "Location": ["Witchs Swamp"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "24-66",
+      "ChallengeScore": "80 mixed",
+      "BaseXP": 29
+    },
+    {
+      "Name": "Mutant Carp",
+      "Description": "The strange waters of the sewer turned this carp into a monstrosity.",
+      "BasePrice": 1000,
+      "Location": ["The Sewers"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "35-37",
+      "ChallengeScore": "80 dart",
+      "BaseXP": 145,
+      "Notes": "Easiest legendary fish?"
+    },
+    {
+      "Name": "Angler",
+      "Description": "Uses a bioluminescent dangler to attract prey.",
+      "BasePrice": 900,
+      "Location": ["Special"],
+      "Time": ["Anytime"],
+      "Season": ["Fall"],
+      "Weather": ["Any"],
+      "Size (inches)": "17-19",
+      "ChallengeScore": "85 smooth",
+      "BaseXP": 29,
+      "Notes": "North of JojaMart on the wooden plank bridge. Requires level 3 fishing."
+    },
+    {
+      "Name": "Glacierfish",
+      "Description": "Builds a nest on the underside of glaciers.",
+      "BasePrice": 1000,
+      "Location": ["Special"],
+      "Time": ["Anytime"],
+      "Season": ["Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "26-28",
+      "ChallengeScore": "100 mixed",
+      "BaseXP": 180,
+      "Notes": "South end of Arrowhead Island in Cindersap Forest. Deep water. Requires level 7 fishing."
+    },
+    {
+      "Name": "Crimsonfish",
+      "Description": "Lives deep in the ocean but likes to lay its eggs in the warm summer water.",
+      "BasePrice": 1500,
+      "Location": ["Special"],
+      "Time": ["Anytime"],
+      "Season": ["Summer"],
+      "Weather": ["Any"],
+      "Size (inches)": "19-21",
+      "ChallengeScore": "95 mixed",
+      "BaseXP": 170,
+      "Notes": "East Pier on The Beach. Deep water. Requires level 5 fishing."
+    },
+    {
+      "Name": "Legend",
+      "Description": "The king of all fish! They said he'd never be caught.",
+      "BasePrice": 5000,
+      "Location": ["Special"],
+      "Time": ["Anytime"],
+      "Season": "Spring",
+      "Weather": ["Rain"],
+      "Size (inches)": "49-51",
+      "ChallengeScore": "110 mixed",
+      "BaseXP": 195,
+      "Notes": "The Mountain Lake near the log. Requires level 10 fishing."
+    },
+    {
+      "Name": "Slimejack",
+      "Description": "He's coated in a very thick layer of slime. He keeps slipping out of your hands!",
+      "BasePrice": 100,
+      "Location": ["Mutant Bug Lair"],
+      "Time": ["Anytime"],
+      "Season": ["Spring","Summer","Fall", "Winter"],
+      "Weather": ["Any"],
+      "Size (inches)": "8-26",
+      "ChallengeScore": "55 dart",
+      "BaseXP": 21
+    }
+  }
+}

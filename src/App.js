@@ -9,14 +9,19 @@ import './App.css';
 
 import forage from './forage.json';
 import crops from './crops.json';
-import minerals from './minerals.json';
 import fish from './fish.json';
+import minerals from './minerals.json';
 import bundles from './bundles.json';
 import Forage from './components/Forage.js';
 import Crops from './components/Crops.js';
 import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
+
+{/*
+const fish = full[fish];
+const minerals = full[minerals];
+*/}
 
 const url0 = '..'
 const url1 = '../forage'
@@ -68,6 +73,9 @@ function Index() {
       </div>
       <hr/>
       <p>Use the LISTS button to explore the site.</p>
+      <div className="responsive-stuff">
+        categorical
+      </div>
       <h6>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></h6>
     </div>
   );

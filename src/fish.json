@@ -8,7 +8,8 @@
     "Season": ["Summer"],
     "Weather": ["Sun"],
     "Size (inches)": "1-37",
-    "ChallengePlusBehavior": "80 floater",
+    "ChallengeScore": 80,
+    "Behaviour": "floater",
     "BaseXP": 29,
     "Uses": ["Specialty Fish Bundle","Abigail","'Aquatic Research' Quest"]
   },
@@ -21,7 +22,8 @@
     "Season": ["Spring","Fall"],
     "Weather": ["Any"],
     "Size (inches)": "1-17",
-    "ChallengePlusBehavior": "30 dart",
+    "ChallengeScore": 30,
+    "Behaviour": "dart",
     "BaseXP": 13
   },
   {
@@ -33,7 +35,8 @@
     "Season": ["Summer","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "23-61",
-    "ChallengePlusBehavior": "70 smooth",
+    "ChallengeScore": 70,
+    "Behaviour": "smooth",
     "BaseXP": 26,
     "Uses": ["Ocean Fish Bundle","Fish Taco"]
   },
@@ -46,7 +49,8 @@
     "Season": ["Spring","Fall","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "1-13",
-    "ChallengePlusBehavior": "30 dart",
+    "ChallengeScore": 30,
+    "Behaviour": "dart",
     "BaseXP": 13,
     "Uses": ["Ocean Fish Bundle","Dish o' The Sea"]
   },
@@ -59,7 +63,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-31",
-    "ChallengePlusBehavior": "35 smooth",
+    "ChallengeScore": 35,
+    "Behaviour": "smooth",
     "BaseXP": 14,
     "Uses": ["Night Fishing Bundle","Baked Fish"]
   },
@@ -72,7 +77,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "11-31",
-    "ChallengePlusBehavior": "50 mixed",
+    "ChallengeScore": 50,
+    "Behaviour": "mixed",
     "BaseXP": 19,
     "Uses": ["Lake Fish Bundle","Crispy Bass","'Fish Casserole' Quest"]
   },
@@ -85,7 +91,8 @@
     "Season": ["Spring","Fall"],
     "Weather": ["Any"],
     "Size (inches)": "12-25",
-    "ChallengePlusBehavior": "28 mixed",
+    "ChallengeScore": 28,
+    "Behaviour": "mixed",
     "BaseXP": 12
   },
   {
@@ -97,7 +104,8 @@
     "Season": ["Summer"],
     "Weather": ["Sun"],
     "Size (inches)": "10-26",
-    "ChallengePlusBehavior": "45 mixed",
+    "ChallengeScore": 45,
+    "Behaviour": "mixed",
     "BaseXP": 18,
     "Uses": ["Trout Soup"]
   },
@@ -110,7 +118,8 @@
     "Season": ["Fall"],
     "Weather": ["Any"],
     "Size (inches)": "24-66",
-    "ChallengePlusBehavior": "50 mixed",
+    "ChallengeScore": 50,
+    "Behaviour": "mixed",
     "BaseXP": 19,
     "Uses": ["Salmon Dinner"]
   },
@@ -123,7 +132,8 @@
     "Season": ["Fall","Winter"],
     "Weather": ["Rain"],
     "Size (inches)": "10-41",
-    "ChallengePlusBehavior": "45 smooth",
+    "ChallengeScore": 45,
+    "Behaviour": "smooth",
     "BaseXP": 18,
     "Uses": ["Night Fishing Bundle"],
     "Notes": "Winter (with Rain Totem)"
@@ -137,7 +147,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "10-25",
-    "ChallengePlusBehavior": "35 mixed",
+    "ChallengeScore": 35,
+    "Behaviour": "mixed",
     "BaseXP": 14
   },
   {
@@ -149,7 +160,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "15-51",
-    "ChallengePlusBehavior": "15 mixed",
+    "ChallengeScore": 15,
+    "Behaviour": "mixed",
     "BaseXP": 8,
     "Uses": ["Lake Fish Bundle","Carp Surprise"]
   },
@@ -162,7 +174,8 @@
     "Season": ["Spring","Summer","Fall"],
     "Weather": ["Rain"],
     "Size (inches)": "12-73",
-    "ChallengePlusBehavior": "75 mixed",
+    "ChallengeScore": 75,
+    "Behaviour": "mixed",
     "BaseXP": 28,
     "Uses": ["River Fish Bundle","Willy"]
   },
@@ -175,7 +188,8 @@
     "Season": ["Summer","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "15-61",
-    "ChallengePlusBehavior": "60 dart",
+    "ChallengeScore": 60,
+    "Behaviour": "dart",
     "BaseXP": 23
   },
   {
@@ -187,7 +201,8 @@
     "Season": ["Spring","Summer"],
     "Weather": ["Sun","Wind"],
     "Size (inches)": "5-16",
-    "ChallengePlusBehavior": "30 mixed",
+    "ChallengeScore": 30,
+    "Behaviour": "mixed",
     "BaseXP": 13,
     "Uses": ["River Fish Bundle","Baked Fish"]
   },
@@ -200,7 +215,8 @@
     "Season": ["Summer","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-23",
-    "ChallengePlusBehavior": "55 smooth",
+    "ChallengeScore": 55,
+    "Behaviour": "smooth",
     "BaseXP": 21
   },
   {
@@ -212,7 +228,8 @@
     "Season": ["Spring","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-21",
-    "ChallengePlusBehavior": "25 dart",
+    "ChallengeScore": 25,
+    "Behaviour": "dart",
     "BaseXP": 11
   },
   {
@@ -224,7 +241,8 @@
     "Season": ["Spring","Fall"],
     "Weather": ["Rain"],
     "Size (inches)": "12-81",
-    "ChallengePlusBehavior": "70 smooth",
+    "ChallengeScore": 70,
+    "Behaviour": "smooth",
     "BaseXP": 26,
     "Uses": ["Night Fishing Bundle","Fried Eel","Spicy Eel"]
   },
@@ -237,7 +255,8 @@
     "Season": ["Summer"],
     "Weather": ["Any"],
     "Size (inches)": "12-49",
-    "ChallengePlusBehavior": "95 sinker",
+    "ChallengeScore": 95,
+    "Behaviour": "sinker",
     "BaseXP": 34,
     "Uses": ["Willy"]
   },
@@ -250,7 +269,8 @@
     "Season": ["Summer","Fall","Winter"],
     "Weather": ["Rain"],
     "Size (inches)": "8-26",
-    "ChallengePlusBehavior": "40 mixed",
+    "ChallengeScore": 40,
+    "Behaviour": "mixed",
     "BaseXP": 16,
     "Uses": ["Ocean Fish Bundle"],
     "Notes": "Winter (with Rain Totem)"
@@ -264,7 +284,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-49",
-    "ChallengePlusBehavior": "75 sinker",
+    "ChallengeScore": 75,
+    "Behaviour": "sinker",
     "BaseXP": 28,
     "Uses": ["Fried Calamari","'Catch a Squid' Quest"]
   },
@@ -277,7 +298,8 @@
     "Season": ["Fall","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "3-21",
-    "ChallengePlusBehavior": "40 sinker",
+    "ChallengeScore": 40,
+    "Behaviour": "sinker",
     "BaseXP": 16,
     "Uses": ["Lucky Lunch","Willy"]
   },
@@ -290,7 +312,8 @@
     "Season": ["Summer","Fall"],
     "Weather": ["Any"],
     "Size (inches)": "12-37",
-    "ChallengePlusBehavior": "80 sinker",
+    "ChallengeScore": 80,
+    "Behaviour": "sinker",
     "BaseXP": 29,
     "Uses": ["Wizard"]
   },
@@ -304,7 +327,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "10-36",
-    "ChallengePlusBehavior": "50 mixed",
+    "ChallengeScore": 50,
+    "Behaviour": "mixed",
     "BaseXP": 19,
     "Uses": ["Specialty Fish Bundle"]
   },
@@ -318,7 +342,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "14-16",
-    "ChallengePlusBehavior": "65 sinker",
+    "ChallengeScore": 65,
+    "Behaviour": "sinker",
     "BaseXP": 24
   },
   {
@@ -331,7 +356,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "7-9",
-    "ChallengePlusBehavior": "85 dart",
+    "ChallengeScore": 85,
+    "Behaviour": "dart",
     "BaseXP": 31
   },
   {
@@ -344,7 +370,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "31-33",
-    "ChallengePlusBehavior": "90 mixed",
+    "ChallengeScore": 90,
+    "Behaviour": "mixed",
     "BaseXP": 33
   },
   {
@@ -356,7 +383,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-24",
-    "ChallengePlusBehavior": "65 mixed",
+    "ChallengeScore": 65,
+    "Behaviour": "mixed",
     "BaseXP": 24,
     "Uses": ["Specialty Fish Bundle","Penny"]
   },
@@ -370,7 +398,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-32",
-    "ChallengePlusBehavior": "90 dart",
+    "ChallengeScore": 90,
+    "Behaviour": "dart",
     "BaseXP": 33
   },
   {
@@ -382,7 +411,8 @@
     "Season": ["Summer","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-61",
-    "ChallengePlusBehavior": "78 mixed",
+    "ChallengeScore": 78,
+    "Behaviour": "mixed",
     "BaseXP": 29,
     "Uses": ["Lake Fish Bundle","Willy"]
   },
@@ -395,7 +425,8 @@
     "Season": ["Fall","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "10-21",
-    "ChallengePlusBehavior": "60 dart",
+    "ChallengeScore": 60,
+    "Behaviour": "dart",
     "BaseXP": 23,
     "Uses": ["River Fish Bundle"]
   },
@@ -408,7 +439,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-31",
-    "ChallengePlusBehavior": "46 smooth",
+    "ChallengeScore": 46,
+    "Behaviour": "smooth",
     "BaseXP": 18,
     "Uses": ["Lake Fish Bundle"]
   },
@@ -421,7 +453,8 @@
     "Season": ["Summer","Fall"],
     "Weather": ["Any"],
     "Size (inches)": "11-31",
-    "ChallengePlusBehavior": "50 mixed",
+    "ChallengeScore": 50,
+    "Behaviour": "mixed",
     "BaseXP": 19,
     "Uses": ["Ocean Fish Bundle"]
   },
@@ -434,7 +467,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "12-25",
-    "ChallengePlusBehavior": "35 dart",
+    "ChallengeScore": 35,
+    "Behaviour": "dart",
     "BaseXP": 14,
     "Uses": ["Field Research Bundle"]
   },
@@ -447,7 +481,8 @@
     "Season": ["Summer"],
     "Weather": ["Any"],
     "Size (inches)": "24-33",
-    "ChallengePlusBehavior": "78 mixed",
+    "ChallengeScore": 78,
+    "Behaviour": "mixed",
     "BaseXP": 29
   },
   {
@@ -459,7 +494,8 @@
     "Season": ["Fall","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "20-41",
-    "ChallengePlusBehavior": "60 mixed",
+    "ChallengeScore": 60,
+    "Behaviour": "mixed",
     "BaseXP": 23,
     "Uses": ["'Fish Stew' Quest"]
   },
@@ -472,7 +508,8 @@
     "Season": ["Spring","Summer","Fall"],
     "Weather": ["Rain"],
     "Size (inches)": "20-49",
-    "ChallengePlusBehavior": "45 smooth",
+    "ChallengeScore": 45,
+    "Behaviour": "smooth",
     "BaseXP": 18,
     "Uses": ["River Fish Bundle"]
   },
@@ -485,7 +522,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "30-51",
-    "ChallengePlusBehavior": "85 mixed",
+    "ChallengeScore": 85,
+    "Behaviour": "mixed",
     "BaseXP": 31,
     "Uses": ["'Catch a Lingcod' Quest"]
   },
@@ -498,7 +536,8 @@
     "Season": ["Spring","Summer","Winter"],
     "Weather": ["Any"],
     "Size (inches)": "10-34",
-    "ChallengePlusBehavior": "50 sinker",
+    "ChallengeScore": 50,
+    "Behaviour": "sinker",
     "BaseXP": 19
   },
   {
@@ -510,7 +549,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "11-30",
-    "ChallengePlusBehavior": "50 mixed",
+    "ChallengeScore": 50,
+    "Behaviour": "mixed",
     "BaseXP": 19,
     "Uses": ["Specialty Fish Bundle"]
   },
@@ -523,7 +563,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-25",
-    "ChallengePlusBehavior": "75 floater",
+    "ChallengeScore": 75,
+    "Behaviour": "floater",
     "BaseXP": 28
   },
   {
@@ -535,7 +576,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-25",
-    "ChallengePlusBehavior": "55 sinker",
+    "ChallengeScore": 55,
+    "Behaviour": "sinker",
     "BaseXP": 21
   },
   {
@@ -547,7 +589,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-25",
-    "ChallengePlusBehavior": "60 dart",
+    "ChallengeScore": 60,
+    "Behaviour": "dart",
     "BaseXP": 23
   },
   {
@@ -559,7 +602,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "24-66",
-    "ChallengePlusBehavior": "80 mixed",
+    "ChallengeScore": 80,
+    "Behaviour": "mixed",
     "BaseXP": 29
   },
   {
@@ -571,7 +615,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "35-37",
-    "ChallengePlusBehavior": "80 dart",
+    "ChallengeScore": 80,
+    "Behaviour": "dart",
     "BaseXP": 145,
     "Notes": "Easiest legendary fish?"
   },
@@ -584,7 +629,8 @@
     "Season": ["Fall"],
     "Weather": ["Any"],
     "Size (inches)": "17-19",
-    "ChallengePlusBehavior": "85 smooth",
+    "ChallengeScore": 85,
+    "Behaviour": "smooth",
     "BaseXP": 29,
     "Notes": "North of JojaMart on the wooden plank bridge. Requires level 3 fishing."
   },
@@ -597,7 +643,8 @@
     "Season": ["Winter"],
     "Weather": ["Any"],
     "Size (inches)": "26-28",
-    "ChallengePlusBehavior": "100 mixed",
+    "ChallengeScore": 100,
+    "Behaviour": "mixed",
     "BaseXP": 180,
     "Notes": "South end of Arrowhead Island in Cindersap Forest. Deep water. Requires level 7 fishing."
   },
@@ -610,7 +657,8 @@
     "Season": ["Summer"],
     "Weather": ["Any"],
     "Size (inches)": "19-21",
-    "ChallengePlusBehavior": "95 mixed",
+    "ChallengeScore": 95,
+    "Behaviour": "mixed",
     "BaseXP": 170,
     "Notes": "East Pier on The Beach. Deep water. Requires level 5 fishing."
   },
@@ -623,7 +671,8 @@
     "Season": "Spring",
     "Weather": ["Rain"],
     "Size (inches)": "49-51",
-    "ChallengePlusBehavior": "110 mixed",
+    "ChallengeScore": 110,
+    "Behaviour": "mixed",
     "BaseXP": 195,
     "Notes": "The Mountain Lake near the log. Requires level 10 fishing."
   },
@@ -636,7 +685,8 @@
     "Season": ["Spring","Summer","Fall", "Winter"],
     "Weather": ["Any"],
     "Size (inches)": "8-26",
-    "ChallengePlusBehavior": "55 dart",
+    "ChallengeScore": 55,
+    "Behaviour": "dart",
     "BaseXP": 21
   }
 ]
