@@ -16,7 +16,7 @@ class Fish extends Component {
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortOnlyBundles = this.sortOnlyBundles.bind(this);
+    this.bundleRiverFish = this.bundleRiverFish.bind(this);
   }
   sortByPriceAsc() {
     this.setState(prevState => {
@@ -36,11 +36,9 @@ class Fish extends Component {
     });
     console.log("Sort Name Asc");
   }
-  sortOnlyBundles() {
+  bundleRiverFish() {
     this.setState(prevState => {
-        let bundleItems = this.state.categoricals.filter(function (item) {
-          if (item.Use == 'River Fish Bundle') { return item; }
-        });
+      this.state.categoricals.filter(fish => fish.Location == 'River');
     });
     console.log("Sort Only River Fish Bundle");
   }
@@ -141,6 +139,12 @@ class Fish extends Component {
 
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
+            <a href="#bundleRiverFish"onClick={this.bundleRiverFish}>
+              <Button>
+                  <span>River&nbsp;Fish&nbsp;</span>
+                  <span>🐟</span>
+              </Button>
+            </a>
             <a href="#Price_Ascending"onClick={this.sortByPriceAsc}>
               <Button>
                   <span>Lowest&nbsp;Price&nbsp;</span>

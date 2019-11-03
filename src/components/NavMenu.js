@@ -16,7 +16,7 @@ function NavMenu() {
     setAnchorEl(null);
   }
 
-  const url0 = '..'
+  const url_ = '..'
   const url1 = '../forage'
   const url2 = '../crops'
   const url3 = '../minerals'
@@ -24,7 +24,7 @@ function NavMenu() {
   const url5 = '../cooking'
   const url6 = '../crafting'
   const url7 = '../artisan'
-  const url8 = '../bundles'
+  const url0 = '../bundles'
 
   return (
     <div>
@@ -41,7 +41,7 @@ function NavMenu() {
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}>
-          <Link href={url0}>HOME</Link>
+          <Link href={url_}>HOME</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url1}>Forage</Link>
@@ -65,7 +65,7 @@ function NavMenu() {
           <Link href={url7}>Artisan</Link>
         </MenuItem>*/}
         <MenuItem onClick={handleClose}>
-          <Link href={url8}>Bundles</Link>
+          <Link href={url0}>Bundles</Link>
         </MenuItem>
       </Menu>
     </div>

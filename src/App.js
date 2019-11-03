@@ -3,27 +3,20 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AdSense from 'react-adsense';
 import NavMenu from './components/NavMenu.js';
 import Button from '@material-ui/core/Button';
-
 import logo from './img/logo.png';
 import './App.css';
-
-import forage from './forage.json';
-import crops from './crops.json';
-import fish from './fish.json';
-import minerals from './minerals.json';
-import bundles from './bundles.json';
+import full from './full.json';
 import Forage from './components/Forage.js';
 import Crops from './components/Crops.js';
 import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
-
-{/*
-const fish = full[fish];
-const minerals = full[minerals];
-*/}
-
-const url0 = '..'
+const forage = full.filter(thing => thing.Category == 'forage');
+const crops = full.filter(thing => thing.Category == 'crops');
+const bundles = full.filter(thing => thing.Category == 'bundles');
+const fish = full.filter(thing => thing.Category == 'fish');
+const minerals = full.filter(thing => thing.Category == 'mineral');
+const url_ = '..'
 const url1 = '../forage'
 const url2 = '../crops'
 const url3 = '../minerals'
@@ -31,7 +24,7 @@ const url4 = '../fish'
 const url5 = '../cooking'
 const url6 = '../crafting'
 const url7 = '../artisan'
-const url8 = '../bundles'
+const url0 = '../bundles'
 
 function Index() {
   return(
@@ -65,7 +58,7 @@ function Index() {
           &nbsp;
           Fish
         </Link>
-        <Link to={url8} className="rowed">
+        <Link to={url0} className="rowed">
           <img src={require('./img/Quality_Crops_Bundle.png')} />
           &nbsp;
           Bundles
@@ -103,7 +96,7 @@ class App extends Component {
 
         <header className="App-header rowed row-spacer">
           <div className="coled">
-            <Link to={url0}>
+            <Link to={url_}>
               <img src={logo} className="App-logo pulse" alt="logo" />
             </Link>
           </div>
