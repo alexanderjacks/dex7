@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AdSense from 'react-adsense';
-import NavMenu from './components/NavMenu.js';
+import SortMenu from './components/SortMenu.js';
 import Button from '@material-ui/core/Button';
 import logo from './img/logo.png';
 import './App.css';
@@ -37,38 +37,10 @@ function Index() {
           slot='6359860180'
       />
       <hr/>
-      <div className="coled">
-        <Link to={url1} className="rowed">
-          <img src={require('./img/Common_Mushroom.png')} />
-          &nbsp;
-          Forage
-        </Link>
-        <Link to={url2} className="rowed">
-          <img src={require('./img/Melon.png')} />
-          &nbsp;
-          Crops
-        </Link>
-        <Link to={url3} className="rowed">
-          <img src={require('./img/Jade.png')} />
-          &nbsp;
-          Minerals
-        </Link>
-        <Link to={url4} className="rowed">
-          <img src={require('./img/Red_Snapper.png')} />
-          &nbsp;
-          Fish
-        </Link>
-        <Link to={url0} className="rowed">
-          <img src={require('./img/Quality_Crops_Bundle.png')} />
-          &nbsp;
-          Bundles
-        </Link>
-      </div>
-      <hr/>
       <p>
         Use the SORT menu!
         &nbsp;
-        <NavMenu/>
+        <SortMenu/>
       </p>
       <h6>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></h6>
     </div>
@@ -102,7 +74,7 @@ class App extends Component {
             </Link>
           </div>
           <div className="coled">
-            <NavMenu/>
+            <SortMenu/>
           </div>
           <div className="coled">
             <h3>Your Guide to Pelican Town</h3>

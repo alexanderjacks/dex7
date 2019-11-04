@@ -5,7 +5,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
 
-function NavMenu() {
+function SortMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   function handleClick(event) {
@@ -43,32 +43,38 @@ function NavMenu() {
           <Link href={url_}>HOME</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url1}>Forage</Link>
+          <Link href={url1}>
+          <img src={require('../img/Common_Mushroom.png')} />
+          Forage
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url2}>Crops</Link>
+          <Link href={url2}>
+          <img src={require('../img/Melon.png')} />
+          Crops
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url3}>Minerals</Link>
+          <Link href={url3}>
+          <img src={require('../img/Geode.png')} />
+          Minerals
+          </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href={url4}>Fish</Link>
+          <Link href={url4}>
+          <img src={require('../img/Dorado.png')} />
+          Fish
+          </Link>
         </MenuItem>
-        {/*<MenuItem onClick={handleClose}>
-          <Link href={url5}>Cooking</Link>
-        </MenuItem>*/}
-        {/*<MenuItem onClick={handleClose}>
-          <Link href={url6}>Crafting</Link>
-        </MenuItem>*/}
-        {/*<MenuItem onClick={handleClose}>
-          <Link href={url7}>Artisan</Link>
-        </MenuItem>*/}
         <MenuItem onClick={handleClose}>
-          <Link href={url0}>Bundles</Link>
+          <Link href={url0}>
+          <img src={require('../img/Apple.png')} />
+          Bundles
+          </Link>
         </MenuItem>
       </Menu>
     </div>
   );
 }
 
-export default NavMenu;
+export default SortMenu;
