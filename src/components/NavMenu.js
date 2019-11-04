@@ -35,9 +35,8 @@ function NavMenu() {
         color="secondary"
         variant="contained"
       >
-        LISTS&nbsp;
-        <span>🚧
-        </span>
+        SORT&nbsp;
+        <span>🔎</span>
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}>

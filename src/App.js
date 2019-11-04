@@ -65,10 +65,11 @@ function Index() {
         </Link>
       </div>
       <hr/>
-      <p>Use the LISTS button to explore the site.</p>
-      <div className="responsive-stuff">
-        categorical
-      </div>
+      <p>
+        Use the SORT menu!
+        &nbsp;
+        <NavMenu/>
+      </p>
       <h6>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></h6>
     </div>
   );
