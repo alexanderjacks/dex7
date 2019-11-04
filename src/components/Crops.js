@@ -72,15 +72,15 @@ class Crops extends Component {
 	            className="item-border"
 	            alt={item.Name}
 	            />
-	            <h4 class="text-shadow-white">
-	              <h2>{item.Name}</h2>
-	            </h4>
+	            <h2 className="text-shadow-white">
+	              {item.Name}
+	            </h2>
             </div>
             <div>
                <h3>{item.Season[0]}</h3>
 	             <h3>{item.Type}</h3>
-               <h5>takes {item.Days} days</h5>
-               {item.Continuous ? <h3>multi-harvest</h3> : <h5>harvest once</h5> }
+               <h4>takes {item.Days} days</h4>
+               <h4>{item.Continuous ? 'multi-harvest' : 'harvest once' }</h4>
             </div>
           </div>
           <hr/>

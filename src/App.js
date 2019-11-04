@@ -115,35 +115,35 @@ class App extends Component {
           <Route path="/bundles/"
             render={props =>
             (<Bundles {...props}
-              key={this.state.bundles}
+              key={this.state.bundles[0]}
               categoricals={this.state.bundles} />)
             }
           />
           <Route path="/forage/"
             render={props =>
             (<Forage {...props}
-              key={this.state.forage}
+              key={this.state.forage[0]}
               categoricals={this.state.forage} />)
             }
           />
           <Route path="/crops/"
             render={props =>
             (<Crops {...props}
-              key={this.state.crops}
+              key={this.state.crops[0]}
               categoricals={this.state.crops} />)
             }
           />
           <Route path="/minerals/"
             render={props =>
             (<Minerals {...props}
-              key={this.state.minerals}
+              key={this.state.minerals[0]}
               categoricals={this.state.minerals} />)
             }
           />
           <Route path="/fish/"
             render={props =>
             (<Fish {...props}
-              key={this.state.fish}
+              key={this.state.fish[0]}
               categoricals={this.state.fish} />)
             }
           />

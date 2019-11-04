@@ -12,36 +12,36 @@ class Forage extends Component {
     this.state = {
       categoricals: this.props.categoricals,
     }
-    this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
-    this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    this.sortByNameAsc = this.sortByNameAsc.bind(this);
-    this.sortBySeason = this.sortBySeason.bind(this);
+    this.sortForageByPriceAsc = this.sortForageByPriceAsc.bind(this);
+    this.sortForageByPriceDesc = this.sortForageByPriceDesc.bind(this);
+    this.sortForageByNameAsc = this.sortForageByNameAsc.bind(this);
+    this.sortForageBySeason = this.sortForageBySeason.bind(this);
   }
-  sortByPriceAsc() {
+  sortForageByPriceAsc() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
     });
     console.log("Sort Price Asc");
   }
-  sortByPriceDesc() {
+  sortForageByPriceDesc() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
     });
     console.log("Sort Price Desc");
   }
-  sortByNameAsc() {
+  sortForageByNameAsc() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
     });
     console.log("Sort Name Asc");
   }
-  sortBySeason() {
+  sortForageBySeason() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (a.Season[0].localeCompare(b.Season[0])))
     });
     console.log("Sort Season Asc");
   }
-  componentWillMount() {      
+  componentWillMount() {
     console.log("Forage goods are too mysterious!");
     this.setState({categoricals: this.props.categoricals});
   }
@@ -62,7 +62,7 @@ class Forage extends Component {
 
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
+            <h4 className="text-shadow-white">
               <span>{item.Location}</span>
               {item.Location2 && <span>& {item.Location2}</span>}
               {/*<SeasonText seasons={item.Season} />*/}
@@ -70,8 +70,8 @@ class Forage extends Component {
           </div>
           <div className="rowed row-spacer">
             {/* display image on left */}
-            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
-            className="item-border" 
+            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+            className="item-border"
             alt={item.Name}
             />
             {/* display metadata on right */}
@@ -92,8 +92,8 @@ class Forage extends Component {
 
         {/* prices across 4 quality lvls; needs own component */}
           <hr/>
-          <h4 className="prices_bar"> 
-            <h3>{item.BasePrice}g </h3>
+          <h4 className="prices_bar">
+            {item.BasePrice}g
             <span>
               <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
             </span>
@@ -108,8 +108,8 @@ class Forage extends Component {
           <div className="coled">
             {item.Bundle &&
               <span>
-              <img src={require('../img/'+item.Bundle.replace(/ /g, '_')+'.png')} 
-                className="item-border" 
+              <img src={require('../img/'+item.Bundle.replace(/ /g, '_')+'.png')}
+                className="item-border"
                 alt={item.Bundle}
               />
               <h4>{
@@ -133,33 +133,33 @@ class Forage extends Component {
 
     return (
       <div className="App">
-        
+
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
-            <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
+            <a href="#sortForageByPriceAsc" className="" onClick={this.sortForageByPriceAsc}>
               <Button>
                   <span>Lowest&nbsp;Price&nbsp;</span>
                   <span>💰</span>
               </Button>
             </a>
-            <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
+            <a href="#sortForageByPriceDesc" className="" onClick={this.sortForageByPriceDesc}>
               <Button>
                   <span>Highest&nbsp;Price&nbsp;</span>
                   <span>💎</span>
               </Button>
             </a>
-            <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
+            <a href="#sortForageByNameAsc" className="" onClick={this.sortForageByNameAsc}>
               <Button>
                   <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>
-            <a href="#sortBySeason" className="" onClick={this.sortBySeason}>
+            <a href="#sortForageBySeason" className="" onClick={this.sortForageBySeason}>
               <Button>
                   <span>Season&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
-            </a>            
+            </a>
         </div>
 
         {/* BODY component, content sorted by HEADER */}
