@@ -12,8 +12,8 @@ import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
 const forage = full.filter(thing => thing.Category == 'forage');
-const crops = full.filter(thing => thing.Category == 'crops');
-const bundles = full.filter(thing => thing.Category == 'bundles');
+const crops = full.filter(thing => thing.Category == 'crop');
+const bundles = full.filter(thing => thing.Category == 'bundle');
 const fish = full.filter(thing => thing.Category == 'fish');
 const minerals = full.filter(thing => thing.Category == 'mineral');
 const url_ = '..'
