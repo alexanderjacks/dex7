@@ -114,27 +114,37 @@ class App extends Component {
           <Route path="/" exact component={Index} />
           <Route path="/bundles/"
             render={props =>
-            (<Bundles {...props} categoricals={this.state.bundles} />)
+            (<Bundles {...props}
+              key={this.state.bundles}
+              categoricals={this.state.bundles} />)
             }
           />
           <Route path="/forage/"
             render={props =>
-            (<Forage {...props} categoricals={this.state.forage} />)
+            (<Forage {...props}
+              key={this.state.forage}
+              categoricals={this.state.forage} />)
             }
           />
           <Route path="/crops/"
             render={props =>
-            (<Crops {...props} categoricals={this.state.crops} />)
+            (<Crops {...props}
+              key={this.state.crops}
+              categoricals={this.state.crops} />)
             }
           />
           <Route path="/minerals/"
             render={props =>
-            (<Minerals {...props} categoricals={this.state.minerals} />)
+            (<Minerals {...props}
+              key={this.state.minerals}
+              categoricals={this.state.minerals} />)
             }
           />
           <Route path="/fish/"
             render={props =>
-            (<Fish {...props} categoricals={this.state.fish} />)
+            (<Fish {...props}
+              key={this.state.fish}
+              categoricals={this.state.fish} />)
             }
           />
         </section>

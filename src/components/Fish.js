@@ -92,7 +92,7 @@ class Fish extends Component {
             {/* display metadata on right */}
           </div>
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
+            <h4 className="text-shadow-white">
               <hr/>
               <div className="max400px">
                 {item.Notes &&
