@@ -17,14 +17,6 @@ const bundles = full.filter(thing => thing.Category == 'bundle');
 const fish = full.filter(thing => thing.Category == 'fish');
 const minerals = full.filter(thing => thing.Category == 'mineral');
 const url_ = '..'
-const url1 = '../forage'
-const url2 = '../crops'
-const url3 = '../minerals'
-const url4 = '../fish'
-const url5 = '../cooking'
-const url6 = '../crafting'
-const url7 = '../artisan'
-const url0 = '../bundles'
 
 function Index() {
   return(

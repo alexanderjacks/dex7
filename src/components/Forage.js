@@ -136,7 +136,7 @@ class Forage extends Component {
 
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
-            <a href="#sortForageByPriceAsc" className="" onClick={this.sortForageByPriceAsc}>
+            <a href="#sortForageByPrice_Asc" className="" onClick={this.sortForageByPriceAsc}>
               <Button>
                   <span>Lowest&nbsp;Price&nbsp;</span>
                   <span>💰</span>

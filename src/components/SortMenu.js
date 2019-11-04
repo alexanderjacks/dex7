@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -7,24 +6,14 @@ import Link from '@material-ui/core/Link';
 
 function SortMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-
-  function handleClick(event) {
-    setAnchorEl(event.currentTarget);
-  }
-
-  function handleClose() {
-    setAnchorEl(null);
-  }
-
+  function handleClick(event) { setAnchorEl(event.currentTarget); }
+  function handleClose() { setAnchorEl(null); }
   const url_ = '..'
+  const url0 = '../bundles'
   const url1 = '../forage'
   const url2 = '../crops'
   const url3 = '../minerals'
   const url4 = '../fish'
-  const url5 = '../cooking'
-  const url6 = '../crafting'
-  const url7 = '../artisan'
-  const url0 = '../bundles'
 
   return (
     <div>
@@ -40,12 +29,12 @@ function SortMenu() {
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}>
-          <Link href={url_}>HOME</Link>
+          <Link href={url_}>[ X ] CLEAR</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url1}>
-          <img src={require('../img/Common_Mushroom.png')} />
-          Forage
+          <img src={require('../img/Blackberry.png')} />
+          <span>Forage</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
