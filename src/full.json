@@ -2416,7 +2416,7 @@
     "Name": "Sweet Gem Berry",
     "BasePrice": 3000,
     "Type": "Special",
-    "Season": ["Summer"],
+    "Season": ["Fall"],
     "SeedPrice": 1000,
     "Location": "Traveling Cart",
     "Days": 24,
