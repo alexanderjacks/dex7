@@ -51,20 +51,20 @@ class Bundles extends Component {
         <div className="css3frame-card-padding">
           {/* name & reward metadata */}
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
+            <h4 className="text-shadow-white">
               <h2>{item.Name}</h2>
               <h3>{item.Reward}</h3>
             </h4>
           </div>
 
           {/* all bundle ingredients */}
-            <div class="text-shadow-white">
+            <div className="text-shadow-white">
               <BundleIterator requirements={item.Ingredients} />
 	            <h5>Needs {item.Needs} of {item.Of}</h5>
             </div>
           {/* CommCenter room metadata */}
           <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
+            <h4 className="text-shadow-white">
               <hr/>
               <span>{item.Room}</span>
             </h4>
