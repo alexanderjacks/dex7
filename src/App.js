@@ -11,11 +11,13 @@ import Crops from './components/Crops.js';
 import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
+import Recipes from './components/Recipes.js';
 const forage = full.filter(thing => thing.Category == 'forage');
 const crops = full.filter(thing => thing.Category == 'crop');
 const bundles = full.filter(thing => thing.Category == 'bundle');
 const fish = full.filter(thing => thing.Category == 'fish');
 const minerals = full.filter(thing => thing.Category == 'mineral');
+const recipes = full.filter(thing => thing.Category == 'recipe');
 const url_ = '..'
 
 function Index() {
@@ -48,6 +50,7 @@ class App extends Component {
       minerals: minerals,
       fish: fish,
       bundles: bundles,
+      recipes: recipes,
     }
   }
 
@@ -110,6 +113,13 @@ class App extends Component {
             (<Fish {...props}
               key={this.state.fish[0]}
               categoricals={this.state.fish} />)
+            }
+          />
+          <Route path="/recipes/"
+            render={props =>
+            (<Recipes {...props}
+              key={this.state.recipes[0]}
+              categoricals={this.state.recipes} />)
             }
           />
         </section>

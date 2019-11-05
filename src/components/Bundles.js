@@ -11,22 +11,10 @@ class Bundles extends Component {
     this.state = {
       categoricals: this.props.categoricals,
     }
-    // this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByNameAsc = this.sortByNameAsc.bind(this);
     this.sortByRoomAsc = this.sortByRoomAsc.bind(this);
   }
-  // sortByPriceAsc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
-  //   });
-  //   console.log("Sort Price Asc");
-  // }
-  // sortByPriceDesc() {
-  //   this.setState(prevState => {
-  //       this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
-  //   });
-  //   console.log("Sort Price Desc");
-  // }
+
   sortByNameAsc() {
     this.setState(prevState => {
         this.state.categoricals.sort((a,b) => (a.Name.localeCompare(b.Name)))
@@ -39,7 +27,7 @@ class Bundles extends Component {
     });
     console.log("Sort Room Asc");
   }
-  componentWillMount() {      
+  componentWillMount() {
     console.log("some players never complete bundles ;_;");
     this.setState({categoricals: this.props.categoricals});
   }
@@ -88,7 +76,6 @@ class Bundles extends Component {
 
         </div>
 
-
         {/* styling of item frame */}
         </div>
         </div>
@@ -99,7 +86,7 @@ class Bundles extends Component {
 
     return (
       <div className="App">
-        
+
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Name_Ascending" onClick={this.sortByNameAsc}>

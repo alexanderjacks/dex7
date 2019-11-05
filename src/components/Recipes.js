@@ -5,7 +5,7 @@ import BundleIterator from './BundleIterator.js';
 
 import '../App.css';
 
-class Crops extends Component {
+class Recipes extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -13,38 +13,22 @@ class Crops extends Component {
     }
     this.sortByPriceAsc = this.sortByPriceAsc.bind(this);
     this.sortByPriceDesc = this.sortByPriceDesc.bind(this);
-    this.sortByTimeAsc = this.sortByTimeAsc.bind(this);
-    this.sortByTimeDesc = this.sortByTimeDesc.bind(this);
-
   }
   sortByPriceAsc() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.BasePrice - b.BasePrice))
+        this.state.categoricals.sort((a,b) => (a.SellPrice - b.SellPrice))
     });
     console.log("Sort Price Asc");
   }
   sortByPriceDesc() {
     this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.BasePrice - a.BasePrice))
+        this.state.categoricals.sort((a,b) => (b.SellPrice - a.SellPrice))
     });
     console.log("Sort Price Desc");
   }
-  sortByTimeAsc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (a.Days - b.Days))
-    });
-    console.log("Sort Time Asc");
-  }
-  sortByTimeDesc() {
-    this.setState(prevState => {
-        this.state.categoricals.sort((a,b) => (b.Days - a.Days))
-    });
-    console.log("Sort Time Desc");
-  }
-
 
   componentWillMount() {
-    console.log("Artisan Valley => +100% more crop types; look into it!");
+    console.log("Heyo Recipes = Cooking");
     this.setState({categoricals: this.props.categoricals});
   }
 
@@ -61,14 +45,14 @@ class Crops extends Component {
         <div className="rowed row-spacer row-spillover">
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className={item.Season[0].replace(/ /g, '_')+ " coled no-repeat-bg"}>
+        <div className="">
         <div className="css3frame-card-back">
         <div className="css3frame-card-padding">
           {/* name & price metadata */}
           <div className="rowed row-spacer">
             {/* display image on left */}
             <div>
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+	            <img src={require('../img/'+item.Name.replace(/ /g, '_').replace(/'/g, '%27')+'.png')}
 	            className="item-border"
 	            alt={item.Name}
 	            />
@@ -77,20 +61,26 @@ class Crops extends Component {
 	            </h2>
             </div>
             <div>
-               <h3>{item.Season[0]}</h3>
-	             <h3>{item.Type}</h3>
-               <h4>harvest: {item.Days} days</h4>
-               <h4>{item.Continuous ? 'multi-harvest' : 'harvest once' }</h4>
+              <h3>{item.Description}</h3>
+              <h3>from: {item.Source1}<span alt="poker-heart-emoji">♥</span></h3>
             </div>
           </div>
           <hr/>
           <div className="coled text-shadow-white">
-	          <h3>Seed/buy: {item.SeedPrice}g</h3>
-	          <h3>Crop/sell: {item.BasePrice}g</h3>
+	          <h3>Energy Restore: {item.GivesEnergy}</h3>
+	          <h3>Health Restore: {item.GivesHealth}</h3>
+            <h3>{item.SellPrice}g</h3>
           </div>
           <hr/>
-          <h3>from: {item.Location}</h3>
-          <BundleIterator requirements={item.Bundles} />
+          <div className="coled">
+	          <h3>Ingredients</h3>
+            <h4>
+              {item.Ing1 && <span>{item.Ing1}</span> }
+              {item.Ing2 && <span> + {item.Ing2}</span> }
+              {item.Ing3 && <span> + {item.Ing3}</span> }
+              {item.Ing4 && <span> + {item.Ing4}</span> }
+            </h4>
+          </div>
 
         </div>
         </div>
@@ -117,22 +107,10 @@ class Crops extends Component {
             	<span>Low Sell Price&nbsp;</span>
                 <span>💰</span>
             </Button></a>
-            <a href="#Price_Descending"onClick={this.sortByPriceDesc}>
+            <a href="#sortByPriceDesc"onClick={this.sortByPriceDesc}>
               <Button>
                   <span>High Sell Price&nbsp;</span>
                   <span>💎</span>
-              </Button>
-            </a>
-            <a href="#Time_Ascending"onClick={this.sortByTimeAsc}>
-              <Button>
-                  <span>Short Grow Time&nbsp;</span>
-                  <span>🥕</span>
-              </Button>
-            </a>
-            <a href="#Time_Descending"onClick={this.sortByTimeDesc}>
-              <Button>
-                  <span>Long Grow Time&nbsp;</span>
-                  <span>🌽</span>
               </Button>
             </a>
 
@@ -150,4 +128,4 @@ class Crops extends Component {
   }
 }
 
-export default Crops;
+export default Recipes;
