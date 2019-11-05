@@ -1,6 +1,6 @@
 {
-  "short_name": "Top100Crypto",
-  "name": "Top 100 Cryptocurrrencies",
+  "short_name": "Stardewdex",
+  "name": "Quick Guide Stardew Valley",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "firebrick"
+  "theme_color": "#goldenrod",
+  "background_color": "deepskyblue"
 }

@@ -15,5 +15,5 @@ ReactDOM.render(
 
 // Progressive Web App toggle
 
-serviceWorker.unregister();
-// serviceWorker.register();
+// serviceWorker.unregister();
+serviceWorker.register();
