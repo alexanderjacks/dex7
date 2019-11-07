@@ -81,12 +81,12 @@ class People extends Component {
             <GiftIterator
               gifts={person.Dislikes}
               title="Dislikes"
-              bgcolor="lime"
+              bgcolor="darkgreen"
             />
             <GiftIterator
               gifts={person.Hates}
               title="Hates"
-              bgcolor="darkgreen"
+              bgcolor="navy"
             />
           </div>
 

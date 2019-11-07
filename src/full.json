@@ -3746,8 +3746,8 @@
     "Birthday": "Summer22",
     "Loves": ["Amethyst","Aquamarine","Emerald","Jade","Omni Geode","Ruby","Topaz"],
     "Likes": ["Dwarf Gadget","Dwarf Scroll I","Dwarf Scroll II","Dwarf Scroll III","Dwarf Scroll IV","Dwarvish Helm","Quartz"],
-    "Neutral": ["(See Bug Note below)","AllFruit(exceptFruit Tree Fruit&Salmonberry)","Solar Essence","Void Essence"],
-    "Dislikes": ["All Eggs","All Milk","Al]l Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"]
+    "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","Solar Essence","Void Essence"],
+    "Dislikes": ["All Eggs","All Milk","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"]
   },
   {
     "Category": "NPC",
@@ -3892,7 +3892,7 @@
     "Loves": ["Cranberry Candy","Grape","Pink Cake"],
     "Likes": ["Coconut","Daffodil"],
     "Neutral": ["All Milk"],
-    "Dislikes": ["All Eggs","AllFruit(exceptCoconut,Grape&Fruit Tree Fruit)","AllVegetables(exceptHops&Wheat)","Al]l Mushrooms(exceptRed)","Dandelion","Hazelnut","Holly","Leek","Quartz","Snow Yam","Winter Root"],
+    "Dislikes": ["All Eggs","AllFruit(exceptCoconut,Grape&Fruit Tree Fruit)","AllVegetables(exceptHops&Wheat)","All Mushrooms(exceptRed)","Dandelion","Hazelnut","Holly","Leek","Quartz","Snow Yam","Winter Root"],
     "Hates": ["AllArtisan Goods(exceptMead&Oil)","Clay","Wild Horseradish"]
   },
   {
@@ -3960,7 +3960,7 @@
     "Loves": ["Frozen Tear","Obsidian","Pumpkin Soup","Sashimi","Void Egg"],
     "Likes": ["Quartz"],
     "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","AllFish(exceptCarp&Snails)","All Milk"],
-    "Dislikes": ["AllFlowers(exceptPoppy)","Al]l Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"],
+    "Dislikes": ["AllFlowers(exceptPoppy)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"],
     "Hates": ["AllArtisan Goods(exceptCoffee,Mead, &Oil)","All Eggs(exceptVoid Egg)","Clay","Complete Breakfast","Farmer's Lunch","Omelet"]
   },
   {
@@ -3999,7 +3999,7 @@
     "Birthday": "Spring14",
     "Loves": ["Coconut","Fruit Salad","Pink Cake","Sunflower"],
     "Likes": ["Daffodil"],
-    "Dislikes": ["All Eggs","AllFruit(exceptCoconut)","All Milk","Al]l Mushrooms(exceptRed)","AllVegetables(exceptHops&Wheat)","Dandelion","Hazelnut","Holly","Leek","Quartz","Snow Yam","Winter Root"],
+    "Dislikes": ["All Eggs","AllFruit(exceptCoconut)","All Milk","All Mushrooms(exceptRed)","AllVegetables(exceptHops&Wheat)","Dandelion","Hazelnut","Holly","Leek","Quartz","Snow Yam","Winter Root"],
     "Hates": ["AllFish","Clay","Prismatic Shard","Wild Horseradish"]
   },
   {
