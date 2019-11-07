@@ -252,8 +252,7 @@ a {
 }
 
 .tinted-card {
-  border-radius: 2rem;
-  border: 0.3rem black dotted;
+  border-radius: 1.2rem;
 }
 /* layout utilities */
 
@@ -302,9 +301,18 @@ a {
   max-width: 200px;
   overflow-wrap: normal;
 }
+.max235px {
+  max-width: 235px;
+  overflow-wrap: normal;
+}
 
 .max400px {
   max-width: 400px;
+  overflow-wrap: normal;
+}
+
+.max420px {
+  max-width: 420px;
   overflow-wrap: normal;
 }
 

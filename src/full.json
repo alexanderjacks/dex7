@@ -3938,7 +3938,7 @@
     "Villager": "Harvey",
     "Birthday": "Winter14",
     "Loves": ["Coffee","Pickles","Super Meal","Truffle Oil","Wine"],
-    "Likes": ["AllFruit(exceptSalmonberry&Spice Berry)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Duck Egg","Duck Feather","Goa], Milk","Hazelnut","Holly","Large Goat Milk","Leek","Quartz","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
+    "Likes": ["AllFruit(exceptSalmonberry&Spice Berry)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Duck Egg","Duck Feather","Goat Milk","Hazelnut","Holly","Large Goat Milk","Leek","Quartz","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
     "Neutral": ["All Eggs(exceptDuck Egg&Void Egg)","Large Milk","Milk"],
     "Dislikes": ["Bread","Cheese","Goat Cheese"],
     "Hates": ["Coral","Nautilus Shell","Rainbow Shell","Salmonberry","Spice Berry"]
@@ -3959,7 +3959,7 @@
     "Birthday": "Winter10",
     "Loves": ["Frozen Tear","Obsidian","Pumpkin Soup","Sashimi","Void Egg"],
     "Likes": ["Quartz"],
-    "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","AllFish(exceptCarp&Snails)","All Milk"],
+    "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","AllFish(exceptCarp&Snail)","All Milk"],
     "Dislikes": ["AllFlowers(exceptPoppy)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"],
     "Hates": ["AllArtisan Goods(exceptCoffee,Mead, &Oil)","All Eggs(exceptVoid Egg)","Clay","Complete Breakfast","Farmer's Lunch","Omelet"]
   },
@@ -4007,7 +4007,7 @@
     "Villager": "Leah",
     "Birthday": "Winter23",
     "Loves": ["Goat Cheese","Poppyseed Muffin","Salad","Stir Fry","Truffle","Vegetable Medley","Wine"],
-    "Likes": ["All Eggs(exceptVoid Egg)","AllFruit","All Milk","Al], Mushrooms(exceptRed)","Daffodil","Dandelion","Driftwood","Hazelnut","Holly","Leek","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
+    "Likes": ["All Eggs(exceptVoid Egg)","AllFruit","All Milk","All Mushrooms(exceptRed)","Daffodil","Dandelion","Driftwood","Hazelnut","Holly","Leek","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
     "Dislikes": ["AllForaged Minerals(exceptEarth Crystal)","AllGems(exceptDiamond&Prismatic Shard)","Carp Surprise","Cookie","Frie]d Egg","Ice Cream","Pink Cake","Rice Pudding","Seaweed","Survival Burger","Tortilla"],
     "Hates": ["Bread","Hashbrowns","Pancakes","Pizza","Void Egg"]
   },

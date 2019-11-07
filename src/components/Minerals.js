@@ -40,15 +40,15 @@ class Minerals extends Component {
     });
     console.log("Sort Type Asc");
   }
-  
-  componentWillMount() {      
+
+  componentWillMount() {
     console.log("Minerals need more recipes!");
     this.setState({categoricals: this.props.categoricals});
   }
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
+      <li key={item.Key} className="categorical css3frame-card-padding">
          {/* needs own component from here on down, fields will reflect json types */}
         <div className="css3frame-border-4">
         <div className="css3frame-border-3">
@@ -68,8 +68,8 @@ class Minerals extends Component {
 				<h2 className="text-shadow-white">{item.Name}</h2>
 				<h5>{item.Type}</h5>
 			</span>
-            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')} 
-            className="item-border" 
+            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+            className="item-border"
             alt={item.Name}
             />
             {/* display metadata on right */}
@@ -77,7 +77,7 @@ class Minerals extends Component {
           <div className="rowed row-spacer">
             <h4 class="text-shadow-white">
               <h3>{item.BasePrice}g</h3>
-              {item.Mine_Lvl && 
+              {item.Mine_Lvl &&
               	<span>Lvls: {item.Mine_Lvl} </span>
               }
               <span>Panning: {item.Panning} </span>
@@ -88,8 +88,8 @@ class Minerals extends Component {
                 {item.Uses && item.Uses.map(
                   (Use) => (
                     <span>
-                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')} 
-                      className="item-border" 
+                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')}
+                      className="item-border"
                       alt={item.Use}
                     />
                     <h4>{
@@ -116,7 +116,7 @@ class Minerals extends Component {
 
     return (
       <div className="App">
-        
+
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
@@ -143,7 +143,7 @@ class Minerals extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-            
+
         </div>
 
         {/* BODY component, content sorted by HEADER */}

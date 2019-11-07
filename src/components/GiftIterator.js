@@ -21,10 +21,7 @@ class GiftIterator extends React.Component {
 						</li>
 					)}
 				</ul>
-				<h1>
-				<hr/>
-					<h3>{this.props.title}</h3>
-				</h1>
+				<h3>{this.props.title}</h3>
 			</div>
 		)
 	}
