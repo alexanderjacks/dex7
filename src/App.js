@@ -12,12 +12,14 @@ import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
 import Recipes from './components/Recipes.js';
+import People from './components/People.js';
 const forage = full.filter(thing => thing.Category == 'forage');
 const crops = full.filter(thing => thing.Category == 'crop');
 const bundles = full.filter(thing => thing.Category == 'bundle');
 const fish = full.filter(thing => thing.Category == 'fish');
 const minerals = full.filter(thing => thing.Category == 'mineral');
 const recipes = full.filter(thing => thing.Category == 'recipe');
+const people = full.filter(thing => thing.Category == 'NPC');
 const url_ = '..'
 
 function Index() {
@@ -51,6 +53,7 @@ class App extends Component {
       fish: fish,
       bundles: bundles,
       recipes: recipes,
+      people: people,
     }
   }
 
@@ -72,7 +75,6 @@ class App extends Component {
             <SortMenu/>
           </div>
           <div className="coled">
-            <h3>Your Guide to Pelican Town</h3>
             <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
           </div>
         </header>
@@ -120,6 +122,13 @@ class App extends Component {
             (<Recipes {...props}
               key={this.state.recipes[0]}
               categoricals={this.state.recipes} />)
+            }
+          />
+          <Route path="/people/"
+            render={props =>
+            (<People {...props}
+              key={this.state.people[0]}
+              categoricals={this.state.people} />)
             }
           />
         </section>

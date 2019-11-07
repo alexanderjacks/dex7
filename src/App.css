@@ -251,6 +251,10 @@ a {
   text-decoration: none;
 }
 
+.tinted-card {
+  border-radius: 2rem;
+  border: 0.3rem black dotted;
+}
 /* layout utilities */
 
 .rowed {

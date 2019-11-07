@@ -15,6 +15,7 @@ function SortMenu() {
   const url3 = '../minerals'
   const url4 = '../fish'
   const url5 = '../recipes'
+  const url6 = '../people'
 
   return (
     <div>
@@ -66,6 +67,12 @@ function SortMenu() {
           <Link href={url5}>
           <img src={require('../img/Sashimi.png')} />
           Recipes
+          </Link>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <Link href={url6}>
+          <img src={require('../img/Wizard_Icon.png')} />
+          People
           </Link>
         </MenuItem>
       </Menu>
