@@ -68,7 +68,7 @@ class App extends Component {
         <header className="App-header rowed row-spacer">
           <div className="coled">
             <Link to={url_}>
-              <img src={logo} className="App-logo pulse" alt="logo" />
+              <img src={logo} className="App-logo" alt="logo" />
             </Link>
           </div>
           <div className="coled">

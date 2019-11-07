@@ -3,6 +3,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Link from '@material-ui/core/Link';
+import '../App.css';
 
 function SortMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -25,6 +26,7 @@ function SortMenu() {
         onClick={handleClick}
         color="secondary"
         variant="contained"
+        className="pulse"
       >
         SORT&nbsp;
         <span>🔎</span>
