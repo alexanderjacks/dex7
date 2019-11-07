@@ -71,7 +71,7 @@ function SortMenu() {
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url6}>
-          <img src={require('../img/Wizard_Icon.png')} />
+          <img src={require('../img/DialogueBubbleLove.png')} />
           People
           </Link>
         </MenuItem>

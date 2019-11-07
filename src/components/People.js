@@ -68,6 +68,26 @@ class People extends Component {
               title="Loves"
               bgcolor="red"
             />
+            <GiftIterator
+              gifts={person.Likes}
+              title="Likes"
+              bgcolor="orange"
+            />
+            <GiftIterator
+              gifts={person.Neutral}
+              title="Neutral"
+              bgcolor="whitesmoke"
+            />
+            <GiftIterator
+              gifts={person.Dislikes}
+              title="Dislikes"
+              bgcolor="lime"
+            />
+            <GiftIterator
+              gifts={person.Hates}
+              title="Hates"
+              bgcolor="darkgreen"
+            />
           </div>
 
         </div>
