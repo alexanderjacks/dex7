@@ -34,21 +34,19 @@ class People extends Component {
 
   render(){
     const persons = this.state.categoricals.map((person, key ) =>
-      <li key={person.Key} className="categorical css3frame-card-padding">
+      <li key={person.Key} className="categorical">
          {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4 max420px">
+        <div className="css3frame-border-4">
         <div className="css3frame-border-3">
         <div className="css3frame-border-2">
         <div className="css3frame-border-1">
-
-
 
         <div>
         <div className="coled no-repeat-bg">
         <div className="css3frame-card-back-sidefade">
         <div className="css3frame-card-padding">
           {/* name & bday metadata */}
-          <div className="rowed row-spacer">
+          <div className="rowed">
             <img src={require('../img/'+person.Villager.replace(/ /g, '_')+'.png')}
               className="item-border"
               alt={person.Villager}
@@ -60,7 +58,7 @@ class People extends Component {
           </div>
 
           {/* all gift tastes */}
-          <div className="text-shadow-white">
+          <div className="text-shadow-white rowed row-spillover">
             <GiftIterator
               gifts={person.Loves}
               title="Loves"
@@ -79,7 +77,22 @@ class People extends Component {
               bgcolor="whitesmoke"
             />
             }
-
+            {
+            person.Dislikes &&
+            <GiftIterator
+              gifts={person.Dislikes}
+              title="Dislikes"
+              bgcolor="slateblue"
+            />
+            }
+            {
+            person.Hates &&
+            <GiftIterator
+              gifts={person.Hates}
+              title="Hates"
+              bgcolor="darkslategrey"
+            />
+            }
           </div>
 
         </div>

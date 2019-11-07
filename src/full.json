@@ -3757,7 +3757,7 @@
     "Likes": ["All Milk","Daffodil"],
     "Neutral": ["All Eggs(exceptVoid Egg)","AllFruit(exceptFruit Tree Fruit,Salmonberry&Spice Berry)","All Mushrooms(exceptRed)","Dandelion","Hazelnut","Leek","Snow Yam","Winter Root"],
     "Dislikes": ["Quartz","Wild Horseradish"],
-    "Hates": ["AllFish","Clam","Clay","Coral","Fried Eel","Garlic","Holly","Maki Roll","Salmonberry","Sashimi","Spice] Berry","Spicy Eel","Trout Soup"]
+    "Hates": ["All Fish","Clam","Clay","Coral","Fried Eel","Garlic","Holly","Maki Roll","Salmonberry","Sashimi","Spice Berry","Spicy Eel","Trout Soup"]
   },
   {
     "Category": "NPC",
@@ -3815,7 +3815,7 @@
     "Loves": ["Diamond","Iridium Bar","Pumpkin","Void Egg","Void Mayonnaise","Wild Horseradish"],
     "Likes": ["Gold Bar","Quartz"],
     "Neutral": ["All Eggs(exceptVoid Egg)","All Milk","AllFruit(exceptFruit Tree Fruit&Salmonberry)"],
-    "Dislikes": ["AllCooking(exceptBread,Fried Egg,Strange Bun)","AllMushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Life Elixir","Salmonberry","Snow Yam","Winter Root"]
+    "Dislikes": ["AllCooking(exceptBread,Fried Egg,Strange Bun)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Life Elixir","Salmonberry","Snow Yam","Winter Root"]
   },
   {
     "Category": "NPC",
@@ -3832,7 +3832,7 @@
     "Villager": "Linus",
     "Birthday": "Winter03",
     "Loves": ["Blueberry Tart","Cactus Fruit","Coconut","Dish O' The Sea","Yam"],
-    "Likes": ["All Eggs(exceptVoid Egg)","All Milk","AllFruit(exceptCactus Fruit&Coconut)","AllMushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
+    "Likes": ["All Eggs(exceptVoid Egg)","All Milk","AllFruit(exceptCactus Fruit&Coconut)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
     "Neutral": ["AllFish(exceptCarp&Snail)"],
     "Dislikes": ["AllForaged Minerals","AllGems(exceptDiamond&Prismatic Shard)"]
   },
@@ -3863,8 +3863,8 @@
     "Loves": ["Fried Calamari"],
     "Likes": ["All Eggs(exceptVoid Egg)","All Milk","Daffodil","Dandelion"],
     "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)"],
-    "Dislikes": ["AllForaged Minerals","AllGems(exceptDiamond&Prismatic Shard)","AllMushrooms(exceptRed)","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"],
-    "Hates": ["AllFish","Corn","Garlic","Parsnip Soup","Tortilla"]
+    "Dislikes": ["AllForaged Minerals","AllGems(exceptDiamond&Prismatic Shard)","All Mushrooms(exceptRed)","Hazelnut","Holly","Leek","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"],
+    "Hates": ["All Fish","Corn","Garlic","Parsnip Soup","Tortilla"]
   },
   {
     "Category": "NPC",
@@ -3902,7 +3902,7 @@
     "Loves": ["Catfish","Diamond","Iridium Bar","Mead","Octopus","Pumpkin","Sea Cucumber","Sturgeon"],
     "Likes": ["Gold Bar","Lingcod","Quartz","Tiger Trout"],
     "Neutral": ["All Eggs(exceptVoid Egg)","AllFish(exceptCarp,Catfish,Lingcod,Octopus,Sea Cucumber,Snail,Sturgeon&Tiger Trout)","AllFruit(exceptFruit Tree Fruit&Salmonberry)","All Milk"],
-    "Dislikes": ["AllCooking(except fish recipes)","AllMushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Life Elixir","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"]
+    "Dislikes": ["AllCooking(except fish recipes)","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Life Elixir","Salmonberry","Snow Yam","Wild Horseradish","Winter Root"]
   },
   {
     "Category": "NPC",
@@ -3911,7 +3911,7 @@
     "Loves": ["Purple Mushroom","Solar Essence","Super Cucumber","Void Essence"],
     "Likes": ["AllGeode Minerals","Quartz"],
     "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)"],
-    "Dislikes": ["All Eggs","All Milk","AllMushrooms(exceptRed&Purple)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Slime","Snow Yam","Wild Horseradish","Winter Root"]
+    "Dislikes": ["All Eggs","All Milk","All Mushrooms(exceptRed&Purple)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Salmonberry","Slime","Snow Yam","Wild Horseradish","Winter Root"]
   },
   {
     "Category": "NPC",
@@ -3919,7 +3919,7 @@
     "Birthday": "Summer13",
     "Loves": ["Complete Breakfast","Salmon Dinner"],
     "Likes": ["All Eggs(exceptVoid Egg)"],
-    "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","All Milk","AllMushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Leek","Snow Yam","Winter Root"],
+    "Neutral": ["AllFruit(exceptFruit Tree Fruit&Salmonberry)","All Milk","All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Leek","Snow Yam","Winter Root"],
     "Dislikes": ["Salmonberry","Wild Horseradish"],
     "Hates": ["Holly","Quartz"]
   },
@@ -3950,8 +3950,8 @@
     "Loves": ["Cactus Fruit","Maple Bar","Pizza","Tigerseye"],
     "Likes": ["All Eggs(exceptVoid Egg)","Joja Cola"],
     "Neutral": ["AllFruit(exceptCactus Fruit,Fruit Tree Fruit&Salmonberry)","All Milk"],
-    "Dislikes": ["AllMushrooms(exceptRed)","AllVegetables(exceptHops&Wheat)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Quartz","Salmonberry","Seaweed","Snow Yam","Wild Horseradish","Winter Root"],
-    "Hates": ["Coal","Copper Bar","Duck Mayonnaise","Gold Bar","Gold Ore","Iridium Bar","Iridium Ore","Iron] Bar","Mayonnaise","Pickles","Refined Quartz"]
+    "Dislikes": ["All Mushrooms(exceptRed)","AllVegetables(exceptHops&Wheat)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Quartz","Salmonberry","Seaweed","Snow Yam","Wild Horseradish","Winter Root"],
+    "Hates": ["Coal","Copper Bar","Duck Mayonnaise","Gold Bar","Gold Ore","Iridium Bar","Iridium Ore","Iron Bar","Mayonnaise","Pickles","Refined Quartz"]
   },
   {
     "Category": "NPC",
@@ -3970,7 +3970,7 @@
     "Loves": ["Beer","Hot Pepper","Pepper Poppers","Pizza"],
     "Likes": ["All Eggs(exceptVoid Egg)","AllFruit(exceptHot Pepper)"],
     "Neutral": ["All Milk"],
-    "Dislikes": ["All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Seaweed","Snow Yam","Wil]d Horseradish","Winter Root"],
+    "Dislikes": ["All Mushrooms(exceptRed)","Daffodil","Dandelion","Hazelnut","Holly","Leek","Seaweed","Snow Yam","Wild Horseradish","Winter Root"],
     "Hates": ["Pickles","Quartz"]
   },
   {
@@ -4000,7 +4000,7 @@
     "Loves": ["Coconut","Fruit Salad","Pink Cake","Sunflower"],
     "Likes": ["Daffodil"],
     "Dislikes": ["All Eggs","AllFruit(exceptCoconut)","All Milk","All Mushrooms(exceptRed)","AllVegetables(exceptHops&Wheat)","Dandelion","Hazelnut","Holly","Leek","Quartz","Snow Yam","Winter Root"],
-    "Hates": ["AllFish","Clay","Prismatic Shard","Wild Horseradish"]
+    "Hates": ["All Fish","Clay","Prismatic Shard","Wild Horseradish"]
   },
   {
     "Category": "NPC",
@@ -4008,7 +4008,7 @@
     "Birthday": "Winter23",
     "Loves": ["Goat Cheese","Poppyseed Muffin","Salad","Stir Fry","Truffle","Vegetable Medley","Wine"],
     "Likes": ["All Eggs(exceptVoid Egg)","AllFruit","All Milk","All Mushrooms(exceptRed)","Daffodil","Dandelion","Driftwood","Hazelnut","Holly","Leek","Snow Yam","Spring Onion","Wild Horseradish","Winter Root"],
-    "Dislikes": ["AllForaged Minerals(exceptEarth Crystal)","AllGems(exceptDiamond&Prismatic Shard)","Carp Surprise","Cookie","Frie]d Egg","Ice Cream","Pink Cake","Rice Pudding","Seaweed","Survival Burger","Tortilla"],
+    "Dislikes": ["AllForaged Minerals(exceptEarth Crystal)","AllGems(exceptDiamond&Prismatic Shard)","Carp Surprise","Cookie","Fried Egg","Ice Cream","Pink Cake","Rice Pudding","Seaweed","Survival Burger","Tortilla"],
     "Hates": ["Bread","Hashbrowns","Pancakes","Pizza","Void Egg"]
   },
   {
@@ -4038,7 +4038,7 @@
     "Loves": ["Fish Taco","Summer Spangle"],
     "Likes": ["Daffodil"],
     "Neutral": ["All Eggs(exceptVoid Egg)","AllFruit(exceptFruit Tree Fruit&Salmonberry)","All Milk"],
-    "Dislikes": ["All Mushrooms(exceptRed)","Amaranth","Dandelion","Duck Mayonnaise","Hazelnut","Holly","Leek","Mayonnaise","Sno]w Yam","Wild Horseradish","Winter Root"],
+    "Dislikes": ["All Mushrooms(exceptRed)","Amaranth","Dandelion","Duck Mayonnaise","Hazelnut","Holly","Leek","Mayonnaise","Snow Yam","Wild Horseradish","Winter Root"],
     "Hates": ["Quartz","Salmonberry"]
   },
   {
