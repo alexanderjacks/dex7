@@ -316,9 +316,18 @@ a {
   overflow-wrap: normal;
 }
 
+
+.categorical {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
 @keyframes pulse {
   50% {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 @keyframes spin {

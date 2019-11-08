@@ -50,7 +50,7 @@ class Crops extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical css3frame-card-padding">
+      <li key={item.Key} className="categorical">
          {/* needs own component from here on down, fields will reflect json types */}
         <div className="css3frame-border-4">
         <div className="css3frame-border-3">

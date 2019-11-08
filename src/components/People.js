@@ -44,7 +44,7 @@ class People extends Component {
         <div>
         <div className="coled no-repeat-bg">
         <div className="css3frame-card-back-sidefade">
-        <div className="css3frame-card-padding">
+        <div className="">
           {/* name & bday metadata */}
           <div className="rowed">
             <img src={require('../img/'+person.Villager.replace(/ /g, '_')+'.png')}
