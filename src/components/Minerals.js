@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import Button from '@material-ui/core/Button';
-
 import '../App.css';
 
 class Minerals extends Component {
@@ -48,43 +46,31 @@ class Minerals extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
-         {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
-
-      {/* elaborate background image decision code, for CSS class via .Location prop */}
-        <div className={item.Location[0].replace(/ /g, '_')+ " coled"}>
-
-        <div className="css3frame-card-back">
+      <li key={item.Key} className={item.Name.replace(/ /g, '_')+ " coled"}>
+        <div className={item.Location[0].replace(/ /g, '_')+" coled"}>
+        <div className="css3frame-card-back categorical">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
           <div className="rowed row-spacer">
             {/* display image on left */}
-			<span>
-				<h2 className="text-shadow-white">{item.Name}</h2>
-				<h5>{item.Type}</h5>
-			</span>
+      			<span>
+      				<h2 className="text-shadow-white">{item.Name}</h2>
+      				<h5>{item.Type}</h5>
+      			</span>
             <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
             className="item-border"
             alt={item.Name}
             />
-            {/* display metadata on right */}
-          </div>
-          <div className="rowed row-spacer">
-            <h4 class="text-shadow-white">
+            {/* display metadata to right of image */}
+            <div class="text-shadow-white rowed">
               <h3>{item.BasePrice}g</h3>
               {item.Mine_Lvl &&
               	<span>Lvls: {item.Mine_Lvl} </span>
               }
               <span>Panning: {item.Panning} </span>
-              <hr/>
               {/* could use refactoring into own Uses/Bundles component */}
               {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
-              <span className="coled">
+              <span className="rowed row-spillover">
                 {item.Uses && item.Uses.map(
                   (Use) => (
                     <span>
@@ -99,24 +85,15 @@ class Minerals extends Component {
                   )
                 )}
               </span>
-            </h4>
+            </div>
           </div>
-
-        </div>
-        </div>
-
-        {/* styling of item frame */}
-        </div>
-        </div>
         </div>
         </div>
         </div>
       </li>
     );
-
     return (
       <div className="App">
-
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
@@ -143,19 +120,15 @@ class Minerals extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-
         </div>
-
         {/* BODY component, content sorted by HEADER */}
         <section>
          <ul className="App-body">
           {items}
          </ul>
         </section>
-
       </div>
     );
   }
 }
-
 export default Minerals;

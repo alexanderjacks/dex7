@@ -250,7 +250,20 @@ ul {
 a {
   text-decoration: none;
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+}
+.master-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.categorical {
+  min-width: 100vw;
+}
 .tinted-card {
   border-radius: 1.2rem;
 }
@@ -314,15 +327,6 @@ a {
 .max420px {
   max-width: 420px;
   overflow-wrap: normal;
-}
-
-
-.categorical {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
 }
 
 @keyframes pulse {

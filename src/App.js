@@ -42,7 +42,6 @@ function Index() {
     </div>
   );
 }
-
 class App extends Component {
   constructor(props){
     super(props)
@@ -56,15 +55,10 @@ class App extends Component {
       people: people,
     }
   }
-
-  componentDidMount() {
-    console.log("here's the app shell");
-  }
-
+  componentDidMount() { console.log("here's the app shell"); }
   render(){
     return (
       <div className="App">
-
         <header className="App-header rowed row-spacer">
           <div className="coled">
             <Link to={url_}>
@@ -132,7 +126,6 @@ class App extends Component {
             }
           />
         </section>
-
       </div>
     );
   }
