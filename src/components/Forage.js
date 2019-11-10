@@ -48,61 +48,41 @@ class Forage extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
+      <li key={item.Key} className="">
          {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
-
       {/* CSS class assigns background img based on .Location prop */}
-        <div className={item.Location.replace(/ /g, '_')+ " coled"}>
-        <div className="css3frame-card-back">
-
+        <div className={item.Location.replace(/ /g, '_')+ " text-shadow-white"}>
+        <div className="css3frame-card-back categorical rowed row-spacer">
           {/* place and time metadata in text */}
-          <div className="rowed row-spacer">
-            <h4 className="text-shadow-white">
-              <span>{item.Location}</span>
-              {item.Location2 && <span>& {item.Location2}</span>}
-              {/*<SeasonText seasons={item.Season} />*/}
-            </h4>
+          <span>{item.Location}</span>
+          {item.Location2 && <span>& {item.Location2}</span>}
+          <div>
+            <SeasonTile seasons={item.Season} />
+            {item.Season}
           </div>
-          <div className="rowed row-spacer">
-            {/* display image on left */}
-            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          <h2>{item.Name}</h2>
+          <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
             className="item-border"
             alt={item.Name}
-            />
-            {/* display metadata on right */}
-            <div className="rowed">
-              {/* seasons could use own component */}
-              <SeasonTile seasons={item.Season} />
-              <div>{item.Season}</div>
-            </div>
-          </div>
-          <div className="rowed row-spacer">
-              <h2>{item.Name}</h2>
-              <span>
-                <span>Forage</span>
-                {/* if 2nd type exists */}
-                {item.AlsoType && <span>(& {item.AlsoType})</span>}
-              </span>
-          </div>
+          />
+          <h3>
+            Forage
+            {/* if 2nd type exists */}
+            {item.AlsoType && ` (& ${item.AlsoType})`}
+          </h3>
 
-        {/* prices across 4 quality lvls; needs own component */}
-          <hr/>
+          {/* prices across 4 quality lvls; needs own component */}
           <h4 className="prices_bar">
-            {item.BasePrice}g
-            <span>
-              <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
-            </span>
+          {item.BasePrice}g
+          <span>
+            <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
+          </span>
+          <span>
+            <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
+          </span>
+          <span>
+            <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
+          </span>
           </h4>
           {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
           <div className="coled">
@@ -118,22 +98,12 @@ class Forage extends Component {
               </span>
              }
           </div>
-
-
-        </div>
-        </div>
-
-        {/* styling of item frame */}
-        </div>
-        </div>
-        </div>
+          </div>
         </div>
       </li>
     );
-
     return (
       <div className="App">
-
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#sortForageByPrice_Asc" className="" onClick={this.sortForageByPriceAsc}>
