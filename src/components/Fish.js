@@ -43,8 +43,8 @@ class Fish extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className={item.Location[0].replace(/ /g, '_')+ " rowed row-spacer"}>
-        <div className="css3frame-card-back categorical rowed row-spacer">
+      <li key={item.Key} className={item.Location[0].replace(/ /g, '_')+ " "}>
+        <div className="css3frame-card-back categorical">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
         <div className="text-shadow-white">
@@ -59,9 +59,9 @@ class Fish extends Component {
           <h3>{item.BasePrice}g</h3>
           <h4>{item.Behaviour}&nbsp;{item.ChallengeScore}</h4>
         </div>
-				<h3 className="">
+
         {/* in-line handling of single exception in img names XD */}
-        <ul className="rowed">{item.Location && item.Location.map(
+        <ul className="">{item.Location && item.Location.map(
           Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
           )}</ul>
         <SeasonImages seasons={item.Season} />
@@ -70,7 +70,7 @@ class Fish extends Component {
           )}
         </ul>
         <WeatherImages weather={item.Weather} />
-        </h3>
+
 			  </div>
       </div>
 

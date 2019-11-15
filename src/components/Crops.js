@@ -50,31 +50,30 @@ class Crops extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className={item.Season[0].replace(/ /g, '_')+ " categorical rowed css3frame-card-padding text-shadow-white"}>
-      <div className="css3frame-card-back">
+      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className="">
-
+        <div className={item.Season[0].replace(/ /g, '_')+ " "}>
+        <div className="css3frame-card-back-sidefade categorical rowed">
           {/* name & price metadata */}
 
             {/* display image on left */}
-            <div>
+
 	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
 	            className="item-border"
 	            alt={item.Name}
 	            />
-	            <h2 className="text-shadow-white">
+	            <h2 className="">
 	              {item.Name}
 	            </h2>
-            </div>
+
             <div>
                <h3>{item.Season[0]}</h3>
 	             <h3>{item.Type}</h3>
                <h4>harvest: {item.Days} days</h4>
                <h4>{item.Continuous ? 'multi-harvest' : 'harvest once' }</h4>
             </div>
-          </div>
+
           <hr/>
           <div className="coled text-shadow-white">
 	          <h3>Seed/buy: {item.SeedPrice}g</h3>
@@ -82,7 +81,8 @@ class Crops extends Component {
             <h3>from: {item.Location}</h3>
           </div>
           <BundleIterator requirements={item.Bundles} />
-      </div>
+        </div>
+        </div>
       </li>
     );
 
