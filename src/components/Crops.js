@@ -50,22 +50,14 @@ class Crops extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
-         {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
-
-        <div className="rowed row-spacer row-spillover">
+      <li key={item.Key} className={item.Season[0].replace(/ /g, '_')+ " categorical rowed css3frame-card-padding text-shadow-white"}>
+      <div className="css3frame-card-back">
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className={item.Season[0].replace(/ /g, '_')+ " coled no-repeat-bg"}>
-        <div className="css3frame-card-back">
-        <div className="css3frame-card-padding">
+        <div className="">
+
           {/* name & price metadata */}
-          <div className="rowed row-spacer">
+
             {/* display image on left */}
             <div>
 	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
@@ -87,23 +79,10 @@ class Crops extends Component {
           <div className="coled text-shadow-white">
 	          <h3>Seed/buy: {item.SeedPrice}g</h3>
 	          <h3>Crop/sell: {item.BasePrice}g</h3>
+            <h3>from: {item.Location}</h3>
           </div>
-          <hr/>
-          <h3>from: {item.Location}</h3>
           <BundleIterator requirements={item.Bundles} />
-
-        </div>
-        </div>
-        </div>
-
-        </div>
-
-
-        {/* styling of item frame */}
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
       </li>
     );
 

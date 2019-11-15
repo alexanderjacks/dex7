@@ -41,24 +41,20 @@ class People extends Component {
         <div className="css3frame-border-2">
         <div className="css3frame-border-1">
 
-        <div>
-        <div className="coled no-repeat-bg">
-        <div className="css3frame-card-back-sidefade">
-        <div className="">
-          {/* name & bday metadata */}
-          <div className="rowed">
-            <img src={require('../img/'+person.Villager.replace(/ /g, '_')+'.png')}
-              className="item-border"
-              alt={person.Villager}
-            />
-            <h4 className="text-shadow-white">
-              <h2>{person.Villager}</h2>
-              {person.Birthday}
-            </h4>
-          </div>
+        <div className="no-repeat-bg css3frame-card-back-sidefade">
 
+          <div className="text-shadow-white rowed">
+          {/* name & bday metadata */}
+          <img src={require('../img/'+person.Villager.replace(/ /g, '_')+'.png')}
+            className="item-border"
+            alt={person.Villager}
+          />
+          <h4 className="text-shadow-white">
+            <h2>{person.Villager}</h2>
+            {person.Birthday}
+          </h4>
+          <ul>
           {/* all gift tastes */}
-          <div className="text-shadow-white rowed row-spillover">
             <GiftIterator
               gifts={person.Loves}
               title="Loves"
@@ -93,17 +89,13 @@ class People extends Component {
               bgcolor="darkslategrey"
             />
             }
+            </ul>
           </div>
 
         </div>
         </div>
         </div>
-
-        </div>
-
         {/* styling of item frame */}
-        </div>
-        </div>
         </div>
         </div>
       </li>

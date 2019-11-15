@@ -26,7 +26,7 @@ function Index() {
   return(
     <div className="homepage-route">
       <h1><span alt="exclamation-upside-down">¡</span>Stardewdex!</h1>
-      <p>Your quick guide to Stardew Valley</p>
+      <h3>Open Settings Menu (⠇) & Add To Your Home Screen</h3>
       <hr/>
       <AdSense.Google
           client='ca-pub-1699472970547311'
@@ -34,7 +34,7 @@ function Index() {
       />
       <hr/>
       <p>
-        Use the SORT menu!
+        Use the STUFF menu!
         &nbsp;
         <SortMenu/>
       </p>
@@ -58,23 +58,16 @@ class App extends Component {
   componentDidMount() { console.log("here's the app shell"); }
   render(){
     return (
-      <div className="App">
+      <div className="">
         <header className="App-header rowed row-spacer">
-          <div className="coled">
-            <Link to={url_}>
-              <img src={logo} className="App-logo" alt="logo" />
-            </Link>
-          </div>
-          <div className="coled">
-            <SortMenu/>
-          </div>
-          <div className="coled">
-            <h4>Open Settings Menu (⠇) & Add To Your Home Screen</h4>
-          </div>
+          <Link to={url_}>
+            <img src={logo} className="App-logo" alt="logo" />
+          </Link>
+          <SortMenu/>
+          <h4>Your quick guide to Stardew Valley</h4>
         </header>
-
         {/* BODY components, active content chosen by <NavMenu/>  */}
-        <section>
+        <section className="">
           <Route path="/" exact component={Index} />
           <Route path="/bundles/"
             render={props =>

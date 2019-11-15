@@ -28,7 +28,7 @@ function SortMenu() {
         variant="contained"
         className="pulse"
       >
-        SORT&nbsp;
+        STUFF&nbsp;
         <span>🔎</span>
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>

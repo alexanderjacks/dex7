@@ -34,20 +34,14 @@ class Bundles extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
-         {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
+      <li key={item.Key} className="">
 
       {/* CSS class assigns background img based on .Name prop */}
         <div>
     	{/* converts json field so matches filenames,
     	removes any quantity from image name */}
         <div className={item.Image.replace(/ /g, '_').split('_(')[0]+ " coled no-repeat-bg"}>
-        <div className="css3frame-card-back-sidefade">
+        <div className="css3frame-card-back-sidefade categorical rowed row-spacer">
         <div className="css3frame-card-padding">
           {/* name & reward metadata */}
           <div className="rowed row-spacer">
@@ -65,18 +59,10 @@ class Bundles extends Component {
           {/* CommCenter room metadata */}
           <div className="rowed row-spacer">
             <h4 className="text-shadow-white">
-              <hr/>
               <span>{item.Room}</span>
             </h4>
           </div>
 
-        </div>
-        </div>
-        </div>
-
-        </div>
-
-        {/* styling of item frame */}
         </div>
         </div>
         </div>

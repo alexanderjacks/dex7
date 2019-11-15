@@ -3,7 +3,7 @@ import React from 'react';
 class SeasonTile extends React.Component {
 	render() {
 		return(
-			<div className="rowed">
+			<div>
 				<span>
 				{this.props.seasons.includes('Spring')
 				? <span><img className="seasonTile" src={require('../img/Spring.png')} /></span> : <></>

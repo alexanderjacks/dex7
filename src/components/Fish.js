@@ -43,47 +43,38 @@ class Fish extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
-         {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
-
-      {/* elaborate background image decision code, for CSS class via .Location prop */}
-        <div className={item.Location[0].replace(/ /g, '_')+ " coled"}>
-
-        <div className="css3frame-card-back">
+      <li key={item.Key} className={item.Location[0].replace(/ /g, '_')+ " rowed row-spacer"}>
+        <div className="css3frame-card-back categorical rowed row-spacer">
         <div className="css3frame-card-padding">
           {/* place and time metadata in text */}
-          <div className="rowed row-spacer">
-            {/* display image on left */}
-			<span className="coled">
-				<h2 className="text-shadow-white">{item.Name}</h2>
-				<h3 className="text-shadow-white">
-        <ul className="coled">{item.Location && item.Location.map(
+        <div className="text-shadow-white">
+          {/* display image on left */}
+			  <div className="rowed">
+        <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          className="item-border"
+          alt={item.Name}
+        />
+        <div className="coled">
+        <h2 className="">{item.Name}</h2>
+          <h3>{item.BasePrice}g</h3>
+          <h4>{item.Behaviour}&nbsp;{item.ChallengeScore}</h4>
+        </div>
+				<h3 className="">
+        {/* in-line handling of single exception in img names XD */}
+        <ul className="rowed">{item.Location && item.Location.map(
           Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
           )}</ul>
         <SeasonImages seasons={item.Season} />
-        <ul className="coled">{item.Time.map && item.Time.map(
+        <ul className="rowed">{item.Time.map && item.Time.map(
           Time => <li>{Time}</li>
           )}
         </ul>
         <WeatherImages weather={item.Weather} />
         </h3>
+			  </div>
+      </div>
 
-			</span>
-            <span className="coled">
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-	            className="item-border"
-	            alt={item.Name}
-	            />
-	            <h3>{item.BasePrice}g</h3>
-              <h4>{item.Behaviour}&nbsp;{item.ChallengeScore}</h4>
-            </span>
-            {/* display metadata on right */}
-          </div>
+          {/* 2nd row */}
           <div className="rowed row-spacer">
             <h4 className="text-shadow-white">
               <hr/>
@@ -97,16 +88,16 @@ class Fish extends Component {
                 }
               </div>
               {/* could use refactoring into own Uses/Bundles component */}
-              <span className="coled">
-              	{item.Uses && item.Uses.map(
-              		(Use) => (
+              <span className="rowed">
+              	{item.Ins && item.Ins.map(
+              		(In) => (
                     <span>
-                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')}
+                    <img src={require('../img/'+In.replace(/ /g, '_')+'.png')}
                       className="item-border"
-                      alt={item.Use}
+                      alt={item.In}
                     />
                     <h4>{
-                      Use
+                      In
                     }</h4>
                     </span>
                   )
@@ -114,16 +105,9 @@ class Fish extends Component {
               </span>
             </h4>
           </div>
-
         </div>
         </div>
 
-        {/* styling of item frame */}
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
       </li>
     );
 

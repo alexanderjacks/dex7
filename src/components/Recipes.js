@@ -48,33 +48,40 @@ class Recipes extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="categorical">
+      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
          {/* needs own component from here on down, fields will reflect json types */}
-        <div className="css3frame-border-4">
-        <div className="css3frame-border-3">
-        <div className="css3frame-border-2">
-        <div className="css3frame-border-1">
-
-
-        <div className="rowed row-spacer row-spillover">
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className={item.Name.replace(/ /g, '_').replace(/'/g, '%27')+ " coled"}>
+        <div className={item.Name.replace(/ /g, '_').replace(/'/g, '%27')+ " categorical"}>
         <div className="css3frame-card-back">
-        <div className="css3frame-card-padding">
-          {/* name & price metadata */}
-          <div className="rowed row-spacer">
-            {/* display image on left */}
+          <div className="rowed">
+
+            {/* name & price metadata */}
             <div>
 	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
 	            className="item-border"
 	            alt={item.Name}
 	            />
-	            <h2 className="text-shadow-white">
-	              {item.Name}
-	            </h2>
+	            <h2>{item.Name}</h2>
+              <h3 className="coled">Sells for: {item.SellPrice}g</h3>
             </div>
-            <div className="text-shadow-white max200px">
+
+            <div>
+              <div className="coled">
+    	          <h3>+{item.GivesEnergy} Energy</h3>
+    	          <h3>+{item.GivesHealth} Health</h3>
+              </div>
+              { item.Buff1 &&
+              <div className="coled">
+                <h3>Buff: {item.Buff1}</h3>
+                { item.Buff2 && <h3>Buff #2: {item.Buff2}</h3> }
+                { item.Buff3 && <h3>Buff #3: {item.Buff3}</h3> }
+                { item.Buff4 && <h3>Buff #4: {item.Buff4}</h3> }
+              </div>
+              }
+            </div>
+
+            <div className="max200px">
               <h3 className="">"{item.Description}"</h3>
               <h4>via: {item.Source1}
               {/* Only Queen of Sauce recipes have these props */}
@@ -86,30 +93,15 @@ class Recipes extends Component {
                */}
               { !(item.Source1.charAt(0)==("T")) ? <span alt="poker-heart-emoji">♥</span> : <span></span>}
               </h4>
-              <h3 className="coled text-shadow-white">Sells for: {item.SellPrice}g</h3>
             </div>
           </div>
-          <hr/>
-          <div className="rowed">
-            <div className="coled text-shadow-white">
-  	          <h3>+{item.GivesEnergy} Energy</h3>
-  	          <h3>+{item.GivesHealth} Health</h3>
-            </div>
-            { item.Buff1 &&
-            <div className="coled text-shadow-white">
-              <h3>Buff: {item.Buff1}</h3>
-              { item.Buff2 && <h3>Buff #2: {item.Buff2}</h3> }
-              { item.Buff3 && <h3>Buff #3: {item.Buff3}</h3> }
-              { item.Buff4 && <h3>Buff #4: {item.Buff4}</h3> }
-            </div>
-            }
-          </div>
-          <hr/>
-          <div className="coled">
+
+          {/*needs own component*/}
+          <div className="">
 	          <h3>Ingredients</h3>
-            <div className="rowed row-spacer">
+            <div className="rowed">
               {item.Ing1 &&
-                <div className="rowed row-spacer">
+                <div>
                   <div className="coled">
                     <img src={require('../img/'+item.Ing1.replace(/ /g, '_')+'.png')}
                       className="item-border"
@@ -120,7 +112,7 @@ class Recipes extends Component {
                 </div>
               }
               {item.Ing2 &&
-                <div className="rowed row-spacer"> +
+                <div className="">
                   <div className="coled">
                     <img src={require('../img/'+item.Ing2.replace(/ /g, '_')+'.png')}
                       className="item-border"
@@ -131,7 +123,7 @@ class Recipes extends Component {
                 </div>
               }
               {item.Ing3 &&
-                <div className="rowed row-spacer"> +
+                <div className="">
                   <div className="coled">
                     <img src={require('../img/'+item.Ing3.replace(/ /g, '_')+'.png')}
                       className="item-border"
@@ -142,7 +134,7 @@ class Recipes extends Component {
                 </div>
               }
               {item.Ing4 &&
-                <div className="rowed row-spacer"> +
+                <div className="">
                   <div className="coled">
                     <img src={require('../img/'+item.Ing4.replace(/ /g, '_')+'.png')}
                       className="item-border"
@@ -154,18 +146,8 @@ class Recipes extends Component {
               }
             </div>
           </div>
-
-        </div>
-        </div>
         </div>
 
-        </div>
-
-
-        {/* styling of item frame */}
-        </div>
-        </div>
-        </div>
         </div>
       </li>
     );
