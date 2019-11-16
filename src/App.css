@@ -5,13 +5,13 @@
 }
 
 section {
-  display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
 }
 .App {
   text-align: center;
   margin: 0px;
+  padding: 0rem;
 }
 
 .pulse {

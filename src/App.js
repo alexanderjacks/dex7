@@ -46,6 +46,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
+      show: false,
       forage: forage,
       crops: crops,
       minerals: minerals,
@@ -58,7 +59,7 @@ class App extends Component {
   componentDidMount() { console.log("here's the app shell"); }
   render(){
     return (
-      <div className="">
+      <div className="App">
         <header className="App-header rowed row-spacer">
           <Link to={url_}>
             <img src={logo} className="App-logo" alt="logo" />
