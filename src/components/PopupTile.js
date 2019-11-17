@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import SeasonTile from './SeasonTile.js';
 import WeatherImages from './WeatherImages.js';
+import BundleIterator from './BundleIterator.js';
 import '../App.css';
 
 function PopupTile(props) {
@@ -113,22 +114,40 @@ function PopupTile(props) {
                   </div>
                 }
 
-                      {/* could use refactoring into own Uses/Bundles component */}
-                      <span className="rowed">
-                      	{props.Ins && props.Ins.map(
-                      		(In) => (
-                            <span>
-                            <img src={require('../img/'+In.replace(/ /g, '_')+'.png')}
-                              className="item-border"
-                              alt={props.In}
-                            />
-                            <h4>{
-                              In
-                            }</h4>
-                            </span>
-                          )
-                      	)}
+                {/* could use refactoring into own Uses/Bundles component */}
+                <span className="rowed">
+                	{props.Ins && props.Ins.map(
+                		(In) => (
+                      <span>
+                      <img src={require('../img/'+In.replace(/ /g, '_')+'.png')}
+                        className="item-border"
+                        alt={props.In}
+                      />
+                      <h4>{
+                        In
+                      }</h4>
                       </span>
+                    )
+                	)}
+                </span>
+                {/* Crops fields  */}
+                  <h3>{props.Season && `${props.Season[0]}`}</h3>
+                  <h3>{props.Days && `harvest: ${props.Days} days`}</h3>
+                  <h3>{props.Continuous && props.Continuous ? 'multi-harvest' : 'harvest once' }</h3>
+                    {props.SeedPrice &&
+                      <div>
+                      <hr/>
+                      <div className="coled">
+            	          <h3>Seed/buy: ${props.SeedPrice}g</h3>
+            	          <h3>Crop/sell: ${props.BasePrice}g</h3>
+                        <h3>from: ${props.Location}</h3>
+                      </div>
+                    </div>
+                    }
+                  {props.requirements &&
+                    <BundleIterator requirements={props.requirements} />
+                  }
+
               {/* Forage fields  */}
               {/* CSS class assigns background img based on .Location prop */}
               {props.Location &&

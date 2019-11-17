@@ -51,39 +51,20 @@ class Crops extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
-      {/* CSS class assigns background img based on .Name prop */}
-    	{/* converts json field so matches filenames */}
-        <div className={item.Season[0].replace(/ /g, '_')+ " "}>
-        <div className="css3frame-card-back-sidefade categorical rowed">
-          {/* name & price metadata */}
-
-            {/* display image on left */}
-
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-	            className="item-border"
-	            alt={item.Name}
-	            />
-	            <h2 className="">
-	              {item.Name}
-	            </h2>
-
-            <div>
-               <h3>{item.Season[0]}</h3>
-	             <h3>{item.Type}</h3>
-               <h4>harvest: {item.Days} days</h4>
-               <h4>{item.Continuous ? 'multi-harvest' : 'harvest once' }</h4>
-            </div>
-
-          <hr/>
-          <div className="coled text-shadow-white">
-	          <h3>Seed/buy: {item.SeedPrice}g</h3>
-	          <h3>Crop/sell: {item.BasePrice}g</h3>
-            <h3>from: {item.Location}</h3>
-          </div>
-          <BundleIterator requirements={item.Bundles} />
-        </div>
-        </div>
+      <li key={item.Key} className="css3frame-card-padding text-shadow-white">
+      <PopupTile
+        Category={item.Category}
+        Name={item.Name}
+        Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+        Season={item.Season}
+        Location={item.Location}
+        Location2={item.Location2}
+        SellPrice={item.BasePrice}
+        Bundle={item.Bundle}
+        Days={item.Days}
+        Continuous={item.Continuous}
+        requirements={item.requirements}
+      />
       </li>
     );
 
