@@ -43,71 +43,19 @@ class Fish extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className={item.Location[0].replace(/ /g, '_')+ " "}>
-        <div className="css3frame-card-back categorical">
-        <div className="css3frame-card-padding">
-          {/* place and time metadata in text */}
-        <div className="text-shadow-white">
-          {/* display image on left */}
-			  <div className="rowed">
-        <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-          className="item-border"
-          alt={item.Name}
+      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+        <PopupTile
+          Name={item.Name}
+          Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          Season={item.Season}
+          Location={item.Location}
+          Time={item.Time}
+          Notes={item.Description}
+          Behaviour={item.Behaviour}
+          Weather={item.Weather}
+          SellPrice={item.BasePrice}
+          Bundle={item.Bundle}
         />
-        <div className="coled">
-        <h2 className="">{item.Name}</h2>
-          <h3>{item.BasePrice}g</h3>
-          <h4>{item.Behaviour}&nbsp;{item.ChallengeScore}</h4>
-        </div>
-
-        {/* in-line handling of single exception in img names XD */}
-        <ul className="">{item.Location && item.Location.map(
-          Location => <li>{Location.replace(/Witchs/g, "Witch's")}</li>
-          )}</ul>
-        <SeasonImages seasons={item.Season} />
-        <ul className="rowed">{item.Time.map && item.Time.map(
-          Time => <li>{Time}</li>
-          )}
-        </ul>
-        <WeatherImages weather={item.Weather} />
-
-			  </div>
-      </div>
-
-          {/* 2nd row */}
-          <div className="rowed row-spacer">
-            <h4 className="text-shadow-white">
-              <hr/>
-              <div className="max400px">
-                {item.Notes &&
-                  <h4>🔎 {item.Notes}</h4>}
-                {item.Description &&
-                  <h4>
-                	📕: {item.Description}
-                  </h4>
-                }
-              </div>
-              {/* could use refactoring into own Uses/Bundles component */}
-              <span className="rowed">
-              	{item.Ins && item.Ins.map(
-              		(In) => (
-                    <span>
-                    <img src={require('../img/'+In.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.In}
-                    />
-                    <h4>{
-                      In
-                    }</h4>
-                    </span>
-                  )
-              	)}
-              </span>
-            </h4>
-          </div>
-        </div>
-        </div>
-
       </li>
     );
 

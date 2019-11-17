@@ -10,6 +10,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import SeasonTile from './SeasonTile.js';
+import WeatherImages from './WeatherImages.js';
 import '../App.css';
 
 function PopupTile(props) {
@@ -93,7 +94,41 @@ function PopupTile(props) {
                   </Typography>
                 </div>
 
+              {/* Fish fields  */}
+                {props.Time &&
+                <ul className="rowed">{props.Time.map && props.Time.map(
+                  Time => <li>{Time}</li>
+                  )}
+                </ul>
+                }
+                {props.Weather &&
+                <WeatherImages weather={props.Weather} />
+                }
+                {props.Behaviour &&
+                  <>{props.Behaviour}&nbsp;{props.ChallengeScore}</>
+                }
+                {props.Notes &&
+                  <div className="max400px">
+                  <h4>🔎 {props.Notes}</h4>
+                  </div>
+                }
 
+                      {/* could use refactoring into own Uses/Bundles component */}
+                      <span className="rowed">
+                      	{props.Ins && props.Ins.map(
+                      		(In) => (
+                            <span>
+                            <img src={require('../img/'+In.replace(/ /g, '_')+'.png')}
+                              className="item-border"
+                              alt={props.In}
+                            />
+                            <h4>{
+                              In
+                            }</h4>
+                            </span>
+                          )
+                      	)}
+                      </span>
               {/* Forage fields  */}
               {/* CSS class assigns background img based on .Location prop */}
               {props.Location &&
