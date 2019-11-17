@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AdSense from 'react-adsense';
 import SortMenu from './components/SortMenu.js';
+import PopupTile from './components/PopupTile.js';
 import Button from '@material-ui/core/Button';
 import logo from './img/logo.png';
 import './App.css';
@@ -46,7 +47,6 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      show: false,
       forage: forage,
       crops: crops,
       minerals: minerals,

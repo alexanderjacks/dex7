@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import BundleIterator from './BundleIterator.js';
-
+import PopupTile from './PopupTile.js';
 import '../App.css';
 
 class Recipes extends Component {
@@ -52,103 +52,26 @@ class Recipes extends Component {
          {/* needs own component from here on down, fields will reflect json types */}
       {/* CSS class assigns background img based on .Name prop */}
     	{/* converts json field so matches filenames */}
-        <div className={item.Name.replace(/ /g, '_').replace(/'/g, '%27')+ " categorical"}>
-        <div className="css3frame-card-back">
-          <div className="rowed">
-
-            {/* name & price metadata */}
-            <div>
-	            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-	            className="item-border"
-	            alt={item.Name}
-	            />
-	            <h2>{item.Name}</h2>
-              <h3 className="coled">Sells for: {item.SellPrice}g</h3>
-            </div>
-
-            <div>
-              <div className="coled">
-    	          <h3>+{item.GivesEnergy} Energy</h3>
-    	          <h3>+{item.GivesHealth} Health</h3>
-              </div>
-              { item.Buff1 &&
-              <div className="coled">
-                <h3>Buff: {item.Buff1}</h3>
-                { item.Buff2 && <h3>Buff #2: {item.Buff2}</h3> }
-                { item.Buff3 && <h3>Buff #3: {item.Buff3}</h3> }
-                { item.Buff4 && <h3>Buff #4: {item.Buff4}</h3> }
-              </div>
-              }
-            </div>
-
-            <div className="max200px">
-              <h3 className="">"{item.Description}"</h3>
-              <h4>via: {item.Source1}
-              {/* Only Queen of Sauce recipes have these props */}
-              {item.TV_Year && <span>&nbsp;{item.TV_Year}</span> }
-              {item.Episode_Number && <h5>(Episode #{item.Episode_Number})</h5> }
-              {/* We only want the heart to appear after NPCs,
-                  so NOT entries starting w "The ".
-                  This may count as the most Pythonic ES6 I've yet written :|
-               */}
-              { !(item.Source1.charAt(0)==("T")) ? <span alt="poker-heart-emoji">♥</span> : <span></span>}
-              </h4>
-            </div>
-          </div>
-
-          {/*needs own component*/}
-          <div className="">
-	          <h3>Ingredients</h3>
-            <div className="rowed">
-              {item.Ing1 &&
-                <div>
-                  <div className="coled">
-                    <img src={require('../img/'+item.Ing1.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.Ing1}
-                    />
-                    <span> {item.Ing1}</span>
-                  </div>
-                </div>
-              }
-              {item.Ing2 &&
-                <div className="">
-                  <div className="coled">
-                    <img src={require('../img/'+item.Ing2.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.Ing2}
-                    />
-                    <span> {item.Ing2}</span>
-                  </div>
-                </div>
-              }
-              {item.Ing3 &&
-                <div className="">
-                  <div className="coled">
-                    <img src={require('../img/'+item.Ing3.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.Ing3}
-                    />
-                    <span> {item.Ing3}</span>
-                  </div>
-                </div>
-              }
-              {item.Ing4 &&
-                <div className="">
-                  <div className="coled">
-                    <img src={require('../img/'+item.Ing4.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.Ing4}
-                    />
-                    <span> {item.Ing4}</span>
-                  </div>
-                </div>
-              }
-            </div>
-          </div>
-        </div>
-
-        </div>
+        <PopupTile
+          Name={item.Name}
+          Description={item.Description}
+          Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          SellPrice={item.SellPrice}
+          GivesEnergy={item.GivesEnergy}
+          GivesHealth={item.GivesHealth}
+          Buff1={item.Buff1}
+          Buff2={item.Buff2}
+          Buff3={item.Buff3}
+          Buff4={item.Buff4}
+          Ing1={item.Ing1}
+          Ing2={item.Ing2}
+          Ing3={item.Ing3}
+          Ing4={item.Ing4}
+          Source1={item.Source1}
+          TV_Year={item.TV_Year}
+          Episode_Number={item.Episode_Number}
+          Source1={item.Source1}
+        />
       </li>
     );
 

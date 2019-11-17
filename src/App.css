@@ -13,7 +13,10 @@ section {
   margin: 0px;
   padding: 0rem;
 }
-
+.popup0 {
+  min-width: 85vw;
+  min-height: 85vh;
+}
 .pulse {
   animation: pulse infinite 4s linear;
 }
@@ -85,12 +88,16 @@ ul {
 .css3frame-border-3 { border: 5px sandybrown solid; border-radius: 7px; }
 .css3frame-border-4 { border: 2px brown solid; border-radius: 8px; }
 
+.dim-the-unchosen { background: rgba(70, 72, 82, 0.3) }
+
 .word-wrap-break {
   word-wrap: break-word;
 }
 
 .item-plain {
   border: white solid 0px;
+  height: 48px;
+  width: 48px;
 }
 .item-border {
   border: sienna solid 2px;
@@ -156,6 +163,7 @@ ul {
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  width: inherit;
 }
 .coled {
   display: flex;
