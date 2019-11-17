@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import PopupTile from './PopupTile.js';
 import '../App.css';
 
 class Minerals extends Component {
@@ -46,50 +47,17 @@ class Minerals extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className={item.Name.replace(/ /g, '_')+ " coled"}>
-        <div className={item.Location[0].replace(/ /g, '_')+" coled"}>
-        <div className="css3frame-card-back categorical">
-        <div className="css3frame-card-padding">
-          {/* place and time metadata in text */}
-          <div className="rowed row-spacer">
-            {/* display image on left */}
-      			<span>
-      				<h2 className="text-shadow-white">{item.Name}</h2>
-      				<h5>{item.Type}</h5>
-      			</span>
-            <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-            className="item-border"
-            alt={item.Name}
-            />
-            {/* display metadata to right of image */}
-            <div class="text-shadow-white rowed">
-              <h3>{item.BasePrice}g</h3>
-              {item.Mine_Lvl &&
-              	<span>Lvls: {item.Mine_Lvl} </span>
-              }
-              <span>Panning: {item.Panning} </span>
-              {/* could use refactoring into own Uses/Bundles component */}
-              {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
-              <span className="rowed row-spillover">
-                {item.Uses && item.Uses.map(
-                  (Use) => (
-                    <span>
-                    <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')}
-                      className="item-border"
-                      alt={item.Use}
-                    />
-                    <h4>{
-                      Use
-                    }</h4>
-                    </span>
-                  )
-                )}
-              </span>
-            </div>
-          </div>
-        </div>
-        </div>
-        </div>
+      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+        <PopupTile
+          Name={item.Name}
+          Description={item.Description}
+          Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          SellPrice={item.BasePrice}
+          Type={item.Type}
+          Mine_Lvl={item.Mine_Lvl}
+          Panning={item.Panning}
+          Uses={item.Uses}
+        />
       </li>
     );
     return (

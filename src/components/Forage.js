@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SeasonTile from './SeasonTile.js';
 import SeasonText from './SeasonText.js';
 import Button from '@material-ui/core/Button';
-
+import PopupTile from './PopupTile.js';
 import '../App.css';
 
 class Forage extends Component {

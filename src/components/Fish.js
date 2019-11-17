@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SeasonImages from './SeasonImages.js';
 import WeatherImages from './WeatherImages.js';
-
+import PopupTile from './PopupTile.js';
 import Button from '@material-ui/core/Button';
 
 import '../App.css';

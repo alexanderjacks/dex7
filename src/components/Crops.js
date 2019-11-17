@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import BundleIterator from './BundleIterator.js';
+import PopupTile from './PopupTile.js';
 
 import '../App.css';
 

@@ -76,15 +76,51 @@ function PopupTile(props) {
                       so NOT entries starting w "The ".
                       This may count as the most Pythonic ES6 I've yet written :|
                    */}
-                  { !(props.Source1.charAt(0)==("T")) ? <span alt="poker-heart-emoji">♥</span> : <span></span>}
+                  { props.Source1 && !(props.Source1.charAt(0)==("T")) ? <span alt="poker-heart-emoji">♥</span> : <span></span>}
                   </Typography>
                 </div>
 
-              {/*needs own component*/}
+
+              {/* 3rd last --  Minerals metadata needs own component */}
+              <span className="rowed row-spillover">
+              {props.Type &&
+                <span>Category: {props.Type} </span>
+              }
+              {props.Mine_Lvl &&
+                <span>Mine Lvls: {props.Mine_Lvl} </span>
+              }
+              {props.Panning &&
+                <span>Panning? {props.Panning} </span>
+              }
+              </span>
+              {/* 2nd last --  needs own component */}
+              {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
+              {props.Uses &&
+                <span className="rowed row-spillover">
+                  {props.Uses && props.Uses.map(
+                    (Use) => (
+                      <span>
+                      <img src={require('../img/'+Use.replace(/ /g, '_')+'.png')}
+                        className="item-border"
+                        alt={props.Use}
+                      />
+                      <h4>{
+                        Use
+                      }</h4>
+                      </span>
+                    )
+                  )}
+                  </span>
+              }
+
+
+
+              {/* FINAL */}
+              {/* Recipe Ingredients -- needs own component */}
+              {props.Ing1 &&
               <div className="rowed">
     	          <h3>Ingredients</h3>
                 <div className="rowed">
-                  {props.Ing1 &&
                     <div>
                       <div className="coled">
                         <img src={require('../img/'+props.Ing1.replace(/ /g, '_')+'.png')}
@@ -94,7 +130,6 @@ function PopupTile(props) {
                         <span> {props.Ing1}</span>
                       </div>
                     </div>
-                  }
                   {props.Ing2 &&
                     <div className="">
                       <div className="coled">
@@ -130,6 +165,7 @@ function PopupTile(props) {
                   }
                 </div>
               </div>
+            }
             </CardContent>
             </div>
           </Card>
