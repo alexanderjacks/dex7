@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import SeasonTile from './SeasonTile.js';
 import '../App.css';
 
 function PopupTile(props) {
@@ -45,6 +46,18 @@ function PopupTile(props) {
             title={props.Name}
             subheader={props.Description}
             />
+            {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
+            {props.Bundle &&
+              <span>
+              <img src={require('../img/'+props.Bundle.replace(/ /g, '_')+'.png')}
+                className="item-border"
+                alt={props.Bundle}
+              />
+              <h4>{
+                props.Bundle
+              }</h4>
+              </span>
+            }
 
             <CardContent>
               <div className="rowed">
@@ -80,6 +93,40 @@ function PopupTile(props) {
                   </Typography>
                 </div>
 
+
+              {/* Forage fields  */}
+              {/* CSS class assigns background img based on .Location prop */}
+              {props.Location &&
+                <div className="">
+                  {props.Season &&
+                  <div>
+                    <SeasonTile seasons={props.Season} />
+                    <h5>{props.Season}</h5>
+                  </div>
+                  }
+                  <h5>{props.Location}</h5>
+                  {props.Location2 && <h5>& {props.Location2}</h5>}
+                </div>
+              }
+              {/* prices across 4 quality lvls; needs own component */}
+              { props.SellPrice &&
+              <h4 className="prices_bar">
+              {props.SellPrice}g
+              <span>
+                <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(props.SellPrice*1.25)}g </span>
+              </span>
+              <span>
+                <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(props.SellPrice*1.5)}g </span>
+              </span>
+              <span>
+                <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(props.SellPrice*2)}g </span>
+              </span>
+              </h4>
+              }
+
+              { props.Category=="forage" ?
+              <h3>Forage</h3> : <></> }
+              {props.AlsoType && <h3> (& {props.AlsoType})</h3>}
 
               {/* 3rd last --  Minerals metadata needs own component */}
               <span className="rowed row-spillover">

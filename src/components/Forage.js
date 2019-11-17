@@ -48,59 +48,18 @@ class Forage extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className={item.Location.replace(/ /g, '_')+ " rowed css3frame-card-padding text-shadow-white"}>
-         {/* needs own component from here on down, fields will reflect json types */}
-      {/* CSS class assigns background img based on .Location prop */}
-        <div className={item.Location.replace(/ /g, '_')}>
-        <div className="css3frame-card-back categorical rowed row-spacer">
-          {/* place and time metadata in text */}
-              <div>
-                <SeasonTile seasons={item.Season} />
-                <h5>{item.Season}</h5>
-              </div>
-              <h5>{item.Location}</h5>
-              {item.Location2 && <h5>& {item.Location2}</h5>}
-              <img src={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-                className="item-border"
-                alt={item.Name}
-              />
-            <div>
-              <h2>{item.Name}</h2>
-              {/* prices across 4 quality lvls; needs own component */}
-              <h4 className="prices_bar">
-              {item.BasePrice}g
-              <span>
-                <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(item.BasePrice*1.25)}g </span>
-              </span>
-              <span>
-                <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(item.BasePrice*1.5)}g </span>
-              </span>
-              <span>
-                <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(item.BasePrice*2)}g </span>
-              </span>
-              </h4>
-            </div>
-          <h3>
-            Forage
-            {/* if 2nd type exists */}
-            {item.AlsoType && ` (& ${item.AlsoType})`}
-          </h3>
-          {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
-          <div className="coled">
-            {item.Bundle &&
-              <span>
-              <img src={require('../img/'+item.Bundle.replace(/ /g, '_')+'.png')}
-                className="item-border"
-                alt={item.Bundle}
-              />
-              <h4>{
-                item.Bundle
-              }</h4>
-              </span>
-             }
-          </div>
-          </div>
-        </div>
+      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+        <PopupTile
+          Category={item.Category}
+          Name={item.Name}
+          Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
+          seasons={item.Season}
+          Location={item.Location}
+          Location2={item.Location2}
+          SellPrice={item.BasePrice}
+          Bundle={item.Bundle}
+          AlsoType={item.AlsoType}
+        />
       </li>
     );
     return (
