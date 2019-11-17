@@ -12,6 +12,8 @@ section {
   text-align: center;
   margin: 0px;
   padding: 0rem;
+  background-image: linear-gradient(to left, #4ea128, #3f9cf7, #4ea128);
+  min-height: 100vh;
 }
 .popup0 {
   min-width: 85vw;
@@ -48,7 +50,6 @@ FormControl { color: white; }
 .App-body {
   padding: 2rem 0 2rem 0;
   margin: 0;
-  background-image: linear-gradient(to left, #4ea128, #3f9cf7, #4ea128);
   flex-grow: 1;
 }
 

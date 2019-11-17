@@ -53,7 +53,7 @@ class Forage extends Component {
           Category={item.Category}
           Name={item.Name}
           Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
-          seasons={item.Season}
+          Season={item.Season}
           Location={item.Location}
           Location2={item.Location2}
           SellPrice={item.BasePrice}
