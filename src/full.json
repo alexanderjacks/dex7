@@ -1014,6 +1014,7 @@
     "Buff2": "Defense +1"
   },
   {
+    "Category": "fish",
     "Name": "Flounder",
     "Description": "It lives on the bottom, so both eyes are on top of its head.",
     "BasePrice": 100,
@@ -1028,6 +1029,7 @@
     "Uses": ["Seafoam Pudding"]
   },
   {
+    "Category": "fish",
     "Name": "Midnight Carp",
     "Description": "This shy fish only feels comfortable at night.",
     "BasePrice": 150,
