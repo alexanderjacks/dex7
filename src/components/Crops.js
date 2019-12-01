@@ -62,6 +62,8 @@ class Crops extends Component {
         SellPrice={item.BasePrice}
         Bundle={item.Bundle}
         Days={item.Days}
+        Notes={item.Notes}
+        Description={item.Description}
         Continuous={item.Continuous}
         requirements={item.requirements}
       />

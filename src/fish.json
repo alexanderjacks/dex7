@@ -1,5 +1,33 @@
 [
   {
+    "Name": "Flounder",
+    "Description": "It lives on the bottom, so both eyes are on top of its head.",
+    "BasePrice": 100,
+    "Location": ["Ocean"],
+    "Time": ["6am – 8pm"],
+    "Season": ["Spring","Summer"],
+    "Weather": ["Anytime"],
+    "Size (inches)": "4-16",
+    "ChallengeScore": 50,
+    "Behaviour": "sinker",
+    "BaseXP": 19,
+    "Uses": ["Seafoam Pudding"]
+  },
+  {
+    "Name": "Midnight Carp",
+    "Description": "This shy fish only feels comfortable at night.",
+    "BasePrice": 150,
+    "Location": ["Lake"],
+    "Time": ["10pm – 2am"],
+    "Season": ["Fall","Winter"],
+    "Weather": ["Any"],
+    "Size (inches)": "12-52",
+    "ChallengeScore": 55,
+    "Behaviour": "mixed",
+    "BaseXP": 29,
+    "Uses": ["Seafoam Pudding"]
+  },
+  {
     "Name": "Pufferfish",
     "Description": "Inflates when threatened.",
     "BasePrice": 200,

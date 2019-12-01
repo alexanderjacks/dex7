@@ -19,9 +19,6 @@ section {
   min-width: 85vw;
   min-height: 85vh;
 }
-.pulse {
-  animation: pulse infinite 4s linear;
-}
 /* keeps text on top of animations */
 p {z-index: 2;}
 
@@ -212,7 +209,9 @@ ul {
   width: 26px;
   height: 26px;
 }
-
+.pulse {
+  animation: pulse infinite 4s linear;
+}
 @keyframes pulse {
   50% {
     transform: scale(1.2);

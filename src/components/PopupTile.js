@@ -38,6 +38,7 @@ function PopupTile(props) {
 
         <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} className="coled dim-the-unchosen" onClick={handleClose}>
             <Card className="coled css3frame-card-back-sidefade">
+            {/* name & price metadata */}
             <div className="rowed">
             <CardMedia
             image={props.Image}
@@ -48,6 +49,26 @@ function PopupTile(props) {
             title={props.Name}
             subheader={props.Description}
             />
+            </div>
+
+            {/* prices across 4 quality lvls; needs own component */}
+            { props.SellPrice &&
+            <div><h3 className="prices_bar">
+            {props.SellPrice}g
+            </h3>
+            <h4 className="prices_bar">
+            <span>
+              <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(props.SellPrice*1.25)}g </span>
+            </span>
+            <span>
+              <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(props.SellPrice*1.5)}g </span>
+            </span>
+            <span>
+              <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(props.SellPrice*2)}g </span>
+            </span>
+            </h4></div>
+            }
+
             {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
             {props.Bundle &&
               <span>
@@ -63,8 +84,6 @@ function PopupTile(props) {
 
             <CardContent>
               <div className="rowed">
-                {/* name & price metadata */}
-                <Typography variant="body1" color="textSecondary" component="p">Sells for: {props.SellPrice}g</Typography>
                 { props.GivesEnergy
                   && <Typography variant="body1" color="textSecondary" component="p"> Energy: +{props.GivesEnergy}</Typography>
                 }
@@ -108,11 +127,6 @@ function PopupTile(props) {
                 {props.Behaviour &&
                   <>{props.Behaviour}&nbsp;{props.ChallengeScore}</>
                 }
-                {props.Notes &&
-                  <div className="max400px">
-                  <h4>🔎 {props.Notes}</h4>
-                  </div>
-                }
 
                 {/* could use refactoring into own Uses/Bundles component */}
                 <span className="rowed">
@@ -131,9 +145,6 @@ function PopupTile(props) {
                 	)}
                 </span>
                 {/* Crops fields  */}
-                  <h3>{props.Season && `${props.Season[0]}`}</h3>
-                  <h3>{props.Days && `harvest: ${props.Days} days`}</h3>
-                  <h3>{props.Continuous && props.Continuous ? 'multi-harvest' : 'harvest once' }</h3>
                     {props.SeedPrice &&
                       <div>
                       <hr/>
@@ -161,21 +172,6 @@ function PopupTile(props) {
                   <h5>{props.Location}</h5>
                   {props.Location2 && <h5>& {props.Location2}</h5>}
                 </div>
-              }
-              {/* prices across 4 quality lvls; needs own component */}
-              { props.SellPrice &&
-              <h4 className="prices_bar">
-              {props.SellPrice}g
-              <span>
-                <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(props.SellPrice*1.25)}g </span>
-              </span>
-              <span>
-                <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(props.SellPrice*1.5)}g </span>
-              </span>
-              <span>
-                <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(props.SellPrice*2)}g </span>
-              </span>
-              </h4>
               }
 
               { props.Category=="forage" ?
@@ -268,7 +264,6 @@ function PopupTile(props) {
               </div>
             }
             </CardContent>
-            </div>
           </Card>
         </Menu>
 

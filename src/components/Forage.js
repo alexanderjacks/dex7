@@ -51,14 +51,17 @@ class Forage extends Component {
       <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
         <PopupTile
           Category={item.Category}
+          Description={item.Description}
           Name={item.Name}
+          AlsoType={item.AlsoType}
           Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
           Season={item.Season}
           Location={item.Location}
+          Season2={item.Season2}
           Location2={item.Location2}
+          Season3={item.Season3}
+          Location3={item.Location3}
           SellPrice={item.BasePrice}
-          Bundle={item.Bundle}
-          AlsoType={item.AlsoType}
         />
       </li>
     );

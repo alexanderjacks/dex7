@@ -1,6 +1,17 @@
 [
   {
     "Category": "recipe",
+    "Name": "Seafoam Pudding",
+    "Description": "This briny pudding will really get you into the maritime mindset!",
+    "Source1": "Cooking",
+    "SellPrice": 35,
+    "Ing1": "Flounder",
+    "Ing2": "Midnight Carp",
+    "GivesEnergy": 175,
+    "GivesHealth": 78
+  },
+  {
+    "Category": "recipe",
     "Name": "Fried Egg",
     "Description": "Sunny-side up.",
     "Source1": "The Kitchen",
