@@ -1,6 +1,18 @@
 [
   {
     "Category": "recipe",
+    "Name": "Triple Shot Espresso",
+    "Description": "It's more potent than regular coffee!",
+    "Source1": "Cooking",
+    "SellPrice": 450,
+    "Ing1": "Coffee",
+    "Ing2": "Coffee",
+    "Ing3": "Coffee",
+    "GivesEnergy": 8,
+    "GivesHealth": 5
+  },
+  {
+    "Category": "recipe",
     "Name": "Green Tea",
     "Description": "A pleasant, energizing beverage made from lightly processed tea leaves.",
     "Source1": "Artisan Goods",
