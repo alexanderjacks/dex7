@@ -1,10 +1,35 @@
 [
   {
     "Category": "recipe",
+    "Name": "Green Tea",
+    "Description": "A pleasant, energizing beverage made from lightly processed tea leaves.",
+    "Source1": "Artisan Goods",
+    "SellPrice": 100,
+    "Ing1": "Tea Leaves",
+    "GivesEnergy": 13,
+    "GivesHealth": 5
+  },
+  {
+    "Category": "recipe",
+    "Name": "Shrimp Cocktail",
+    "Description": "A sumptuous appetizer made with freshly-caught shrimp.",
+    "Source1": "The Queen of Sauce: 28 Winter",
+    "TV_Year": "Year 2",
+    "Episode_Code": "2d4",
+    "Episode_Number": 32,
+    "SellPrice": 160,
+    "Ing1": "Shrimp",
+    "Ing2": "Tomato",
+    "Ing3": "Wild Horseradish",
+    "GivesEnergy": 225,
+    "GivesHealth": 101
+  },
+  {
+    "Category": "recipe",
     "Name": "Seafoam Pudding",
     "Description": "This briny pudding will really get you into the maritime mindset!",
     "Source1": "Cooking",
-    "SellPrice": 35,
+    "SellPrice": 300,
     "Ing1": "Flounder",
     "Ing2": "Midnight Carp",
     "GivesEnergy": 175,
