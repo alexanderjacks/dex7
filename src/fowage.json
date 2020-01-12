@@ -1,0 +1,395 @@
+[
+  {
+    "Forage": "Leek",
+    "Seasons": {"Spring", "Summer", "Fall", "Winter"},
+    "Type": "Vegetable Fruit Flower Forage",
+    "Description": ".",
+    "Seeds": "Wild Seeds ()",
+    "Stage 1": "10 days",
+    "Stage 2": "10 days",
+    "Harvest": "7 days",
+    "Extra": "About 1/4 chance from Wild Seeds.",
+    "Sells For": 55,
+    "Restores": "Inedible"
+  },
+  [
+ {
+   "Name": "Sap",
+   "Season": "All",
+   "Description": "A fluid obtained from trees.",
+   "Details": "Wherever there are trees that can be chopped down",
+   "Sell Price": "2g",
+   "Restores": "−2 0",
+   "Used In": "Basic Fertilizer Quality Fertilizer Trap Bobber Torch"
+ },
+ {
+   "Name": "Wild Horseradish",
+   "Season": "Spring",
+   "Description": "A spicy root found in the spring.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "50g \n\n\n 62g \n\n\n 75g \n\n\n 100g",
+   "Restores": "13  5 \n  18  8 \n  23  10 \n  33  14",
+   "Used In": "Spring Seeds Spring Foraging Bundle\n Krobus (loved gift)"
+ },
+ {
+   "Name": "Daffodil",
+   "Season": "Spring",
+   "Description": "A traditional spring flower that makes a nice gift.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "30g \n\n\n 37g \n\n\n 45g \n\n\n 60g",
+   "Restores": "0  0 \n  0  0 \n  0  0 \n  0  0",
+   "Used In": "Spring Seeds Spring Foraging Bundle\n Sandy (loved gift)"
+ },
+ {
+   "Name": "Leek",
+   "Season": "Spring",
+   "Description": "A tasty relative of the onion.",
+   "Details": "Above ground in Stardew Valley, may be more common in The Mountains",
+   "Sell Price": "60g \n\n\n 75g \n\n\n 90g \n\n\n 120g",
+   "Restores": "40  18 \n  56  25 \n  72  32 \n  104  46",
+   "Used In": "Salad Spring Seeds Spring Foraging Bundle\n George (loved gift)"
+ },
+ {
+   "Name": "Dandelion",
+   "Season": "Spring",
+   "Description": "Not the prettiest flower, but the leaves make a good salad.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "40g \n\n\n 50g \n\n\n 60g \n\n\n 80g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Salad Spring Seeds Spring Foraging Bundle"
+ },
+ {
+   "Name": "Spring Onion",
+   "Season": "Spring",
+   "Description": "These grow wild during the spring.",
+   "Details": "Cindersap Forest",
+   "Sell Price": "8g \n\n\n 10g \n\n\n 12g \n\n\n 16g",
+   "Restores": "13  5 \n  18  8 \n  23  10 \n  33  14",
+   "Used In": ""
+ },
+ {
+   "Name": "Morel",
+   "Season": "Spring",
+   "Description": "Sought after for its unique nutty flavor.",
+   "Details": "Secret Woods",
+   "Sell Price": "150g \n\n\n 187g \n\n\n 225g \n\n\n 300g",
+   "Restores": "20  9 \n  28  12 \n  36  16 \n  52  23",
+   "Used In": "Fried Mushroom Life Elixir Exotic Foraging Bundle"
+ },
+ {
+   "Name": "Common Mushroom",
+   "Season": "",
+   "Description": "Slightly nutty, with good texture.",
+   "Details": "Secret Woods",
+   "Sell Price": "40g \n\n\n 50g \n\n\n 60g \n\n\n 80g",
+   "Restores": "38  17 \n  53  23 \n  68  30 \n  98  44",
+   "Used In": "Fried Mushroom Stir Fry Tom Kha Soup Fall Foraging Bundle"
+ },
+ {
+   "Name": "Salmonberry",
+   "Season": "",
+   "Description": "A spring-time berry with the flavor of the forest.",
+   "Details": "On bushes during Salmonberry Season (Spring 15 - 18).",
+   "Sell Price": "5g \n\n\n 6g \n\n\n 7g \n\n\n 10g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Jelly Wine"
+ },
+ {
+   "Name": "Spice Berry",
+   "Season": "Summer",
+   "Description": "It fills the air with a pungent aroma.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "80g \n\n\n 100g \n\n\n 120g \n\n\n 160g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Summer Seeds Summer Foraging Bundle\n Jelly Wine"
+ },
+ {
+   "Name": "Grape",
+   "Season": "",
+   "Description": "A sweet cluster of fruit.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "80g \n\n\n 100g \n\n\n 120g \n\n\n 160g",
+   "Restores": "38  17 \n  53  23 \n  68  30 \n  98  44",
+   "Used In": "Summer Seeds Summer Foraging Bundle Vincent (loved gift)\n Jelly Wine"
+ },
+ {
+   "Name": "Sweet Pea",
+   "Season": "",
+   "Description": "A fragrant summer flower.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "50g \n\n\n 62g \n\n\n 75g \n\n\n 100g",
+   "Restores": "0  0 \n  0  0 \n  0  0 \n  0  0",
+   "Used In": "Summer Seeds Summer Foraging Bundle\n Sandy (loved gift)"
+ },
+ {
+   "Name": "Red Mushroom",
+   "Season": "",
+   "Description": "A spotted mushroom sometimes found in caves.",
+   "Details": "The Mines\nSecret Woods",
+   "Sell Price": "75g \n\n\n 93g \n\n\n 112g \n\n\n 150g",
+   "Restores": "−50 \n  −70 \n  −90 \n  −130",
+   "Used In": "Dye Bundle\n Exotic Foraging Bundle\n Life Elixir"
+ },
+ {
+   "Name": "Fiddlehead Fern",
+   "Season": "",
+   "Description": "The young shoots are an edible specialty.",
+   "Details": "Secret Woods",
+   "Sell Price": "90g \n\n\n 112g \n\n\n 135g \n\n\n 180g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Fiddlehead Risotto Chef's Bundle\n Pickles Juice"
+ },
+ {
+   "Name": "Wild Plum",
+   "Season": "Fall",
+   "Description": "Tart and juicy with a pungent aroma.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "80g \n\n\n 100g \n\n\n 120g \n\n\n 160g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Fall Seeds Plum Pudding Fall Foraging Bundle\n Jelly Wine"
+ },
+ {
+   "Name": "Hazelnut",
+   "Season": "Fall",
+   "Description": "That's one big hazelnut!",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "90g \n\n\n 112g \n\n\n 135g \n\n\n 180g",
+   "Restores": "30  13 \n  42  18 \n  54  24 \n  78  35",
+   "Used In": "Fall Seeds Roasted Hazelnuts Stuffing Fall Foraging Bundle"
+ },
+ {
+   "Name": "Blackberry",
+   "Season": "Fall",
+   "Description": "An early-fall treat.",
+   "Details": "Above ground in Stardew Valley\nOn bushes during Blackberry Season (Fall 8 - 11)",
+   "Sell Price": "20g \n\n\n 25g \n\n\n 30g \n\n\n 40g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Fall Seeds Blackberry Cobbler Fall Foraging Bundle\n Jelly Wine"
+ },
+ {
+   "Name": "Chanterelle",
+   "Season": "Fall",
+   "Description": "A tasty mushroom with a fruity smell and slightly peppery flavor.",
+   "Details": "Secret Woods",
+   "Sell Price": "160g \n\n\n 200g \n\n\n 240g \n\n\n 320g",
+   "Restores": "75  33 \n  105  47 \n  135  60 \n  195  87",
+   "Used In": "Life Elixir"
+ },
+ {
+   "Name": "Common Mushroom",
+   "Season": "Fall",
+   "Description": "Slightly nutty, with good texture.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "40g \n\n\n 50g \n\n\n 60g \n\n\n 80g",
+   "Restores": "38  17 \n  53  23 \n  68  30 \n  98  44",
+   "Used In": "Fall Seeds Fried Mushroom Tom Kha Soup Stir Fry Fall Foraging Bundle"
+ },
+ {
+   "Name": "Red Mushroom",
+   "Season": "Fall",
+   "Description": "A spotted mushroom sometimes found in caves.",
+   "Details": "The Mines\nSecret Woods",
+   "Sell Price": "75g \n\n\n 93g \n\n\n 112g \n\n\n 150g",
+   "Restores": "−50 \n  −70 \n  −90 \n  −130",
+   "Used In": "Dye Bundle\n Exotic Foraging Bundle\n Life Elixir"
+ },
+ {
+   "Name": "Winter Root",
+   "Season": "Winter",
+   "Description": "A starchy tuber.",
+   "Details": "Tilling soil throughout Stardew Valley",
+   "Sell Price": "70g \n\n\n 87g \n\n\n 105g \n\n\n 140g",
+   "Restores": "25  11 \n  35  15 \n  45  20 \n  65  29",
+   "Used In": "Winter Seeds Roots Platter Winter Foraging Bundle"
+ },
+ {
+   "Name": "Crystal Fruit",
+   "Season": "Winter",
+   "Description": "A delicate fruit that pops up from the snow.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "150g \n\n\n 187g \n\n\n 225g \n\n\n 300g",
+   "Restores": "63  28 \n  88  39 \n  113  50 \n  163  73",
+   "Used In": "Winter Seeds Winter Foraging Bundle\n Jelly Wine"
+ },
+ {
+   "Name": "Snow Yam",
+   "Season": "Winter",
+   "Description": "This little yam was hiding beneath the snow.",
+   "Details": "Tilling soil throughout Stardew Valley",
+   "Sell Price": "100g \n\n\n 125g \n\n\n 150g \n\n\n 200g",
+   "Restores": "30  13 \n  42  18 \n  54  24 \n  78  35",
+   "Used In": "Winter Seeds Winter Foraging Bundle"
+ },
+ {
+   "Name": "Crocus",
+   "Season": "Winter",
+   "Description": "A flower that can bloom in the winter.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "60g \n\n\n 75g \n\n\n 90g \n\n\n 120g",
+   "Restores": "0  0 \n  0  0 \n  0  0 \n  0  0",
+   "Used In": "Winter Seeds Winter Foraging Bundle\n Sandy (loved gift)"
+ },
+ {
+   "Name": "Holly",
+   "Season": "Winter",
+   "Description": "The leaves and bright red berries make a popular winter decoration.",
+   "Details": "Above ground in Stardew Valley",
+   "Sell Price": "80g \n\n\n 100g \n\n\n 120g \n\n\n 160g",
+   "Restores": "−37 \n  −52 \n  −67 \n  −97",
+   "Used In": ""
+ },
+ {
+   "Name": "",
+   "Season": "The Beach",
+   "Description": "",
+   "Details": "",
+   "Sell Price": "",
+   "Restores": "",
+   "Used In": ""
+ },
+ {
+   "Name": "",
+   "Season": "",
+   "Description": "",
+   "Details": "",
+   "Sell Price": "",
+   "Restores": "",
+   "Used In": ""
+ },
+ {
+   "Name": "Image",
+   "Season": "Name",
+   "Description": "Description",
+   "Details": "Season Found",
+   "Sell Price": "Sell Price",
+   "Restores": "Used In",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Nautilus Shell",
+   "Description": "An ancient shell.",
+   "Details": "Winter",
+   "Sell Price": "120g \n\n\n 150g \n\n\n 180g \n\n\n 240g",
+   "Restores": "Field Research Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Coral",
+   "Description": "A colony of tiny creatures that clump together to form beautiful structures.\nNote: Can only be found on the right side of the beach, past the broken bridge.",
+   "Details": "All",
+   "Sell Price": "80g \n\n\n 100g \n\n\n 120g \n\n\n 160g",
+   "Restores": "Deluxe Speed-Gro Warp Totem: Beach",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Sea Urchin",
+   "Description": "A slow-moving, spiny creature that some consider a delicacy.\nNote: Can only be found on the right side of the beach, past the broken bridge.",
+   "Details": "All",
+   "Sell Price": "160g \n\n\n 200g \n\n\n 240g \n\n\n 320g",
+   "Restores": "Dye Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Rainbow Shell",
+   "Description": "It's a very beautiful shell.",
+   "Details": "Summer",
+   "Sell Price": "300g \n\n\n 375g \n\n\n 450g \n\n\n 600g",
+   "Restores": "\"The Mysterious Qi\" Quest",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Clam",
+   "Description": "Someone lived here once.",
+   "Details": "All",
+   "Sell Price": "50g \n\n\n 62g \n\n\n 75g \n\n\n 100g",
+   "Restores": "Speed-Gro Chowder Crab Pot Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Cockle",
+   "Description": "A common saltwater clam.",
+   "Details": "All",
+   "Sell Price": "50g \n\n\n 62g \n\n\n 75g \n\n\n 100g",
+   "Restores": "Crab Pot Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Mussel",
+   "Description": "A common bivalve that often lives in clusters.",
+   "Details": "All",
+   "Sell Price": "30g \n\n\n 37g \n\n\n 45g \n\n\n 60g",
+   "Restores": "Fish Stew Crab Pot Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Beach",
+   "Season": "Oyster",
+   "Description": "Constantly filters water to find food. In the process, it removes dangerous toxins from the environment.",
+   "Details": "All",
+   "Sell Price": "40g \n\n\n 50g \n\n\n 60g \n\n\n 80g",
+   "Restores": "Crab Pot Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "The Mines",
+   "Season": "",
+   "Description": "",
+   "Details": "",
+   "Sell Price": "",
+   "Restores": "",
+   "Used In": ""
+ },
+ {
+   "Name": "The Mines",
+   "Season": "Red Mushroom",
+   "Description": "A spotted mushroom sometimes found in caves.",
+   "Details": "75g \n\n\n 93g \n\n\n 112g \n\n\n 150g",
+   "Sell Price": "−50 \n  −70 \n  −90 \n  −130",
+   "Restores": "Dye Bundle\n Exotic Foraging Bundle\n Life Elixir",
+   "Used In": ""
+ },
+ {
+   "Name": "The Mines",
+   "Season": "Purple Mushroom",
+   "Description": "A rare mushroom found deep in caves.",
+   "Details": "250g \n\n\n 312g \n\n\n 375g \n\n\n 500g",
+   "Sell Price": "125  56 \n  175  78 \n  225  101 \n  325  146",
+   "Restores": "Exotic Foraging Bundle\n Field Research Bundle\n Life Elixir Wizard (loved gift)",
+   "Used In": ""
+ },
+ {
+   "Name": "The Mines",
+   "Season": "Cave Carrot",
+   "Description": "A starchy snack found in caves. It helps miners work longer.",
+   "Details": "25g",
+   "Sell Price": "30  13",
+   "Restores": "Survival Burger Miner's Treat Roots Platter Stir Fry Exotic Foraging Bundle",
+   "Used In": ""
+ },
+ {
+   "Name": "All",
+   "Season": "Cactus Fruit",
+   "Description": "The sweet fruit of the prickly pear cactus.",
+   "Details": "75g \n\n\n 93g \n\n\n 112g \n\n\n 150g",
+   "Sell Price": "75  33 \n  105  47 \n  135  60 \n  195  87",
+   "Restores": "Exotic Foraging Bundle\n Jelly Wine Linus (loved gift)\n Pam (loved gift)\n Sam (loved gift)",
+   "Used In": ""
+ },
+ {
+   "Name": "All",
+   "Season": "Coconut",
+   "Description": "A seed of the coconut palm. It has many culinary uses.",
+   "Details": "100g \n\n\n 125g \n\n\n 150g \n\n\n 200g",
+   "Sell Price": "Inedible",
+   "Restores": "Tom Kha Soup Exotic Foraging Bundle\n Jelly Wine Haley (loved gift)\n Linus (loved gift)",
+   "Used In": ""
+ }
+]
+]
