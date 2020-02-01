@@ -65,25 +65,25 @@ class Minerals extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending" className="" onClick={this.sortByPriceAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Lowest&nbsp;Price&nbsp;</span>
                   <span>💰</span>
               </Button>
             </a>
             <a href="#Price_Descending" className="" onClick={this.sortByPriceDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>Highest&nbsp;Price&nbsp;</span>
                   <span>💎</span>
               </Button>
             </a>
             <a href="#sortByNameAsc" className="" onClick={this.sortByNameAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>
             <a href="#sortByTypeAsc" className="" onClick={this.sortByTypeAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Type&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>

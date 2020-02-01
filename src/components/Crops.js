@@ -76,24 +76,24 @@ class Crops extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#sortByPriceAsc" onClick={this.sortByPriceAsc}>
-            <Button>
+            <Button className="firelink">
             	<span>Low Sell Price&nbsp;</span>
                 <span>💰</span>
             </Button></a>
             <a href="#Price_Descending"onClick={this.sortByPriceDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>High Sell Price&nbsp;</span>
                   <span>💎</span>
               </Button>
             </a>
             <a href="#Time_Ascending"onClick={this.sortByTimeAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Short Grow Time&nbsp;</span>
                   <span>🥕</span>
               </Button>
             </a>
             <a href="#Time_Descending"onClick={this.sortByTimeDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>Long Grow Time&nbsp;</span>
                   <span>🌽</span>
               </Button>

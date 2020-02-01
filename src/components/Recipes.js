@@ -81,25 +81,25 @@ class Recipes extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#sortByPriceAsc" onClick={this.sortByPriceAsc}>
-              <Button>
+              <Button className="firelink">
               	<span>Low Sell Price&nbsp;</span>
                   <span alt="emoji-moneybag">💰</span>
               </Button>
             </a>
             <a href="#sortByPriceDesc"onClick={this.sortByPriceDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>High Sell Price&nbsp;</span>
                   <span alt="emoji-diamond">💎</span>
               </Button>
             </a>
             <a href="#sortByEnergyDesc" onClick={this.sortByEnergyDesc}>
-              <Button>
+              <Button className="firelink">
               	<span>Energy+&nbsp;</span>
                 <span alt="emoji-chart-w-upwards-trend">📈</span>
               </Button>
             </a>
             <a href="#sortByHealthDesc" onClick={this.sortByHealthDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>Health+&nbsp;</span>
                   <span alt="emoji-hospital">🏥</span>
               </Button>

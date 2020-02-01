@@ -76,13 +76,13 @@ class Bundles extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Name_Ascending" onClick={this.sortByNameAsc}>
-              <Button>
+              <Button className="firelink">
               	<span>Name&nbsp;A→Z&nbsp;</span>
                 <span>🔠</span>
               </Button>
             </a>
             <a href="#Room_Ascending" onClick={this.sortByRoomAsc}>
-              <Button>
+              <Button className="firelink">
                 <span>Room&nbsp;A→Z&nbsp;</span>
                 <span>🔠</span>
               </Button>

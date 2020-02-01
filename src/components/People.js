@@ -107,15 +107,15 @@ class People extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Name_Ascending" onClick={this.sortByNameAsc}>
-              <Button>
+              <Button className="firelink">
               	<span>Name&nbsp;A→Z&nbsp;</span>
                 <span>🔠</span>
               </Button>
             </a>
             <a href="#Room_Ascending" onClick={this.sortByBdayAsc}>
-              <Button>
-                <span>Bday&nbsp;A→Z&nbsp;</span>
-                <span>🔠</span>
+              <Button className="firelink">
+                <span >Bday&nbsp;A→Z&nbsp;</span>
+                <span >🔠</span>
               </Button>
             </a>
             {/*<a href="#Name_Ascending" onClick={this.sortByNameAsc}>

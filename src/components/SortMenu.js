@@ -35,48 +35,48 @@ function SortMenu() {
       </Button>
       <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
         <MenuItem onClick={handleClose}>
-          <Link href={url_}>[ X ] CLEAR</Link>
+          <Link href={url_}>🏡 Home</Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url1}>
-          <img src={require('../img/Blackberry.png')} />
-          <span>Forage</span>
+            <img src={require('../img/Blackberry.png')} />
+            <span className="SortMenuItem">Forage</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url2}>
-          <img src={require('../img/Melon.png')} />
-          Crops
+            <img src={require('../img/Melon.png')} />
+            <span className="SortMenuItem">Crops</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url3}>
-          <img src={require('../img/Geode.png')} />
-          Minerals
+            <img src={require('../img/Geode.png')} />
+            <span className="SortMenuItem">Minerals</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url4}>
-          <img src={require('../img/Dorado.png')} />
-          Fish
+            <img src={require('../img/Dorado.png')} />
+            <span className="SortMenuItem">Fish</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url0}>
-          <img src={require('../img/Apple.png')} />
-          Bundles
+            <img src={require('../img/Apple.png')} />
+            <span className="SortMenuItem">Bundles</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url5}>
-          <img src={require('../img/Sashimi.png')} />
-          Recipes
+            <img src={require('../img/Sashimi.png')} />
+            <span className="SortMenuItem">Recipes</span>
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
           <Link href={url6}>
-          <img src={require('../img/DialogueBubbleLove.png')} />
-          People
+            <img src={require('../img/DialogueBubbleLove.png')} />
+            <span className="SortMenuItem">People</span>
           </Link>
         </MenuItem>
       </Menu>

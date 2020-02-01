@@ -65,26 +65,26 @@ class Fish extends Component {
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
             <a href="#Price_Ascending"onClick={this.sortByPriceAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Lowest&nbsp;Price&nbsp;</span>
                   <span>💰</span>
               </Button>
             </a>
             <a href="#Price_Descending"onClick={this.sortByPriceDesc}>
-              <Button>
+              <Button className="firelink">
                   <span>Highest&nbsp;Price&nbsp;</span>
                   <span>💎</span>
               </Button>
             </a>
             <a href="#sortByNameAsc"onClick={this.sortByNameAsc}>
-              <Button>
+              <Button className="firelink">
                   <span>Name&nbsp;A→Z&nbsp;</span>
                   <span>🔠</span>
               </Button>
             </a>
 
 {/*            <a href="#sortOnlyBundles"onClick={this.sortOnlyBundles}>
-              <Button>
+              <Button className="firelink">
                   <span>Only&nbsp;Bundles&nbsp;</span>
                   <span>🚥</span>
               </Button>

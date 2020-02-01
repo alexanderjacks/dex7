@@ -5,8 +5,9 @@
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .SortMenuItem {
   font-family: 'Fredoka One', cursive;
+  line-height: 1.3;
 }
 Button span {
   font-family: 'Fredoka One', cursive;
@@ -148,6 +149,22 @@ ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+
+.SortMenuItem {
+  text-shadow: 2px 2px 4px navy,
+  -2px -2px 4px navy,
+  -2px 2px 4px blue,
+2px -2px 4px blue;
+  margin: 3rem;
+  font-size: 2rem;
+}
+a:hover, .firelink:hover {
+  text-decoration: none;
+  text-shadow: 2px 2px 4px red,
+  -2px -2px 4px red,
+  -2px 2px 4px gold,
+2px -2px 4px gold;
 }
 a {
   text-decoration: none;
