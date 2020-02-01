@@ -25,6 +25,11 @@ const people = full.filter(thing => thing.Category == 'NPC');
 const url_ = '..'
 
 function Index() {
+  {/* these 3 req for basic Button UX*/}
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  function handleClick(event) { setAnchorEl(event.currentTarget); }
+  function handleClose() { setAnchorEl(null); }
+
   const urlH = '..'
   const url0 = '../bundles'
   const url1 = '../forage'
@@ -38,34 +43,104 @@ function Index() {
     <div className="homepage-route">
       <h1><span alt="exclamation-upside-down">¡</span>Stardewdex!</h1>
       <section>
-      <Link to={url1}>
-        <img src={require('./img/Blackberry.png')} />
-        Forage
-      </Link>
-      <Link to={url2}>
-        <img src={require('./img/Melon.png')} />
-        Crops
-      </Link>
-      <Link to={url3}>
-        <img src={require('./img/Geode.png')} />
-        Minerals
-      </Link>
-      <Link to={url4}>
-        <img src={require('./img/Dorado.png')} />
-        Fish
-      </Link>
-      <Link to={url0}>
-        <img src={require('./img/Apple.png')} />
-        Bundles
-      </Link>
-      <Link to={url5}>
-        <img src={require('./img/Sashimi.png')} />
-        Recipes
-      </Link>
-      <Link to={url6}>
-        <img src={require('./img/DialogueBubbleLove.png')} />
-        People
-      </Link>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url1}>
+          <img src={require('./img/Blackberry.png')} className='exploding-icon-ux' />
+          Forage
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url2}>
+          <img src={require('./img/Melon.png')} className='exploding-icon-ux' />
+          Crops
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url3}>
+          <img src={require('./img/Geode.png')} className='exploding-icon-ux' />
+          Minerals
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url4}>
+          <img src={require('./img/Dorado.png')} className='exploding-icon-ux' />
+          Fish
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url0}>
+          <img src={require('./img/Apple.png')} className='exploding-icon-ux' />
+          Bundles
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url5}>
+          <img src={require('./img/Sashimi.png')} className='exploding-icon-ux' />
+          Recipes
+        </Link>
+      </Button>
+
+      <Button
+        aria-owns={anchorEl ? 'simple-menu' : undefined}
+        aria-haspopup="true"
+        onClick={handleClick}
+        color="secondary"
+        variant="contained"
+        className="pulse2"
+      >
+        <Link to={url6}>
+          <img src={require('./img/DialogueBubbleLove.png')} className='exploding-icon-ux' />
+          People
+        </Link>
+      </Button>
       </section>
       <h3>Open Settings Menu (⠇) & Add To Your Home Screen</h3>
       <hr/>

@@ -29,6 +29,7 @@ section {
   text-align: center;
   margin: 0px;
   padding: 0rem;
+  line-height: 1.6;
   background-image: linear-gradient(blue, deepskyblue, forestgreen);
 }
 .popup0 {
@@ -226,11 +227,18 @@ ul {
   width: 26px;
   height: 26px;
 }
-.pulse {
-  animation: pulse infinite 4s linear;
+.pulse { animation: pulse infinite 4s linear; }
+@keyframes pulse { 50% { transform: scale(1.2); }}
+
+.pulse2 { animation: pulse infinite 13s linear; }
+@keyframes pulse2 { 50% { transform: scale(1.1); }}
+
+.exploding-icon-UX {
+  animation: icon-swells-to-fill-viewport 2.2s linear;
 }
-@keyframes pulse {
-  50% {
-    transform: scale(1.2);
+
+@keyframes icon-swells-to-fill-viewport {
+  100% {
+    transform: scale(35);
   }
 }
