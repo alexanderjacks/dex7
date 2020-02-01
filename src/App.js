@@ -169,7 +169,7 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header rowed">
+        <header className="App-header">
           <div className="rowed">
             <Link to={'/'}>
               <img src={logo} className="App-logo" alt="logo" />
@@ -241,6 +241,20 @@ class App extends Component {
             &nbsp;
             <SortMenu/>
           </h5>
+          <hr/>
+          <ul className="rowed">
+            <li>
+              <a href="https://stardew.info/">
+                Stardew Planner
+              </a>
+            </li>
+            <li>
+              <a href="https://mouseypounds.github.io/stardew-checkup/">
+                Stardew Checkup
+              </a>
+            </li>
+          </ul>
+          <hr/>
           <h6>
             Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
           </h6>

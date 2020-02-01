@@ -62,7 +62,7 @@ class Fish extends Component {
     );
 
     return (
-      <div className="App">
+      <div className="">
 
         {/* buttons, tied to App constructor logic att */}
         <div className="App-header-ctrls">
