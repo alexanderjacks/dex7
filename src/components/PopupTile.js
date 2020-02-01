@@ -37,9 +37,8 @@ function PopupTile(props) {
         </Button>
 
         <Menu id="simple-menu" anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose} className="coled dim-the-unchosen" onClick={handleClose}>
-            <Card className="coled css3frame-card-back-sidefade">
+          <Card className="coled css3frame-card-back-sidefade Popup">
             {/* name & price metadata */}
-            <div className="rowed">
             <CardMedia
             image={props.Image}
             title={props.Name}
@@ -49,24 +48,25 @@ function PopupTile(props) {
             title={props.Name}
             subheader={props.Description}
             />
-            </div>
 
             {/* prices across 4 quality lvls; needs own component */}
             { props.SellPrice &&
-            <div><h3 className="prices_bar">
-            {props.SellPrice}g
-            </h3>
-            <h4 className="prices_bar">
-            <span>
-              <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(props.SellPrice*1.25)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(props.SellPrice*1.5)}g </span>
-            </span>
-            <span>
-              <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(props.SellPrice*2)}g </span>
-            </span>
-            </h4></div>
+            <section>
+              <h3 className="prices_bar">
+              {props.SellPrice}g
+              </h3>
+              <h4 className="prices_bar">
+              <span>
+                <img src={require('../img/star-silver.png')} /> <span>{Math.ceil(props.SellPrice*1.25)}g </span>
+              </span>
+              <span>
+                <img src={require('../img/star-gold.png')} /> <span>{Math.ceil(props.SellPrice*1.5)}g </span>
+              </span>
+              <span>
+                <img src={require('../img/star-iridium.png')} /> <span>{Math.ceil(props.SellPrice*2)}g </span>
+              </span>
+              </h4>
+            </section>
             }
 
             {/* Quests are dummied in w Ppl icons, b/c no game images exist; still crashing out on undefined Use values */}
@@ -82,25 +82,8 @@ function PopupTile(props) {
               </span>
             }
 
-            <CardContent>
-              <div className="rowed">
-                { props.GivesEnergy
-                  && <Typography variant="body1" color="textSecondary" component="p"> Energy: +{props.GivesEnergy}</Typography>
-                }
-                { props.GivesHealth
-                  &&
-                <Typography variant="body1" color="textSecondary" component="p"> Health: +{props.GivesHealth}</Typography>
-                }
-                  { props.Buff1 &&
-                  <div className="coled">
-                    <Typography variant="body2" color="textSecondary" component="p">Buff: {props.Buff1}</Typography>
-                    { props.Buff2 && <Typography variant="body2" color="textSecondary" component="p">Buff #2: {props.Buff2}</Typography> }
-                    { props.Buff3 && <Typography variant="body2" color="textSecondary" component="p">Buff #3: {props.Buff3}</Typography> }
-                    { props.Buff4 && <Typography variant="body2" color="textSecondary" component="p">Buff #4: {props.Buff4}</Typography> }
-                  </div>
-                  }
-                </div>
-                <div className="">
+            <CardContent className="Popup">
+                <section>
                   <Typography variant="body2" color="textSecondary" component="p">
                   { props.Source1 && <span>via: {props.Source1}</span> }
                   {/* Only Queen of Sauce recipes have these props */}
@@ -112,24 +95,23 @@ function PopupTile(props) {
                    */}
                   { props.Source1 && !(props.Source1.charAt(0)==("T")) ? <span alt="poker-heart-emoji">♥</span> : <span></span>}
                   </Typography>
-                </div>
+                </section>
 
               {/* Fish fields  */}
+                {props.Behaviour && <h6>{props.Behaviour}&nbsp;{props.ChallengeScore}</h6> }
+
+                <section>
                 {props.Time &&
-                <ul className="rowed">{props.Time.map && props.Time.map(
-                  Time => <li>{Time}</li>
+                props.Time.map && props.Time.map(
+                  Time => <h6>{Time}</h6>
                   )}
-                </ul>
-                }
                 {props.Weather &&
                 <WeatherImages weather={props.Weather} />
                 }
-                {props.Behaviour &&
-                  <>{props.Behaviour}&nbsp;{props.ChallengeScore}</>
-                }
+                </section>
 
                 {/* could use refactoring into own Uses/Bundles component */}
-                <span className="rowed">
+                <section>
                 	{props.Ins && props.Ins.map(
                 		(In) => (
                       <span>
@@ -137,13 +119,13 @@ function PopupTile(props) {
                         className="item-border"
                         alt={props.In}
                       />
-                      <h4>{
+                      <h6>{
                         In
-                      }</h4>
+                      }</h6>
                       </span>
                     )
                 	)}
-                </span>
+                </section>
                 {/* Crops fields  */}
                     {props.SeedPrice &&
                       <div>
@@ -162,16 +144,16 @@ function PopupTile(props) {
               {/* Forage fields  */}
               {/* CSS class assigns background img based on .Location prop */}
               {props.Location &&
-                <div className="">
+                <section className="">
                   {props.Season &&
                   <div>
                     <SeasonTile seasons={props.Season} />
-                    <h5>{props.Season}</h5>
+                    <h4>{props.Season}</h4>
                   </div>
                   }
                   <h5>{props.Location}</h5>
                   {props.Location2 && <h5>& {props.Location2}</h5>}
-                </div>
+                </section>
               }
 
               { props.Category=="forage" ?

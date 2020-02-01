@@ -33,9 +33,17 @@ section {
   line-height: 1.6;
   background-image: linear-gradient(blue, deepskyblue, forestgreen);
 }
-.popup0 {
-  min-width: 80vw;
-  min-height: 75vh;
+.Popup {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.Popup section {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 /* keeps text on top of animations */
 p {z-index: 2;}

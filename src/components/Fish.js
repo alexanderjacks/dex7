@@ -52,9 +52,11 @@ class Fish extends Component {
           Time={item.Time}
           Notes={item.Description}
           Behaviour={item.Behaviour}
+          ChallengeScore={item.ChallengeScore}
           Weather={item.Weather}
           SellPrice={item.BasePrice}
           Bundle={item.Bundle}
+          Ins={item.Uses}
         />
       </li>
     );

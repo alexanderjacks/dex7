@@ -3,11 +3,11 @@ import React from 'react';
 class WeatherImages extends React.Component {
 	render() {
 		return(
-			<div className="rowed">
+			<div className="">
 				{/* if you expand them out, React offers visually-pleasing conditionals */}
 				<span>
 				{this.props.weather.includes('Sun')
-				? 
+				?
 					<span>
 						<img src={require('../img/tinytile-Sun.png')} />
 						<h6>Sun</h6>
@@ -18,7 +18,7 @@ class WeatherImages extends React.Component {
 				</span>
 				<span>
 				{this.props.weather.includes('Rain')
-				? 
+				?
 					<span>
 						<img src={require('../img/tinytile-Rain.png')} />
 						<h6>Rain</h6>
@@ -29,7 +29,7 @@ class WeatherImages extends React.Component {
 				</span>
 				<span>
 				{this.props.weather.includes('Wind')
-				? 
+				?
 					<span>
 						<img src={require('../img/tinytile-WindSpring.png')} />
 						<h6>Wind</h6>
@@ -40,9 +40,9 @@ class WeatherImages extends React.Component {
 				</span>
 				<span>
 				{this.props.weather.includes('Any')
-				? 
+				?
 					<span>
-						<img src={require('../img/tinytile-Special.png')} />
+						<img src={require('../img/tinytile-Any.png')} />
 						<h6>Any</h6>
 					</span>
 				:
