@@ -43,7 +43,7 @@ class Fish extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+      <li key={item.Key} className="css3frame-card-padding text-shadow-white">
         <PopupTile
           Name={item.Name}
           Image={require('../img/'+item.Name.replace(/ /g, '_')+'.png')}
@@ -62,10 +62,9 @@ class Fish extends Component {
     );
 
     return (
-      <div className="">
-
-        {/* buttons, tied to App constructor logic att */}
+      <div className="App">
         <div className="App-header-ctrls">
+        {/* buttons, tied to App constructor logic att */}
             <a href="#Price_Ascending"onClick={this.sortByPriceAsc}>
               <Button className="firelink">
                   <span>Lowest&nbsp;Price&nbsp;</span>
@@ -84,24 +83,15 @@ class Fish extends Component {
                   <span>🔠</span>
               </Button>
             </a>
-
-{/*            <a href="#sortOnlyBundles"onClick={this.sortOnlyBundles}>
-              <Button className="firelink">
-                  <span>Only&nbsp;Bundles&nbsp;</span>
-                  <span>🚥</span>
-              </Button>
-            </a>*/}
-
         </div>
 
-        {/* BODY component, content sorted by HEADER */}
         <section>
-         <ul className="App-body">
+        {/* BODY component, content sorted by HEADER */}
+         <ul className="App-body rowed">
           {items}
          </ul>
         </section>
-
-      </div>
+        </div>
     );
   }
 }

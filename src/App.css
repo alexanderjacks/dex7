@@ -5,8 +5,8 @@
   margin: 0;
 }
 
-hr {
-  margin: 2rem 2rem 2rem 2rem;
+.p-3 {
+  margin: 1.2rem 1.2rem 1.2rem 1.2rem;
 }
 
 h1, h2, h3, h4, h5, h6, .SortMenuItem {
@@ -27,12 +27,15 @@ h5 { font-size: calc(12px + 2vmin); }
 h6 { font-size: calc(10px + 2vmin); }
 
 section {
+  display: flex;
+  flex-direction: row;
   flex-flow: row wrap;
   justify-content: center;
 }
 .App {
   text-align: center;
-  margin: 0px;
+  width: 100vw;
+  margin: 0px 0px 0px 0px;
   padding: 0rem;
   line-height: 1.6;
   background-image: linear-gradient(blue, deepskyblue, forestgreen);
@@ -67,26 +70,25 @@ p {z-index: 2;}
 .App-header {
   background-image: radial-gradient(  black, navy, blue);
   min-height: 12vh;
-  width: 100vw;
-  padding: 2px 5px 4px 5px;
+  padding: 0.2rem 0.5rem 0.4rem 0.5rem;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 FormControl { color: white; }
 
 .App-body {
-  padding: 2rem 0 2rem 0;
-  margin: 0;
-  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  padding: 0.35rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
   min-height: 88vh;
+  width: 100vw;
 }
 
 ul {
   list-style: none;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .responsive-stuff {
@@ -181,10 +183,7 @@ a:hover, .firelink:hover {
 a {
   text-decoration: none;
 }
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 .master-list {
   display: flex;
   flex-flow: row wrap;
@@ -204,6 +203,7 @@ ul {
 
 .rowed {
   display: flex;
+  flex-direction: row;
   flex-flow: row wrap;
   align-content: center;
   align-items: center;

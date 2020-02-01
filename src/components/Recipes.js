@@ -116,7 +116,7 @@ class Recipes extends Component {
 
         {/* BODY component, content sorted by HEADER */}
         <section>
-         <ul className="App-body">
+         <ul className="App-body rowed">
           {items}
          </ul>
         </section>

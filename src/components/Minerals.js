@@ -47,7 +47,7 @@ class Minerals extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+      <li key={item.Key} className="css3frame-card-padding text-shadow-white">
         <PopupTile
           Name={item.Name}
           Description={item.Description}
@@ -91,7 +91,7 @@ class Minerals extends Component {
         </div>
         {/* BODY component, content sorted by HEADER */}
         <section>
-         <ul className="App-body">
+         <ul className="App-body rowed">
           {items}
          </ul>
         </section>

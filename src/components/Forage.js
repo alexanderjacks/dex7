@@ -48,7 +48,7 @@ class Forage extends Component {
 
   render(){
     const items = this.state.categoricals.map((item, key ) =>
-      <li key={item.Key} className="rowed css3frame-card-padding text-shadow-white">
+      <li key={item.Key} className="css3frame-card-padding text-shadow-white">
         <PopupTile
           Category={item.Category}
           Description={item.Description}
@@ -97,7 +97,7 @@ class Forage extends Component {
 
         {/* BODY component, content sorted by HEADER */}
         <section>
-         <ul className="App-body">
+         <ul className="App-body rowed">
           {items}
          </ul>
         </section>

@@ -235,26 +235,24 @@ class App extends Component {
             }
           />
         </section>
-        <section className="App-footer">
+        <section className="App-footer coled">
           <h5>
             Use the STUFF menu!
             &nbsp;
             <SortMenu/>
           </h5>
-          <hr/>
           <ul className="rowed">
             <li>
               <a href="https://stardew.info/">
-                Stardew Planner
+                Stardew Planner 📚
               </a>
             </li>
             <li>
               <a href="https://mouseypounds.github.io/stardew-checkup/">
-                Stardew Checkup
+                Stardew Checkup 🛰
               </a>
             </li>
           </ul>
-          <hr/>
           <h6>
             Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
           </h6>
