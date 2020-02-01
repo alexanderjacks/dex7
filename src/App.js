@@ -169,11 +169,15 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <header className="App-header rowed row-spacer">
-          <Link to={'/'}>
-            <img src={logo} className="App-logo" alt="logo" />
-          </Link>
-          <SortMenu/>
+        <header className="App-header rowed">
+          <div className="rowed">
+            <Link to={'/'}>
+              <img src={logo} className="App-logo" alt="logo" />
+            </Link>
+            <SortMenu/>
+            <h1><span alt="exclamation-upside-down">¡</span>Stardewdex!</h1>
+          </div>
+
           <h3>Stardew Valley Quick Guide</h3>
         </header>
         {/* BODY components, active content chosen by <NavMenu/>  */}
