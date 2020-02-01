@@ -1,7 +1,7 @@
 [
   {
     "Crop": "Blue Jazz",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Flower",
     "Description": "The flower grows in a sphere to invite as many butterflies as possible.",
     "Seeds": "Jazz Seeds",
@@ -18,7 +18,7 @@
   },
   {
     "Crop": "Cauliflower",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "Valuable, but slow-growing. Despite its pale color, the florets are packed with nutrients.",
     "Seeds": "Cauliflower Seeds",
@@ -37,7 +37,7 @@
   },
   {
     "Crop": "Coffee Bean",
-    "Seasons": {"Spring", "Summer"},
+    "Seasons": {"Spring": true, "Summer": true},
     "Type": "Seed",
     "Description": "Plant in spring or summer to grow a coffee plant. Place five beans in a keg to make coffee.",
     "Extra": "Each plant yields 4 beans per harvest with a small random chance for more beans.",
@@ -57,7 +57,7 @@
   },
   {
     "Crop": "Garlic",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "Adds a wonderful zestiness to dishes. High quality garlic can be pretty spicy.",
     "Seeds": "Garlic Seeds",
@@ -74,7 +74,7 @@
   },
   {
     "Crop": "Green Bean",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "A juicy little bean with a cool, crisp snap.",
     "Extra": "This crop uses a trellis, and continues to produce after maturity.",
@@ -94,7 +94,7 @@
   },
   {
     "Crop": "Kale",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "The waxy leaves are great in soups and stir frys.",
     "Seeds": "Kale Seeds",
@@ -111,7 +111,7 @@
   },
   {
     "Crop": "Parsnip",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "A spring tuber closely related to the carrot. It has an earthy taste and is full of nutrients.",
     "Seeds": "Parsnip Seeds",
@@ -128,7 +128,7 @@
   },
   {
     "Crop": "Potato",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "A widely cultivated tuber.",
     "Extra": "Yields 1 Potato at harvest, with ≈20% chance for more Potatoes.",
@@ -147,7 +147,7 @@
   },
   {
     "Crop": "Rhubarb",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Fruit",
     "Description": "The stalks are extremely tart, but make a great dessert when sweetened.",
     "Seeds": "Rhubarb Seeds",
@@ -164,7 +164,7 @@
   },
   {
     "Crop": "Strawberry",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Fruit",
     "Description": "A sweet, juicy favorite with an appealing red color.",
     "Extra": "Keeps producing after maturity. When harvested, each Strawberry plant gives 1 Strawberry every 4 days, with a small random chance for more Strawberries.",
@@ -183,7 +183,7 @@
   },
   {
     "Crop": "Tulip",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Flower",
     "Description": "The most popular spring flower. Has a very faint sweet smell.",
     "Seeds": "Tulip Bulb",
@@ -200,7 +200,7 @@
   },
   {
     "Crop": "Unmilled Rice",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Vegetable",
     "Description": "Rice in its rawest form. Run this through a mill to increase the value.",
     "Seeds": "Rice Shoot",
@@ -216,7 +216,7 @@
   },
   {
     "Crop": "Blueberry",
-    "Seasons": {"Spring"},
+    "Seasons": {"Spring": true},
     "Type": "Fruit",
     "Description": "A popular berry reported to have many health benefits. The blue skin has the highest nutrient concentration.",
     "Extra": "Keeps producing after maturity. Each plant produces 3 blueberries at harvest, with ≈2% chance for more blueberries.",
@@ -235,7 +235,7 @@
   },
   {
     "Crop": "Corn",
-    "Seasons": {"Summer", "Fall"},
+    "Seasons": {"Summer": true, "Fall": true},
     "Type": "Vegetable",
     "Description": "One of the most popular grains. The sweet, fresh cobs are a summer favorite.",
     "Extra": "Keeps producing after maturity. Can be grown in Summer or Fall.",
@@ -255,7 +255,7 @@
   },
   {
     "Crop": "Hops",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Vegetable",
     "Description": "A bitter, tangy flower used to flavor beer.",
     "Extra": "Hops use a trellis, and continue to produce after maturity.",
@@ -275,7 +275,7 @@
   },
   {
     "Crop": "Hot Pepper",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Fruit",
     "Description": "Fiery hot with a hint of sweetness.",
     "Extra": "Keeps producing after maturity. When harvested, each Hot Pepper plant gives 1 Hot Pepper every 3 days, with a small random chance for more Hot Peppers.",
@@ -295,7 +295,7 @@
   },
   {
     "Crop": "Melon",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Fruit",
     "Description": "A cool, sweet summer treat.",
     "Extra": "Can become a Giant Crop.",
@@ -314,7 +314,7 @@
   },
   {
     "Crop": "Poppy",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Flower",
     "Description": "In addition to its colorful flower, the Poppy has culinary and medicinal uses.",
     "Seeds": "Poppy Seeds",
@@ -331,7 +331,7 @@
   },
   {
     "Crop": "Radish",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Vegetable",
     "Description": "A crisp and refreshing root vegetable with hints of pepper when eaten raw.",
     "Seeds": "Radish Seeds",
@@ -348,7 +348,7 @@
   },
   {
     "Crop": "Red Cabbage",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Vegetable",
     "Description": "Often used in salads and coleslaws. The color can range from purple to blue to green-yellow depending on soil conditions.",
     "Extra": "Available from year 2",
@@ -366,7 +366,7 @@
   },
   {
     "Crop": "Starfruit",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Fruit",
     "Description": "An extremely juicy fruit that grows in hot, humid weather. Slightly sweet with a sour undertone.",
     "Seeds": "Starfruit Seeds",
@@ -383,7 +383,7 @@
   },
   {
     "Crop": "Summer Spangle",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Flower",
     "Description": "A tropical bloom that thrives in the humid summer air. Has a sweet, tangy aroma.",
     "Seeds": "Spangle Seeds",
@@ -400,7 +400,7 @@
   },
   {
     "Crop": "Sunflower",
-    "Seasons": {"Summer", "Fall"},
+    "Seasons": {"Summer": true, "Fall": true},
     "Type": "Flower",
     "Description": "A common misconception is that the flower turns so it's always facing the sun.",
     "Extra": "Harvesting will also produce 0-3 Sunflower Seeds. Can be grown in Summer or Fall.",
@@ -418,7 +418,7 @@
   },
   {
     "Crop": "Tomato",
-    "Seasons": {"Summer"},
+    "Seasons": {"Summer": true},
     "Type": "Vegetable",
     "Description": "Rich and slightly tangy, the Tomato has a wide variety of culinary uses.",
     "Extra": "Keeps producing after maturity. Each harvest produces 1 tomato, with a small random chance for more tomatoes.",
@@ -438,7 +438,7 @@
   },
   {
     "Crop": "Wheat",
-    "Seasons": {"Summer", "Fall"},
+    "Seasons": {"Summer": true, "Fall": true},
     "Type": "Vegetable",
     "Description": "One of the most widely cultivated grains. Makes a great flour for breads and cakes.",
     "Extra": "Can be grown in Summer or Fall.",
@@ -456,7 +456,7 @@
   },
   {
     "Crop": "Amaranth",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "A purple grain cultivated by an ancient civilization.",
     "Seeds": "Amaranth Seeds",
@@ -473,7 +473,7 @@
   },
   {
     "Crop": "Artichoke",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "The bud of a thistle plant. The spiny outer leaves conceal a fleshy, filling interior.",
     "Extra": "Available from year 2.",
@@ -491,7 +491,7 @@
   },
   {
     "Crop": "Beet",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "A sweet and earthy root vegatable. As a bonus, the leaves make a great salad.",
     "Seeds": "Beet Seeds",
@@ -507,7 +507,7 @@
   },
   {
     "Crop": "Bok Choy",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "The leafy greens and fibrous stalks are healthy and delicious.",
     "Seeds": "Bok Choy Seeds",
@@ -524,7 +524,7 @@
   },
   {
     "Crop": "Cranberries",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Fruit",
     "Description": "These tart red berries are a traditional winter food.",
     "Extra": "Yields 2 berries at harvest, with a small random chance for more berries. Keeps producing after maturity.",
@@ -544,7 +544,7 @@
   },
   {
     "Crop": "Eggplant",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "A rich and wholesome relative of the tomato. Delicious fried or stewed.",
     "Extra": "Keeps producing after maturity. When harvested, each Eggplant bush gives 1 Eggplant every 5 days, with a very small random chance for more Eggplants.",
@@ -564,7 +564,7 @@
   },
   {
     "Crop": "Fairy Rose",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Flower",
     "Description": "An old folk legend suggests that the sweet smell of this flower attracts fairies.",
     "Seeds": "Fairy Seeds",
@@ -581,7 +581,7 @@
   },
   {
     "Crop": "Grape",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Fruit",
     "Description": "A sweet cluster of fruit.",
     "Extra": "Grapes use a trellis, and continue to produce after maturity.",
@@ -601,7 +601,7 @@
   },
   {
     "Crop": "Pumpkin",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "A fall favorite, grown for its crunchy seeds and delicately flavored flesh. As a bonus, the hollow shell can be carved into a festive decoration.",
     "Extra": "Can become a Giant Crop.",
@@ -620,7 +620,7 @@
   },
   {
     "Crop": "Yam",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Vegetable",
     "Description": "A starchy tuber with a lot of culinary versatility.",
     "Seeds": "Yam Seeds",
@@ -637,7 +637,7 @@
   },
   {
     "Crop": "Cactus Fruit",
-    "Seasons": {"Indoors"},
+    "Seasons": {"Indoors": true},
     "Type": "Fruit",
     "Description": "The sweet fruit of the prickly pear cactus.",
     "Seeds": "Cactus Seeds",
@@ -655,7 +655,7 @@
   },
   {
     "Crop": "Ancient Fruit",
-    "Seasons": {"Spring", "Summer", "Fall"},
+    "Seasons": {"Spring": true, "Summer": true, "Fall": true},
     "Type": "Fruit",
     "Description": "It's been dormant for eons.",
     "Seeds": "Ancient Seeds",
@@ -672,7 +672,7 @@
   },
   {
     "Crop": "Sweet Gem Berry",
-    "Seasons": {"Fall"},
+    "Seasons": {"Fall": true},
     "Type": "Fruit",
     "Description": "It's been dormant for eons.",
     "Seeds": "Ancient Seeds",

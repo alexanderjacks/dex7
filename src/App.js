@@ -12,6 +12,7 @@ import Crops from './components/Crops.js';
 import Minerals from './components/Minerals.js';
 import Fish from './components/Fish.js';
 import Bundles from './components/Bundles.js';
+import caveCarrot from './components/caveCarrot.js';
 import Recipes from './components/Recipes.js';
 import People from './components/People.js';
 const forage = full.filter(thing => thing.Category == 'forage');
@@ -24,9 +25,48 @@ const people = full.filter(thing => thing.Category == 'NPC');
 const url_ = '..'
 
 function Index() {
+  const urlH = '..'
+  const url0 = '../bundles'
+  const url1 = '../forage'
+  const url2 = '../crops'
+  const url3 = '../minerals'
+  const url4 = '../fish'
+  const url5 = '../recipes'
+  const url6 = '../people'
+
   return(
     <div className="homepage-route">
       <h1><span alt="exclamation-upside-down">¡</span>Stardewdex!</h1>
+      <section>
+      <Link to={url1}>
+        <img src={require('./img/Blackberry.png')} />
+        Forage
+      </Link>
+      <Link to={url2}>
+        <img src={require('./img/Melon.png')} />
+        Crops
+      </Link>
+      <Link to={url3}>
+        <img src={require('./img/Geode.png')} />
+        Minerals
+      </Link>
+      <Link to={url4}>
+        <img src={require('./img/Dorado.png')} />
+        Fish
+      </Link>
+      <Link to={url0}>
+        <img src={require('./img/Apple.png')} />
+        Bundles
+      </Link>
+      <Link to={url5}>
+        <img src={require('./img/Sashimi.png')} />
+        Recipes
+      </Link>
+      <Link to={url6}>
+        <img src={require('./img/DialogueBubbleLove.png')} />
+        People
+      </Link>
+      </section>
       <h3>Open Settings Menu (⠇) & Add To Your Home Screen</h3>
       <hr/>
       <AdSense.Google
@@ -34,12 +74,6 @@ function Index() {
           slot='6359860180'
       />
       <hr/>
-      <p>
-        Use the STUFF menu!
-        &nbsp;
-        <SortMenu/>
-      </p>
-      <h6>Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a></h6>
     </div>
   );
 }
@@ -61,15 +95,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header rowed row-spacer">
-          <Link to={url_}>
+          <Link to={'/'}>
             <img src={logo} className="App-logo" alt="logo" />
           </Link>
           <SortMenu/>
-          <h4>Your quick guide to Stardew Valley</h4>
+          <h3>Stardew Valley Quick Guide</h3>
         </header>
         {/* BODY components, active content chosen by <NavMenu/>  */}
-        <section className="">
+        <section className="App-body">
           <Route path="/" exact component={Index} />
+          <Route path="/cave-carrot" exact component={caveCarrot} />
+
           <Route path="/bundles/"
             render={props =>
             (<Bundles {...props}
@@ -120,6 +156,17 @@ class App extends Component {
             }
           />
         </section>
+        <section className="App-footer">
+          <h5>
+            Use the STUFF menu!
+            &nbsp;
+            <SortMenu/>
+          </h5>
+          <h6>
+            Most images copyright <a href="https://twitter.com/concernedape?lang=en" target="_blank" rel="noopener noreferrer">ConcernedApe</a>. Content available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
+          </h6>
+        </section>
+
       </div>
     );
   }
